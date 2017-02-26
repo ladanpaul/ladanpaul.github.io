@@ -1,5 +1,4 @@
 body {
-	background-image: url(img/background.jpg);
 	background-color: #f9f9f9;
 	font-family: 'open_sansregular', sans-serif;
 	font-size: 13.33px;	
@@ -23,7 +22,6 @@ footer {
 }
 .logo a {
 	width: 144px;
-	/*height: 40px;*/
 	display: block;
 	font-size: 45px;
 	font-weight: bold;
