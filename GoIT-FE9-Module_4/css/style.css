@@ -180,6 +180,10 @@ body {
   line-height: 25px;
 }
 
+.columns img {
+	width: 100%;
+}
+
 .information, .news, .center-column {
   display: table-cell;
 }
