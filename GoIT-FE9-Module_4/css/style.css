@@ -1,9 +1,7 @@
 body {
   font-size: 0;
-  font-family: 'tahoma';
-  background-image: url("../img/bg.jpg");
-  background-repeat: repeat-x;
-  background-color: #0c739f;
+  font-family: 'Tahoma';
+  background: url("../img/bg.jpg") repeat-x #0c739f;
 }
 
 .clearfix::after {
@@ -47,8 +45,8 @@ body {
 }
 
 .contacts > p {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   line-height: 18px;
 }
 
