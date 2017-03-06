@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/bg.jpg");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  background-color: blue;
+}
+
+.header-right-menu li, .header-left-menu li {
+  display: inline-block;
+  list-style: none;
+}
+
+.header-right-menu, .header-left-menu {
+  float: right;
+}
+
+.header-right-menu a, .header-left-menu a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 5px;
+  color: #fff;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
