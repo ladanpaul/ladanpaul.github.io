@@ -57,11 +57,15 @@ header {
 
 .header-right-menu {
   box-sizing: border-box;
-  margin: 0 20px 0 15px;
+  margin: 0 20px 0 5px;
 }
 
-.minhas-ofertas {
-  background: url("../img/flag.png") no-repeat left center;
+.flag {
+  float: left;
+  width: 23px;
+  height: 26px;
+  background: url("../img/flag.png") no-repeat center;
+  margin-top: 4px;
 }
 
 .minhas-ofertas:hover {
@@ -70,8 +74,12 @@ header {
   height: 34px;
 }
 
+.minhas-ofertas a:hover {
+  text-decoration: underline;
+}
+
 .minhas-ofertas > a {
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 .header-left-menu a {
@@ -85,7 +93,6 @@ header {
 }
 
 .entar-ou-cadastre-se:hover {
-  background-color: #4299D2;
   background: linear-gradient(#51b1dc, #2e7ac4);
   outline: 1px solid #4e9ed8;
   height: 34px;
