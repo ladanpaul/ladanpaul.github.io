@@ -557,7 +557,11 @@ main figure h6 {
   margin: 1px 1.5px 0 0;
   letter-spacing: .1px;
   font-size: 14.59px;
+}
+
+main figure h6 a {
   color: #206988;
+  text-decoration: none;
 }
 
 .model {

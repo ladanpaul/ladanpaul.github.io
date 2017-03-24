@@ -20,7 +20,11 @@ main {
 			margin: 1px 1.5px 0 0;
 			letter-spacing: .1px;
 			font-size: 14.59px;
-			color: #206988;
+			
+			a {
+				color: #206988;
+				text-decoration: none;
+			}
 		}
 	}
 }
