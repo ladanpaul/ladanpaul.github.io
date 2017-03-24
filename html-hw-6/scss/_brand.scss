@@ -53,6 +53,11 @@
 		background-image: linear-gradient(to bottom, #206988, #114165 59%, #0c3256);
 		box-shadow: 2px 3px 0 rgba(213, 213, 213, .5);
 		cursor: pointer;
+
+		&:hover {
+			color: #fcfcfc;
+			background-image: linear-gradient(to top, #206988, #114165 20%, #0c3256);
+		}
 	}
 }
 
