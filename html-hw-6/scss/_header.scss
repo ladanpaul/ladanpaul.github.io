@@ -1,0 +1,170 @@
+/* ===HEADER */
+header {
+	@include clearfix;
+	position: relative;
+	li {
+		list-style: none;
+	}
+}
+
+.contacts {
+	font-family: $arial;
+	float: left;
+	font-size: 18px;
+	margin: 5px 0 0 7px;
+	
+	a {
+		text-decoration: none;
+		letter-spacing: .6px;
+		vertical-align: 6px;
+		color: #5e696d;
+	}
+
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 22px;
+		height: 23px;
+		background-image: url("../img/icon/sprite-circle.png");
+		background-position: -50px;
+	}
+}
+
+// ===Sign-IN===
+fieldset {
+	position: relative;
+	display: inline-block;
+	margin-left: 17px;
+	border: 0;
+	width: 495px;
+	height: 26px;
+	border-radius: 4px/3px;
+	box-shadow: 2px 3px 3px rgba(150, 150, 150, .75);
+	background-image: linear-gradient(to bottom, #206988, #114165 59%, #0c3256);
+	padding: 2px 8px 4px 24px;
+	
+	input {
+		font-family: $lucida;
+		margin-right: 2px;
+		-webkit-border-radius: 2px;
+		        border-radius: 2px;
+		width: 115px;
+		height: 18px;
+		padding: 6px 5px 6px 4px;
+		font-size: 10.91px;
+		outline: none;
+		
+			&::-webkit-input-placeholder {
+				color: #97a2a6;
+				font-size: 10.91px
+			}
+
+			&:-moz-placeholder {
+				color: #97a2a6;
+				font-size: 10.91px
+			}
+
+			&::-moz-placeholder {
+				color: #97a2a6;
+				font-size: 10.91px
+			}
+
+			&:-ms-input-placeholder {
+				color: #97a2a6;
+				font-size: 10.91px
+			}
+	}
+
+	&:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		left: 7px;
+		top: 5px;
+		background-image: url("../img/icon/sprite-circle.png");
+		background-position: 38px;
+		width: 15px;
+		height: 20px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+}
+
+.sign-in, .sign-up {
+	display: inline-block;
+	line-height: 10px;
+	font-family: $lucida;
+	font-size: 10.91px;
+	vertical-align: -.5px;
+}
+
+.sign-in {
+	border-right: 1px solid #fff;
+	padding-right: 4px;
+}
+
+.sign-up {
+	padding-left: 0px;
+}
+
+.forgot-pass {
+	margin-left: 14px;
+	display: inline-block;
+	font-family: $lucida;
+	font-size: 12px;
+	vertical-align: -1px;
+}
+
+// ===HEADER-NAV===
+.header-nav {
+	position: absolute;
+	right: 7px;
+	top: 2px;
+	width: 75px;
+	height: 19px;
+	border-radius: 10px/10px 10px 9px 9px;
+	background-color: #fff;
+	border: solid 1px #bdc4c7;
+	padding: 0 7px 2px;
+	
+	li {
+		display: inline;
+		list-style: none;
+	}
+}
+
+.home {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background-image: url("../img/icon/sprite-navi.png");
+}
+
+.map {
+	@extend .home;
+	background-position: 29px;
+	width: 15px;
+	margin-left: 5px;
+}
+
+.message {
+	@extend .home;
+	background-position: 12px;
+	margin-left: 5px;
+	width: 12px;
+}
+
+/*===LOGO===*/
+h1 {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	margin-top: 5px;
+} 
+

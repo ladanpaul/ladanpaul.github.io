@@ -1,0 +1,127 @@
+
+/*===PRODUCT-CATALOG===*/
+.product-catalog {
+
+	h4 {
+		margin-top: 17px;
+		position: relative;
+		text-transform: uppercase;
+		color: #114165;
+		font-size: 12.73px;
+		line-height: 25px;
+		padding-left: 28px;
+		width: 181px;
+		height: 26px;
+		border-radius: 12px/12px 12px 13px 13px;
+		background-color: #fff;
+		box-shadow: 2px 3px 3px rgba(150,150,150,.75);
+		border: solid 1px #79878d;
+		
+		&:before {
+			content: '';
+			width: 21px;
+			height: 22px;
+			display: block;
+			position: absolute;
+			top: .5px;
+			left: 3.3px;
+			background: url("../img/icon/sprite-circle.png") no-repeat -24px;
+			
+		}
+	}
+}
+
+.category  {
+
+	h5 {
+		position: relative;
+		margin: 14px 0 0 2px;
+		width: 150px;
+		height: 27.5px;
+		border-radius: 11px/13px;
+		background-color: #fff;
+		border: solid 1px #79878d;
+		padding-left: 29px;
+		
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			line-height: 27px;
+			color: #114165;
+			font-style: 14px;
+		}
+
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			left: 4px;
+			top: 2px;
+			width: 12px;
+			height: 12px;
+			border: 5px solid #114165;
+			border-radius: 50%;
+		}
+	}
+
+	ul {
+		display: inline-block;
+		margin: 0 0 0 37px;
+		background-color: white;
+
+		li {
+			list-style: none;
+			padding-left: 1px;
+		}
+		
+		a {
+			position: relative;
+			color: #465961;
+			font-size: 12.73px;
+			text-decoration: none;
+
+			&:before {
+				content:'';
+				display: inline-block;
+				width: 3px;
+				height: 3px;
+				margin: 0 4px 1px 0;
+				border: 2px solid #465961;
+				border-radius: 50%;
+			}
+
+			&:hover {
+				color: #0c3256;
+				font-style: italic;
+				font-size: 14px;
+				font-weight: bold-italic;
+				transition: .1s all;
+			}
+
+			&:hover:after {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				top: 15px;
+				right: 0;
+				width: 91%;
+				border-bottom: 2px solid #58697f;
+				transition: .1s all;
+			}
+
+			&:hover:before {
+				border-color: #0c3256;
+				transition: .1s all;
+			}
+		}
+	}
+}
+
+.-tires {
+	ul {
+
+		li {
+			padding-top: 4px;
+		}
+	}
+}

@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 910px;
+  min-height: 100%;
+  background-color: yellow;
+  padding: 17px 0 100px;
+}
+
+/* ===HEADER */
+header {
+  position: relative;
+}
+
+header:before, header:after {
+  content: "";
+  display: block;
+}
+
+header:after {
+  clear: both;
+}
+
+header li {
+  list-style: none;
+}
+
+.contacts {
+  font-family: "ArialRegular", sans-serif;
+  float: left;
+  font-size: 18px;
+  margin: 5px 0 0 7px;
+}
+
+.contacts a {
+  text-decoration: none;
+  letter-spacing: .6px;
+  vertical-align: 6px;
+  color: #5e696d;
+}
+
+.contacts:before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 23px;
+  background-image: url("../img/icon/sprite-circle.png");
+  background-position: -50px;
+}
+
+fieldset {
+  position: relative;
+  display: inline-block;
+  margin-left: 17px;
+  border: 0;
+  width: 495px;
+  height: 26px;
+  border-radius: 4px/3px;
+  box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75);
+  background-image: linear-gradient(to bottom, #206988, #114165 59%, #0c3256);
+  padding: 2px 8px 4px 24px;
+}
+
+fieldset input {
+  font-family: "Lucida Sans Unicode", sans-serif;
+  margin-right: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  width: 115px;
+  height: 18px;
+  padding: 6px 5px 6px 4px;
+  font-size: 10.91px;
+  outline: none;
+}
+
+fieldset input::-webkit-input-placeholder {
+  color: #97a2a6;
+  font-size: 10.91px;
+}
+
+fieldset input:-moz-placeholder {
+  color: #97a2a6;
+  font-size: 10.91px;
+}
+
+fieldset input::-moz-placeholder {
+  color: #97a2a6;
+  font-size: 10.91px;
+}
+
+fieldset input:-ms-input-placeholder {
+  color: #97a2a6;
+  font-size: 10.91px;
+}
+
+fieldset:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  background-image: url("../img/icon/sprite-circle.png");
+  background-position: 38px;
+  width: 15px;
+  height: 20px;
+}
+
+fieldset a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sign-in, .sign-up {
+  display: inline-block;
+  line-height: 10px;
+  font-family: "Lucida Sans Unicode", sans-serif;
+  font-size: 10.91px;
+  vertical-align: -.5px;
+}
+
+.sign-in {
+  border-right: 1px solid #fff;
+  padding-right: 4px;
+}
+
+.sign-up {
+  padding-left: 0px;
+}
+
+.forgot-pass {
+  margin-left: 14px;
+  display: inline-block;
+  font-family: "Lucida Sans Unicode", sans-serif;
+  font-size: 12px;
+  vertical-align: -1px;
+}
+
+.header-nav {
+  position: absolute;
+  right: 7px;
+  top: 2px;
+  width: 75px;
+  height: 19px;
+  border-radius: 10px/10px 10px 9px 9px;
+  background-color: #fff;
+  border: solid 1px #bdc4c7;
+  padding: 0 7px 2px;
+}
+
+.header-nav li {
+  display: inline;
+  list-style: none;
+}
+
+.home, .map, .message {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/icon/sprite-navi.png");
+}
+
+.map {
+  background-position: 29px;
+  width: 15px;
+  margin-left: 5px;
+}
+
+.message {
+  background-position: 12px;
+  margin-left: 5px;
+  width: 12px;
+}
+
+/*===LOGO===*/
+h1 {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+/*===MAIN-NAV===*/
+.main-nav {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  margin-top: 7px;
+  padding: 3px 10px 3px 127px;
+  font-size: 0;
+  border-radius: 5px/3px 3px 2px 2px;
+  background-color: #fff;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.75);
+  border: solid 1px #0d1642;
+  background-image: linear-gradient(to top, #000, #576068);
+}
+
+.main-nav:before, .main-nav:after {
+  content: "";
+  display: block;
+}
+
+.main-nav:after {
+  clear: both;
+}
+
+.main-nav ul {
+  float: left;
+}
+
+.main-nav li {
+  font-family: "Lucida Sans Unicode", sans-serif;
+  list-style: none;
+  display: inline-block;
+}
+
+.main-nav a {
+  font-size: 13.64px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #b1bcc0;
+  line-height: 26px;
+}
+
+.main-nav a:hover {
+  background-image: linear-gradient(to bottom, #206988, #114165 59%, #0c3256);
+  border-radius: 12px/13px;
+  color: #fff;
+  transition: .2s all;
+}
+
+.about-company {
+  padding: 2px 10px 2px 20px;
+}
+
+.payment {
+  padding: 2px 10px 2px 15px;
+}
+
+.delivery {
+  padding: 2px 10px 2px 20px;
+}
+
+.articles {
+  padding: 2px 10px 2px 20px;
+}
+
+.nav-contacts {
+  padding: 2px 10px 2px 15px;
+}
+
+#goods-output {
+  float: left;
+  font-family: "ArialRegular", sans-serif;
+  font-size: 11px;
+  margin: 5px 0 0 90px;
+  letter-spacing: .6px;
+  color: #8a9296;
+}
+
+#goods-output:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 203px;
+  top: 6px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/icon/sprite-circle.png");
+  background-position: 22px;
+}
+
+#amount-output {
+  float: right;
+  font-family: "ArialRegular", sans-serif;
+  font-size: 11px;
+  margin: 5px 13px 0 0;
+  letter-spacing: 0.1px;
+  color: #8a9296;
+}
+
+.amount {
+  font-size: 12px;
+  color: #0d5a8f;
+}
+
+.form-search:before, .form-search:after {
+  content: "";
+  display: block;
+}
+
+.form-search:after {
+  clear: both;
+}
+
+.form-search-by-car {
+  display: inline-block;
+  float: left;
+  margin: 11px 0 0 4px;
+  width: 413px;
+  height: 132px;
+  border-radius: 18px 17px 17px 18px/17px;
+  background-color: #fff;
+  box-shadow: 3px 4px 5px rgba(104, 104, 104, 0.75);
+  border: solid 1px #9c9c9d;
+}
+
+.form-search-tires {
+  display: inline-block;
+  margin: 10px 0 0 15px;
+  width: 191px;
+  height: 135px;
+  border-radius: 17px/19px;
+  background-color: #fff;
+  box-shadow: 3px 4px 5px rgba(150, 150, 150, 0.75);
+  border: solid 1px #9c9c9d;
+}
+
+.form-search-wheels {
+  display: inline-block;
+  margin: 10px 0 0 9px;
+  width: 266px;
+  height: 134px;
+  border-radius: 14px/18px 18px 17px 17px;
+  background-color: #fff;
+  box-shadow: 3px 4px 5px rgba(150, 150, 150, 0.75);
+  border: solid 1px #9c9c9d;
+}
+
+/*===PRODUCT-CATALOG===*/
+.product-catalog h4 {
+  margin-top: 17px;
+  position: relative;
+  text-transform: uppercase;
+  color: #114165;
+  font-size: 12.73px;
+  line-height: 25px;
+  padding-left: 28px;
+  width: 181px;
+  height: 26px;
+  border-radius: 12px/12px 12px 13px 13px;
+  background-color: #fff;
+  box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75);
+  border: solid 1px #79878d;
+}
+
+.product-catalog h4:before {
+  content: '';
+  width: 21px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  top: .5px;
+  left: 3.3px;
+  background: url("../img/icon/sprite-circle.png") no-repeat -24px;
+}
+
+.category h5 {
+  position: relative;
+  margin: 14px 0 0 2px;
+  width: 150px;
+  height: 27.5px;
+  border-radius: 11px/13px;
+  background-color: #fff;
+  border: solid 1px #79878d;
+  padding-left: 29px;
+}
+
+.category h5 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 27px;
+  color: #114165;
+  font-style: 14px;
+}
+
+.category h5:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  border: 5px solid #114165;
+  border-radius: 50%;
+}
+
+.category ul {
+  display: inline-block;
+  margin: 0 0 0 37px;
+  background-color: white;
+}
+
+.category ul li {
+  list-style: none;
+  padding-left: 1px;
+}
+
+.category ul a {
+  position: relative;
+  color: #465961;
+  font-size: 12.73px;
+  text-decoration: none;
+}
+
+.category ul a:before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin: 0 4px 1px 0;
+  border: 2px solid #465961;
+  border-radius: 50%;
+}
+
+.category ul a:hover {
+  color: #0c3256;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: bold-italic;
+  transition: .1s all;
+}
+
+.category ul a:hover:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 91%;
+  border-bottom: 2px solid #58697f;
+  transition: .1s all;
+}
+
+.category ul a:hover:before {
+  border-color: #0c3256;
+  transition: .1s all;
+}
+
+.-tires ul li {
+  padding-top: 4px;
+}
+
+footer {
+  width: 910px;
+  height: 100px;
+  margin: -100px auto 0;
+  position: relative;
+  background-color: lightblue;
+}
+
+footer li {
+  display: inline-block;
+  list-style: none;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+}

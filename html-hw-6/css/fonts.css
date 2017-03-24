@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Lucida Sans Unicode';
+	src: url('../fonts/lucida-sans-unicode/LucidaSansUnicode.eot');
+	src: url('../fonts/lucida-sans-unicode/LucidaSansUnicode.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/lucida-sans-unicode/LucidaSansUnicode.woff') format('woff'),
+		url('../fonts/lucida-sans-unicode/LucidaSansUnicode.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ArialRegular';
+	src: url('../fonts/ArialRegular/ArialRegular.eot');
+	src: url('../fonts/ArialRegular/ArialRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ArialRegular/ArialRegular.woff') format('woff'),
+		url('../fonts/ArialRegular/ArialRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
