@@ -526,6 +526,7 @@ h1 {
   padding-top: 0;
 }
 
+/*===MAIN GOODS===*/
 main {
   float: left;
   font-family: "Lucida Sans Unicode", sans-serif;
@@ -592,6 +593,7 @@ main figure h6 a {
   font-size: 12px;
 }
 
+/*===BRAND===*/
 .brand {
   display: inline-block;
   float: right;
@@ -745,6 +747,7 @@ main figure h6 a {
   color: #0c3256;
 }
 
+/*===MANUFACTURERS===*/
 .clearfix:after {
   content: '.';
   display: block;
@@ -828,6 +831,7 @@ main figure h6 a {
   margin-left: 5px;
 }
 
+/*===FOOTER===*/
 footer {
   width: 910px;
   height: 100px;
