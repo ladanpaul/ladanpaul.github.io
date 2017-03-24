@@ -2,6 +2,7 @@
 /*===PRODUCT-CATALOG===*/
 .product-catalog {
 	float: left;
+	@include clearfix;
 
 	h4 {
 		font-family: $lucida;

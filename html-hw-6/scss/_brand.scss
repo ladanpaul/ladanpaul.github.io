@@ -1,4 +1,5 @@
 .brand {
+	@include clearfix;
 	display: inline-block;
 	float: right;
 	vertical-align: top;

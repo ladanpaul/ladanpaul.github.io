@@ -1,5 +1,79 @@
-.manufacturers {
-	width: 100px;
-	height: 100px;
-	background-color: black;
+.clearfix {
+	@include clearfix;
 }
+
+.manufacturers {
+	margin: 40px 0 0 108.2px;
+	padding: 0;
+	font-size: 0;
+}
+
+.toyo-logo {
+	display: inline-block;
+	width: 90px;
+	height: 32px;
+	background-image: url("../img/Manufacturers/manufacturers.png");
+}
+
+.bridgestone-logo {
+	display: inline-block;
+	width: 100px;
+	height: 32px;
+	background-image: url("../img/Manufacturers/manufacturers.png");
+	background-position: -100px 2px;
+	margin-left: 11px;
+}
+
+.continental-logo {
+	display: inline-block;
+	width: 90px;
+	height: 32px;
+	background-image: url("../img/Manufacturers/manufacturers.png");
+	background-position: -200px 2px;
+	margin-left: 5px;
+}
+
+.cooper-logo {
+	display: inline-block;
+	width: 65px;
+	height: 32px;
+	background-image: url("../img/Manufacturers/manufacturers.png");
+	background-position: -295px -1px;
+	margin-left: 10px;
+}
+
+.avon-logo {
+	display: inline-block;
+	width: 80px;
+	height: 32px;
+	background-image: url("../img/Manufacturers/manufacturers.png");
+	background-position: -360px -.5px;
+	margin-left: 5px;
+}
+
+.tire-factory-logo {
+	display: inline-block;
+	width: 75px;
+	height: 32px;
+	background-image: url("../img/Manufacturers/manufacturers.png");
+	background-position: -440px -4px;
+	margin-left: 5px;
+}
+
+.pirelli-logo {
+	display: inline-block;
+	width: 65px;
+	height: 32px;
+	background-image: url("../img/Manufacturers/manufacturers.png");
+	background-position: -520px 1.5px;
+}
+
+.dunlop-logo {
+	display: inline-block;
+	width: 84px;
+	height: 32px;
+	background-image: url("../img/Manufacturers/manufacturers.png");
+	background-position: -590px 1.5px;
+	margin-left: 5px;
+}
+

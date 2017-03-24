@@ -16,6 +16,8 @@ footer {
 		li {
 			list-style: none;
 			display: inline-block;
+			font-size: 12px;
+			color: #bec6c9;
 
 			a {
 				text-decoration: none;
@@ -23,19 +25,29 @@ footer {
 				font-size: 12px;
 				color: #bec6c9;
 				padding: 0 12px 0;
-				border-right: 1px solid #5b6a76;
-				box-shadow: 1px 0 0 #afb7bc;
+
+				span {
+					padding-left: 12px;
+				}
 
 				&:hover {
 					color: #52abcb;
 					transition: 0.1s all;
 				}
 			}
+
+			&:last-child a {
+				border: none;
+				box-shadow: none;
+			}
 		}
 	}
 }
 
 .copyright {
+	margin-top: 14px;
+	letter-spacing: .5px;
+	display: inline-block;
 	font-family: $arial;
 	font-size: 10px;
 	color: #7f4740;

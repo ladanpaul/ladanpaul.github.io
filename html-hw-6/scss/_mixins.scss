@@ -3,13 +3,11 @@ $arialbi: 'ArialBoldItalic', sans-serif;
 $lucida: 'Lucida Sans Unicode', sans-serif;
 
 @mixin clearfix {
-	&:before,
 	&:after {
-		content: "";
+		content: '.';
 		display: block;
-	}
-
-	&:after {
+		visibility: hidden;
+		height: 0;
 		clear: both;
 	}
 }
