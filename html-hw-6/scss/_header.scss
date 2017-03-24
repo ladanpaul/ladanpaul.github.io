@@ -31,7 +31,7 @@ header {
 }
 
 // ===Sign-IN===
-fieldset {
+.entry-form {
 	position: relative;
 	display: inline-block;
 	margin-left: 17px;
@@ -116,6 +116,12 @@ fieldset {
 	font-family: $lucida;
 	font-size: 12px;
 	vertical-align: -1px;
+
+	&:hover {
+		color: #bfbfbf;
+		text-decoration: underline;
+		transition: .1s all;
+	}
 }
 
 // ===HEADER-NAV===

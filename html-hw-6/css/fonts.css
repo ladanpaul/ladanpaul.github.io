@@ -17,3 +17,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'ArialBoldItalic';
+	src: url('../fonts/ArialBoldItalic/ArialBoldItalic.eot');
+	src: url('../fonts/ArialBoldItalic/ArialBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ArialBoldItalic/ArialBoldItalic.woff') format('woff'),
+		url('../fonts/ArialBoldItalic/ArialBoldItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
