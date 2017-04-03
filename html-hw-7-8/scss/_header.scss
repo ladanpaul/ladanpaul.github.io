@@ -17,19 +17,24 @@ body {
 }
 
 .header__menu {
-	margin-top: 40px;
-	position: relative;
+	margin-top: 35px;
 }
 
 
 
 .nav-menu {
+	position: relative;
+	    
+	&:hover &__list {
+      display: block;
+   	}
+
 	&__list {
-		// display: none;
+		display: none;
 		position: absolute;
 		top: 0;
-		left: 0;
 		right: 0;
+		left: 0;
 		margin: 0 auto;
 		font-family: $league;
 		font-size: 24px;
@@ -45,8 +50,19 @@ body {
 		font-family: $league;
 		font-size: 24px;
 		color: #fff;
+		line-height: 46px;
 		text-transform: uppercase;
 		text-shadow: 0 0 10px rgba(255,255,255,.6);
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 7px;
+			left: 43%;
+			right: 43%;
+			max-width: 46px;
+			border-bottom: 2px solid #edbfff;
+		}
 	}
 
 	&__item {
@@ -89,7 +105,7 @@ body {
 				background-color: rgba(#000000, 0.3);
 				transition: .3s all;
 
-					&:before {
+				&:before {
 					content: '';
 					height: 42px;
 					display: inline-block;
@@ -102,17 +118,48 @@ body {
 			}
 
 				&:before {
-				content: '';
-				height: 42px;
-				display: inline-block;
-				position: absolute;
-				right: 0;
-				left: 0;
-				border-bottom: 2px solid transparent;
+					content: '';
+					height: 42px;
+					display: inline-block;
+					position: absolute;
+					right: 0;
+					left: 0;
+					border-bottom: 2px solid transparent;
 			}
 	}
+		&__link-drop {
+			text-shadow: 0 0 10px rgba(255,255,255,.6);
+
+			&:hover {
+					&:before {
+					content: '';
+					position: absolute;
+					bottom: 7px;
+					left: 41%;
+					right: 41%;
+					max-width: 46px;
+					border-bottom: 2px solid #edbfff;
+				}
+			}
+
+				&:before {
+					content: '';
+					position: absolute;
+					bottom: 7px;
+					left: 41%;
+					right: 41%;
+					max-width: 46px;
+					border-bottom: 2px solid #edbfff;
+				}
+		}
 }
 
+/*===HEADER-SLIDER===*/
+.slider {
+	&__list {
+		margin-top: 134px;
+	}
+}
 
 
 
@@ -134,32 +181,32 @@ body {
 		// &--drop-menu {
 		// 	text-shadow: 0 0 10px rgba(255,255,255,.6);
 
-		// 	&:hover {
+			// &:hover {
 
-		// 		&.nav-menu__drop {
-		// 			display: block;
-		// 		}
+			// 	&.nav-menu__drop {
+			// 		display: block;
+			// 	}
 
-		// 			&:before {
-		// 			content: '';
-		// 			position: absolute;
-		// 			bottom: 8px;
-		// 			left: 41%;
-		// 			right: 41%;
-		// 			max-width: 46px;
-		// 			border-bottom: 2px solid #edbfff;
-		// 		}
-		// 	}
+			// 		&:before {
+			// 		content: '';
+			// 		position: absolute;
+			// 		bottom: 8px;
+			// 		left: 41%;
+			// 		right: 41%;
+			// 		max-width: 46px;
+			// 		border-bottom: 2px solid #edbfff;
+			// 	}
+			// }
 
-		// 	&:before {
-		// 		content: '';
-		// 		position: absolute;
-		// 		bottom: 8px;
-		// 		left: 41%;
-		// 		right: 41%;
-		// 		max-width: 46px;
-		// 		border-bottom: 2px solid #edbfff;
-		// 	}
+			// &:before {
+			// 	content: '';
+			// 	position: absolute;
+			// 	bottom: 8px;
+			// 	left: 41%;
+			// 	right: 41%;
+			// 	max-width: 46px;
+			// 	border-bottom: 2px solid #edbfff;
+			// }
 		// }
 
 

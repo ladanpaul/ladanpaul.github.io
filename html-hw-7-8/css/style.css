@@ -39,15 +39,23 @@ body {
 }
 
 .header__menu {
-  margin-top: 40px;
+  margin-top: 35px;
+}
+
+.nav-menu {
   position: relative;
 }
 
+.nav-menu:hover .nav-menu__list {
+  display: block;
+}
+
 .nav-menu__list {
+  display: none;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   margin: 0 auto;
   font-family: "LeagueGothicRegular", sans-serif;
   font-size: 24px;
@@ -63,8 +71,19 @@ body {
   font-family: "LeagueGothicRegular", sans-serif;
   font-size: 24px;
   color: #fff;
+  line-height: 46px;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.nav-menu__drop:before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  left: 43%;
+  right: 43%;
+  max-width: 46px;
+  border-bottom: 2px solid #edbfff;
 }
 
 .nav-menu__item {
@@ -128,4 +147,33 @@ body {
   right: 0;
   left: 0;
   border-bottom: 2px solid transparent;
+}
+
+.nav-menu__link-drop {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.nav-menu__link-drop:hover:before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  left: 41%;
+  right: 41%;
+  max-width: 46px;
+  border-bottom: 2px solid #edbfff;
+}
+
+.nav-menu__link-drop:before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  left: 41%;
+  right: 41%;
+  max-width: 46px;
+  border-bottom: 2px solid #edbfff;
+}
+
+/*===HEADER-SLIDER===*/
+.slider__list {
+  margin-top: 134px;
 }
