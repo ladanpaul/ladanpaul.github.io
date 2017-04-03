@@ -40,10 +40,14 @@ body {
 
 .header__menu {
   margin-top: 40px;
+  position: relative;
 }
 
 .nav-menu__list {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   font-family: "LeagueGothicRegular", sans-serif;
   font-size: 24px;
@@ -53,6 +57,14 @@ body {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   border: solid 1px #051116;
   overflow: hidden;
+}
+
+.nav-menu__drop {
+  font-family: "LeagueGothicRegular", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
 .nav-menu__item {
@@ -116,32 +128,4 @@ body {
   right: 0;
   left: 0;
   border-bottom: 2px solid transparent;
-}
-
-.nav-menu__link--drop-menu {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-}
-
-.nav-menu__link--drop-menu:hover.nav-menu__drop {
-  display: block;
-}
-
-.nav-menu__link--drop-menu:hover:before {
-  content: '';
-  position: absolute;
-  bottom: 8px;
-  left: 41%;
-  right: 41%;
-  max-width: 46px;
-  border-bottom: 2px solid #edbfff;
-}
-
-.nav-menu__link--drop-menu:before {
-  content: '';
-  position: absolute;
-  bottom: 8px;
-  left: 41%;
-  right: 41%;
-  max-width: 46px;
-  border-bottom: 2px solid #edbfff;
 }
