@@ -1,0 +1,31 @@
+$league: 'LeagueGothicRegular', sans-serif;
+$osl: 'OpenSans-Light', sans-serif;
+$oseb: 'OpenSans-Extrabold', sans-serif;
+
+@mixin clearfix {
+	&:after {
+		content: '.';
+		display: block;
+		visibility: hidden;
+		height: 0;
+		clear: both;
+	}
+}
+
+@mixin placecolor($color: #000000) {
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+
+	&:-moz-placeholder {
+		color: $color;
+	}
+
+	&::-moz-placeholder {
+		color: $color;
+	}
+
+	&:-ms-input-placeholder {
+		color: $color;
+	}
+}

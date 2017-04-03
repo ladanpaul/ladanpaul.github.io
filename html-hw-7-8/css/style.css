@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.substrate {
+  display: flex;
+  justify-content: center;
+}
+
+.substrate--header {
+  background: url("../img/mountains-top.jpg") no-repeat center top;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.header {
+  max-width: 320px;
+  text-align: center;
+}
+
+.header__logo {
+  display: inline-block;
+  margin-top: 69px;
+}
+
+.header__menu {
+  margin-top: 40px;
+}
+
+.nav-menu__list {
+  position: relative;
+  margin: 0 auto;
+  font-family: "LeagueGothicRegular", sans-serif;
+  font-size: 24px;
+  width: 76%;
+  background-color: rgba(54, 41, 62, 0.9);
+  border-radius: 4%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border: solid 1px #051116;
+  overflow: hidden;
+}
+
+.nav-menu__item {
+  display: relative;
+  list-style: none;
+  width: 100%;
+}
+
+.nav-menu__item:after {
+  content: '';
+  height: 45px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-top: 1px solid #5f486a;
+}
+
+.nav-menu__item:before {
+  content: '';
+  height: 44px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #37293f;
+}
+
+.nav-menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+  line-height: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu__link:hover {
+  line-height: 45px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: .3s all;
+}
+
+.nav-menu__link:hover:before {
+  content: '';
+  height: 42px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-bottom: 2px solid #edbfff;
+  transition: .3s all;
+}
+
+.nav-menu__link:before {
+  content: '';
+  height: 42px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-menu__link--drop-menu {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.nav-menu__link--drop-menu:hover.nav-menu__drop {
+  display: block;
+}
+
+.nav-menu__link--drop-menu:hover:before {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 41%;
+  right: 41%;
+  max-width: 46px;
+  border-bottom: 2px solid #edbfff;
+}
+
+.nav-menu__link--drop-menu:before {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 41%;
+  right: 41%;
+  max-width: 46px;
+  border-bottom: 2px solid #edbfff;
+}

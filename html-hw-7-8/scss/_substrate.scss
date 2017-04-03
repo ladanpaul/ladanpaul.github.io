@@ -1,0 +1,7 @@
+.substrate {
+	display: flex;
+	justify-content: center;
+	&--header {
+		background: url("../img/mountains-top.jpg")  no-repeat center top;
+	}
+}
