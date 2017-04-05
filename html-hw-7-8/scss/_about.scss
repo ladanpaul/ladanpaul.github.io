@@ -1,0 +1,94 @@
+.about {
+	max-width: 320px;
+	text-align: center;
+
+	&__article {
+		margin-top: 65px;
+	}
+}
+
+.wrench-icon {
+	fill: #fff;
+	width: 24px;
+	height: 25px;
+}
+
+.speech-bubble-icon {
+	fill: #fff;
+	width: 24px;
+	height: 25px;
+}
+
+.note-icon {
+	fill: #fff;
+	width: 24px;
+	height: 25px;
+}
+
+.about-company {
+	@include clearfix;
+	position: relative;
+	
+	&__icon {
+		float: left;
+		margin-left: 100%*32px/320px;
+		margin-top: 2px;
+	}
+
+	&__title {
+		display: inline-block;
+		float: left;
+		margin-left: 100%*22px/320px;
+		text-transform: uppercase;
+		letter-spacing: .3px;
+		font-family: $league;
+		font-size: 24px;
+		line-height: 24px;
+		color: #fff;
+		text-shadow: 1.3px 1.3px  #0f1518;
+	}
+
+	&__text {
+		font-family: $osl;
+		font-size: 16px;
+		text-align: left;
+		line-height: 24px;
+		color: #fff;
+		text-shadow: 1px 1px #0f1518;
+		clear: both;
+		padding-left: 100%*65px/320px;
+		padding-right: 100%*42px/320px;
+		max-height: 24px*3;
+		margin-left: 3%;
+		overflow: hidden;
+	}
+
+	&__link {
+		position: absolute;
+		top: 115px;
+		right: 8%;
+
+		&:hover {
+			text-shadow: 0 0 8px rgba(255,255,255,.8);		
+		}
+	}
+}
+
+.read-more {
+	font-family: $league;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+

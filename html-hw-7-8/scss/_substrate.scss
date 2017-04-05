@@ -1,7 +1,21 @@
 .substrate {
 	display: flex;
 	justify-content: center;
+
 	&--header {
+		padding-bottom: 60px;
+		border-bottom: 1px solid #35273c;
 		background: url("../img/mountains-top.jpg")  no-repeat center top;
+	}
+
+	&--about {
+		padding-bottom: 80px;
+		border-bottom: 1px solid #12191f;
+		background-image: linear-gradient(to top, #322539, #745083);
+	}
+
+	&--update {
+		border-top: 1px solid #f9f9f9;
+        background: linear-gradient(to bottom, rgba(215,215,215,1) 0%, rgba(230,230,230,1) 4%, rgba(249,249,249,1) 100%);
 	}
 }

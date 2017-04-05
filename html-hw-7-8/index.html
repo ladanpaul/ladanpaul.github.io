@@ -9,15 +9,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-<!-- 		<svg class="note-icon">
-			<use xlink:href="img/note.svg#note"></use>
-		</svg> -->
-<!-- 		<svg class="speech-bubble-icon">
-			<use xlink:href="img/speech-bubble.svg#speech"></use>
-		</svg> -->
-<!-- 		<svg class="wrench-icon">
-			<use xlink:href="img/wrench.svg#wrench"></use>
-		</svg> -->
+
 
 		<!-- ===HEADER-BEGIN=== -->
 		<div class="substrate substrate--header">
@@ -67,7 +59,7 @@
 			  	<a class="slider__control slider__control--prev"></a>
 					<div class="slider__bullets bullets">
 						<a class="bullets__item"></a>
-						<a class="bullets__item--active"></a>
+						<a class="bullets__item bullets__item--active"></a>
 						<a class="bullets__item"></a>
 						<a class="bullets__item"></a>
 					</div>
@@ -80,9 +72,11 @@
 		<div class="substrate substrate--about">
     <!-- ===SECTION-ABOUT-BEGIN=== -->
 	    <section class="about">
-	        <div class="about__article about-company about-company">
+	        <div class="about__article about-company">
 	        	<i class="about-company__icon">
-	        		
+	        		<svg class="wrench-icon">
+								<use xlink:href="img/wrench.svg#wrench"></use>
+							</svg>
 	        	</i>
 						<h5 class="about-company__title">
 							about our company
@@ -96,7 +90,9 @@
 	        </div>
 	        <div class="about__article about-company about-company">
 	        	<i class="about-company__icon">
-	        		
+	        		<svg class="speech-bubble-icon">
+								<use xlink:href="img/speech-bubble.svg#speech"></use>
+							</svg>
 	        	</i>
 						<h5 class="about-company__title">
 							about our company
@@ -110,7 +106,9 @@
 	        </div>
 	        <div class="about__article about-company about-company">
 	        	<i class="about-company__icon">
-	        		
+							<svg class="note-icon">
+								<use xlink:href="img/note.svg#note"></use>
+							</svg>
 	        	</i>
 						<h5 class="about-company__title">
 							about our company
@@ -126,94 +124,95 @@
     <!-- ===SECTION-ABOUT-END=== -->
     </div>
 		<div class="substrate substrate--update">
+		<!-- ===SECTION-UPDATE-BEGIN=== -->
 		 	<section class="pingbuller-updates">
 		 		<div class="pinguller-updates__starts-here starts-here">
 		 			<i class="starts-here__photo pingbuller-avatar">
 		 				<img src="img/photo-icon.png" alt="avatar" class="pingbuller-avatar__img">
 		 			</i>
-		 			<h4 class="starts-here__title">
-		 				pingbuller <span class="starts-here__title--sarts">starts here</span>
+		 			<h4 class="starts-here__head">
+		 				pingbuller <p class="starts-here__head--color">starts here</p>
 		 			</h4>
 		 			<p class="starts-here__text">
 		 				“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”
 		 			</p>
 	 				<div class="pingbuller__bullets bullets">
 						<a class="bullets__item"></a>
-						<a class="bullets__item--active"></a>
+						<a class="bullets__item bullets__item--active"></a>
 						<a class="bullets__item"></a>
 						<a class="bullets__item"></a>
 					</div>
 		 		</div>
 
-		<div class="pingbuller-updates__recent recent-updates">
-			<div class="recent-updates__item">
-				recent updates
-				<article class="recent-updates__article">
-					<i class="recent-updates__ico"></i>
-					<h3 class="recent-updates__title">
-						Nunc turpis neque feugiat eget
-					</h3>
-					<p class="recent-updates__text">
-						Posted by Admin on March 13 2012 in Recent News
-					</p>
-				</article>
-				<article class="recent-updates__article">
-					<i class="recent-updates__ico"></i>
-					<h3 class="recent-updates__title">
-						Nunc turpis neque feugiat eget
-					</h3>
-					<p class="recent-updates__text">
-						Posted by Admin on March 13 2012 in Category
-					</p>
-				</article>
-				<article class="recent-updates__article">
-					<i class="recent-updates__ico"></i>
-					<h3 class="recent-updates__title">
-						Nunc turpis neque feugiat eget
-					</h3>
-					<p class="recent-updates__text">
-						Posted by Admin on March 13 2012 in Blog Updates
-					</p>
-				</article>
-			</div>
-			<a href="" class="recent-updates__link read-more">
-				read more
-			</a>
-		</div>
-
+				<div class="pingbuller-updates__recent recent-updates">
+					<div class="recent-updates__item">
+						<h4 class="recent-updates__head">recent updates</h4>
+						<article class="recent-updates__article">
+							<i class="recent-updates__ico recent-updates__ico--nunc"></i>
+							<h3 class="recent-updates__title">
+								Nunc turpis neque feugiat eget
+							</h3>
+							<p class="recent-updates__text">
+								Posted by Admin on March 13 2012 in Recent News
+							</p>
+						</article>
+						<article class="recent-updates__article">
+							<i class="recent-updates__ico recent-updates__ico--turpis"></i>
+							<h3 class="recent-updates__title">
+								Nunc turpis neque feugiat eget
+							</h3>
+							<p class="recent-updates__text">
+								Posted by Admin on March 13 2012 in Category
+							</p>
+						</article>
+						<article class="recent-updates__article">
+							<i class="recent-updates__ico recent-updates__ico--neque"></i>
+							<h3 class="recent-updates__title">
+								Nunc turpis neque feugiat eget
+							</h3>
+							<p class="recent-updates__text">
+								Posted by Admin on March 13 2012 in Blog Updates
+							</p>
+						</article>
+					</div>
+					<a href="" class="recent-updates__link read-more">
+						read more here
+					</a>
+				</div>
 		 	</section>
-		 	<ul class="brands-logo">
-		 		<li class="brands-logo__list">
-			 		<a href="" class="brands-logo__link">
-			 			<i class="brands-logo__ico"></i>
-			 		</a>
-		 		</li>
-		 		<li class="brands-logo__list">
-			 		<a href="" class="brands-logo__link">
-			 			<i class="brands-logo__ico"></i>
-			 		</a>
-		 		</li>
-		 		<li class="brands-logo__list">
-			 		<a href="" class="brands-logo__link">
-			 			<i class="brands-logo__ico"></i>
-			 		</a>
-		 		</li>
-		 		<li class="brands-logo__list">
-			 		<a href="" class="brands-logo__link">
-			 			<i class="brands-logo__ico"></i>
-			 		</a>
-		 		</li>
-		 		<li class="brands-logo__list">
-			 		<a href="" class="brands-logo__link">
-			 			<i class="brands-logo__ico"></i>
-			 		</a>
-		 		</li>
-		 		<li class="brands-logo__list">
-			 		<a href="" class="brands-logo__link">
-			 			<i class="brands-logo__ico"></i>
-			 		</a>
-		 		</li>
-		 	</ul>
+			 	<ul class="brands-logo">
+			 		<li class="brands-logo__list">
+				 		<a href="" class="brands-logo__link">
+				 			<i class="brands-logo__ico"></i>
+				 		</a>
+			 		</li>
+			 		<li class="brands-logo__list">
+				 		<a href="" class="brands-logo__link">
+				 			<i class="brands-logo__ico"></i>
+				 		</a>
+			 		</li>
+			 		<li class="brands-logo__list">
+				 		<a href="" class="brands-logo__link">
+				 			<i class="brands-logo__ico"></i>
+				 		</a>
+			 		</li>
+			 		<li class="brands-logo__list">
+				 		<a href="" class="brands-logo__link">
+				 			<i class="brands-logo__ico"></i>
+				 		</a>
+			 		</li>
+			 		<li class="brands-logo__list">
+				 		<a href="" class="brands-logo__link">
+				 			<i class="brands-logo__ico"></i>
+				 		</a>
+			 		</li>
+			 		<li class="brands-logo__list">
+				 		<a href="" class="brands-logo__link">
+				 			<i class="brands-logo__ico"></i>
+				 		</a>
+			 		</li>
+			 	</ul>
+		<!-- ===SECTION-UPDATE-END=== -->
 		</div>
 		<div class="substrate substrate--news">
 				<section class="pingbuller-news">
