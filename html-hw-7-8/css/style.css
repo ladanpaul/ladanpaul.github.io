@@ -109,8 +109,8 @@ body {
   content: '';
   position: absolute;
   bottom: 7px;
-  left: 43%;
-  right: 43%;
+  left: 40%;
+  right: 40%;
   max-width: 46px;
   border-bottom: 2px solid #edbfff;
 }
@@ -186,8 +186,8 @@ body {
   content: '';
   position: absolute;
   bottom: 7px;
-  left: 41%;
-  right: 41%;
+  left: 37%;
+  right: 37%;
   max-width: 46px;
   border-bottom: 2px solid #edbfff;
 }
@@ -196,8 +196,8 @@ body {
   content: '';
   position: absolute;
   bottom: 7px;
-  left: 41%;
-  right: 41%;
+  left: 37%;
+  right: 37%;
   max-width: 46px;
   border-bottom: 2px solid #edbfff;
 }
