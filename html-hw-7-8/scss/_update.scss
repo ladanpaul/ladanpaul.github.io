@@ -1,8 +1,8 @@
 .pingbuller-updates {
 	max-width: 320px;
 	text-align: center;
-	background-color: yellow;
 	@include clearfix;
+
 }
 
 .starts-here {
@@ -89,6 +89,7 @@
 .recent-updates {
 	@include clearfix;
 	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 90px;
 
 	&__item {
 		margin-top: 50px;
@@ -162,14 +163,59 @@
 	}
 }
 
+/*===BRENDS-LOGO===*/
 .brands-logo {
 	max-width: 320px;
+	border-top: 1px solid #fefefe;
+	padding-top: 70px;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	padding: 0 2%;
+
+	&__list {
+		margin-bottom: 45px;
+	}
+
+	&__link {
+		text-decoration: none;
+	}
 
 	&__ico {
-		width: 70px;
-		height: 65px;
 		display: inline-block;
-		background: url("../img/sprite/logo.png");
+		background-image: url("../img/sprite/logo-brand.png");
+		height: 65px;
+  	margin: 0 15px 0;
+
+		&-1 {
+			width: 70px;
+			background-position: 0 0;
+		}
+
+		&-2 {
+			width: 70px;
+			background-position: -70px 0;
+		}
+		
+		&-3 {
+			width: 68px;
+			background-position: -143px 0;
+		}
+		
+		&-4 {
+			width: 53px;
+			background-position: -210px 0;
+		}
+		
+		&-5 {
+			width: 105px;
+			background-position: -262px 0;
+		}
+		
+		&-6 {
+			width: 81px;
+			background-position: -366px 0;
+		}
 	}
 }
 

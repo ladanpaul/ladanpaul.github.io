@@ -14,7 +14,8 @@ html, body {
 
 .substrate {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .substrate--header {
@@ -30,8 +31,18 @@ html, body {
 }
 
 .substrate--update {
+  padding-bottom: 20px;
   border-top: 1px solid #f9f9f9;
   background: linear-gradient(to bottom, #d7d7d7 0%, #e6e6e6 4%, #f9f9f9 100%);
+  box-shadow: 0 5px 8px #6a676b;
+}
+
+.substrate--news {
+  display: none;
+}
+
+.substrate--footer {
+  background-image: url("../img/mountains-bottom.jpg");
 }
 
 html {
@@ -64,7 +75,7 @@ body {
   display: block;
 }
 
-.nav-menu__list {
+.nav-menu__list--vertical {
   display: none;
   position: absolute;
   top: 0;
@@ -104,13 +115,13 @@ body {
   border-bottom: 2px solid #edbfff;
 }
 
-.nav-menu__item {
+.nav-menu__item--vertical {
   display: relative;
   list-style: none;
   width: 100%;
 }
 
-.nav-menu__item:after {
+.nav-menu__item--vertical:after {
   content: '';
   height: 45px;
   display: inline-block;
@@ -120,7 +131,7 @@ body {
   border-top: 1px solid #5f486a;
 }
 
-.nav-menu__item:before {
+.nav-menu__item--vertical:before {
   content: '';
   height: 44px;
   display: inline-block;
@@ -130,7 +141,7 @@ body {
   border-bottom: 1px solid #37293f;
 }
 
-.nav-menu__link {
+.nav-menu__link--vertical {
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
@@ -140,13 +151,13 @@ body {
   justify-content: center;
 }
 
-.nav-menu__link:hover {
+.nav-menu__link--vertical:hover {
   line-height: 45px;
   background-color: rgba(0, 0, 0, 0.3);
   transition: .3s all;
 }
 
-.nav-menu__link:hover:before {
+.nav-menu__link--vertical:hover:before {
   content: '';
   height: 42px;
   display: inline-block;
@@ -157,7 +168,7 @@ body {
   transition: .3s all;
 }
 
-.nav-menu__link:before {
+.nav-menu__link--vertical:before {
   content: '';
   height: 42px;
   display: inline-block;
@@ -386,7 +397,6 @@ body {
 .pingbuller-updates {
   max-width: 320px;
   text-align: center;
-  background-color: yellow;
 }
 
 .pingbuller-updates:after {
@@ -476,6 +486,7 @@ body {
 
 .recent-updates {
   border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 90px;
 }
 
 .recent-updates:after {
@@ -558,13 +569,82 @@ body {
   color: #5b5757;
 }
 
+/*===BRENDS-LOGO===*/
 .brands-logo {
   max-width: 320px;
+  border-top: 1px solid #fefefe;
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding: 0 2%;
+}
+
+.brands-logo__list {
+  margin-bottom: 45px;
+}
+
+.brands-logo__link {
+  text-decoration: none;
 }
 
 .brands-logo__ico {
-  width: 70px;
-  height: 65px;
   display: inline-block;
-  background: url("../img/sprite/logo.png");
+  background-image: url("../img/sprite/logo-brand.png");
+  height: 65px;
+  margin: 0 15px 0;
+}
+
+.brands-logo__ico-1 {
+  width: 70px;
+  background-position: 0 0;
+}
+
+.brands-logo__ico-2 {
+  width: 70px;
+  background-position: -70px 0;
+}
+
+.brands-logo__ico-3 {
+  width: 68px;
+  background-position: -143px 0;
+}
+
+.brands-logo__ico-4 {
+  width: 53px;
+  background-position: -210px 0;
+}
+
+.brands-logo__ico-5 {
+  width: 105px;
+  background-position: -262px 0;
+}
+
+.brands-logo__ico-6 {
+  width: 81px;
+  background-position: -366px 0;
+}
+
+.footer {
+  min-width: 320px;
+  text-align: center;
+  min-height: 100%;
+}
+
+.footer__menu {
+  display: none;
+}
+
+.designed-by {
+  display: inline-block;
+  padding: 30px 0 130px 0;
+  font-family: "OpenSans-Light", sans-serif;
+  line-height: 33px;
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.designed-by__bold {
+  font-family: "OpenSans-Extrabold", sans-serif;
 }
