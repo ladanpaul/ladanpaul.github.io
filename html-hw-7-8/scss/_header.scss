@@ -34,8 +34,13 @@ body {
     display: block;
   }
 
+  &:hover &__drop {
+  	border: none;
+  }
+
 	&__list--vertical {
 		display: none;
+		z-index: 1;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -55,27 +60,12 @@ body {
 		font-family: $league;
 		font-size: 24px;
 		color: #fff;
-		line-height: 46px;
 		text-transform: uppercase;
 		text-shadow: 0 0 10px rgba(255,255,255,.6);
+		border-bottom: 2px solid #edbfff;
+		display: inline-block;
+		padding: 9px 6px 0;
 
-		&:hover .nav-menu__list {
-      display: block;
-   	}
-
-		&:before {
-			content: '';
-			position: absolute;
-			bottom: 7px;
-			left: 42.5%;
-			right: 42%;
-			max-width: 46px;
-			border-bottom: 2px solid #edbfff;
-
-			@include adaptive(media480) {
-				left: 45%;
-			}
-		}
 	}
 
 	&__item--vertical {
@@ -143,42 +133,21 @@ body {
 		&__link-drop {
 			text-shadow: 0 0 10px rgba(255,255,255,.6);
 
-			&:hover {
-					&:before {
-					content: '';
-					position: absolute;
-					bottom: 7px;
-					left: 40%;
-					max-width: 46px;
-					border-bottom: 2px solid #edbfff;
-
-					@include adaptive(media480) {
-						left: 40%;
-					}
-				}
+			&:hover:before {
+				content:'';
+				border-bottom: 2px solid #edbfff;
 			}
-
-				&:before {
-					content: '';
-					position: absolute;
-					bottom: 7px;
-					left: 40%;
-					max-width: 46px;
-					border-bottom: 2px solid #edbfff;
-
-					@include adaptive(media480) {
-						left: 40%;
-					}
-				}
 		}
 }
 
 /*===HEADER-SLIDER===*/
 .slider {
+	position: relative;
+
 	&__substrate {
 		@include adaptive(media480) {
 			background-color: rgba(0,0,0,.2);
-			min-height: 300px;
+			min-height: 245px;
 			padding-top: 100px;
 		}
 	}
@@ -194,7 +163,7 @@ body {
 	&__control--next {
 		position: absolute;
 		right: 0;
-		top: 305px;
+		top: 5px;
 		display: inline-block;
 		width: 28px;
 		height: 38px;
@@ -211,7 +180,7 @@ body {
 	&__control--prev {
 		position: absolute;
 		left: 0;
-		top: 305px;
+		top: 5px;
 		display: inline-block;
 		width: 28px;
 		height: 38px;

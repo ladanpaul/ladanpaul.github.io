@@ -83,8 +83,13 @@ body {
   display: block;
 }
 
+.nav-menu:hover .nav-menu__drop {
+  border: none;
+}
+
 .nav-menu__list--vertical {
   display: none;
+  z-index: 1;
   position: absolute;
   top: 0;
   right: 0;
@@ -104,29 +109,11 @@ body {
   font-family: "LeagueGothicRegular", sans-serif;
   font-size: 24px;
   color: #fff;
-  line-height: 46px;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-}
-
-.nav-menu__drop:hover .nav-menu__list {
-  display: block;
-}
-
-.nav-menu__drop:before {
-  content: '';
-  position: absolute;
-  bottom: 7px;
-  left: 42.5%;
-  right: 42%;
-  max-width: 46px;
   border-bottom: 2px solid #edbfff;
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .nav-menu__drop:before {
-    left: 45%;
-  }
+  display: inline-block;
+  padding: 9px 6px 0;
 }
 
 .nav-menu__item--vertical {
@@ -198,39 +185,18 @@ body {
 
 .nav-menu__link-drop:hover:before {
   content: '';
-  position: absolute;
-  bottom: 7px;
-  left: 40%;
-  max-width: 46px;
   border-bottom: 2px solid #edbfff;
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .nav-menu__link-drop:hover:before {
-    left: 40%;
-  }
-}
-
-.nav-menu__link-drop:before {
-  content: '';
-  position: absolute;
-  bottom: 7px;
-  left: 40%;
-  max-width: 46px;
-  border-bottom: 2px solid #edbfff;
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .nav-menu__link-drop:before {
-    left: 40%;
-  }
 }
 
 /*===HEADER-SLIDER===*/
+.slider {
+  position: relative;
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .slider__substrate {
     background-color: rgba(0, 0, 0, 0.2);
-    min-height: 300px;
+    min-height: 245px;
     padding-top: 100px;
   }
 }
@@ -248,7 +214,7 @@ body {
 .slider__control--next {
   position: absolute;
   right: 0;
-  top: 305px;
+  top: 5px;
   display: inline-block;
   width: 28px;
   height: 38px;
@@ -265,7 +231,7 @@ body {
 .slider__control--prev {
   position: absolute;
   left: 0;
-  top: 305px;
+  top: 5px;
   display: inline-block;
   width: 28px;
   height: 38px;
