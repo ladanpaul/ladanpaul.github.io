@@ -29,3 +29,22 @@ $oseb: 'OpenSans-Extrabold', sans-serif;
 		color: $color;
 	}
 }
+
+
+@mixin adaptive($media) {
+	@if $media == media320 {
+		@media only screen and (min-width: 320px) and (max-width: 479px) {@content}
+	}
+
+	@else if $media == media480 {
+		@media only screen and (min-width: 480px) and (max-width: 767px) {@content}
+	}
+
+	@else if $media == media768 {
+		@media only screen and (min-width: 768px) and (max-width: 959px) {@content}
+	}
+
+	@else if $media == media960 {
+		@media only screen and (min-width: 960px) {@content}
+	}	
+}

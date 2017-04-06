@@ -54,8 +54,16 @@ body {
 }
 
 .header {
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 960px;
+  width: 100%;
   text-align: center;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .header {
+    min-width: 480px;
+  }
 }
 
 .header__logo {
@@ -84,7 +92,7 @@ body {
   margin: 0 auto;
   font-family: "LeagueGothicRegular", sans-serif;
   font-size: 24px;
-  width: 76%;
+  max-width: 240px;
   background-color: rgba(54, 41, 62, 0.9);
   border-radius: 4%;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
@@ -109,10 +117,16 @@ body {
   content: '';
   position: absolute;
   bottom: 7px;
-  left: 40%;
-  right: 40%;
+  left: 42.5%;
+  right: 42%;
   max-width: 46px;
   border-bottom: 2px solid #edbfff;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .nav-menu__drop:before {
+    left: 45%;
+  }
 }
 
 .nav-menu__item--vertical {
@@ -186,31 +200,55 @@ body {
   content: '';
   position: absolute;
   bottom: 7px;
-  left: 37%;
-  right: 37%;
+  left: 40%;
   max-width: 46px;
   border-bottom: 2px solid #edbfff;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .nav-menu__link-drop:hover:before {
+    left: 40%;
+  }
 }
 
 .nav-menu__link-drop:before {
   content: '';
   position: absolute;
   bottom: 7px;
-  left: 37%;
-  right: 37%;
+  left: 40%;
   max-width: 46px;
   border-bottom: 2px solid #edbfff;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .nav-menu__link-drop:before {
+    left: 40%;
+  }
+}
+
 /*===HEADER-SLIDER===*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .slider__substrate {
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 300px;
+    padding-top: 100px;
+  }
+}
+
 .slider__list {
   margin-top: 112px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .slider__list {
+    margin-top: 16px;
+  }
 }
 
 .slider__control--next {
   position: absolute;
   right: 0;
-  top: 311px;
+  top: 305px;
   display: inline-block;
   width: 28px;
   height: 38px;
@@ -227,7 +265,7 @@ body {
 .slider__control--prev {
   position: absolute;
   left: 0;
-  top: 311px;
+  top: 305px;
   display: inline-block;
   width: 28px;
   height: 38px;
@@ -253,17 +291,20 @@ body {
 
 .slide__heading {
   font-size: 36px;
+  line-height: 24px;
   color: #fefefe;
+  padding-bottom: 8px;
 }
 
 .slide__aditional {
   font-size: 18px;
-  max-height: 20px;
+  line-height: 24px;
+  max-height: 24px;
+  max-width: 65.625%;
   overflow: hidden;
   color: #edbfff;
   text-transform: uppercase;
-  margin-right: 4.6875%;
-  margin-left: 7.1875%;
+  margin-left: 20.3125%;
 }
 
 .slide__description {

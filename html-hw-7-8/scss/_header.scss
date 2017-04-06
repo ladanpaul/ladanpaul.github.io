@@ -7,8 +7,14 @@ body {
 }
 
 .header {
-	max-width: 320px;
+	min-width: 320px;
+	max-width: 960px;
+	width: 100%;
 	text-align: center;
+
+	@include adaptive(media480) {
+		min-width: 480px;
+	}
 }
 
 .header__logo {
@@ -25,8 +31,8 @@ body {
 	position: relative;
 	    
 	&:hover &__list {
-      display: block;
-   	}
+    display: block;
+  }
 
 	&__list--vertical {
 		display: none;
@@ -37,7 +43,7 @@ body {
 		margin: 0 auto;
 		font-family: $league;
 		font-size: 24px;
-		width: 76%;
+		max-width: 100%*240px/100%;
 		background-color: rgba(#36293e, 0.9);
 		border-radius: 4%;
 		box-shadow: 0 3px 5px rgba(0,0,0,.2);
@@ -55,16 +61,20 @@ body {
 
 		&:hover .nav-menu__list {
       display: block;
-   	}		
+   	}
 
 		&:before {
 			content: '';
 			position: absolute;
 			bottom: 7px;
-			left: 40%;
-			right: 40%;
+			left: 42.5%;
+			right: 42%;
 			max-width: 46px;
 			border-bottom: 2px solid #edbfff;
+
+			@include adaptive(media480) {
+				left: 45%;
+			}
 		}
 	}
 
@@ -138,10 +148,13 @@ body {
 					content: '';
 					position: absolute;
 					bottom: 7px;
-					left: 37%;
-					right: 37%;
+					left: 40%;
 					max-width: 46px;
 					border-bottom: 2px solid #edbfff;
+
+					@include adaptive(media480) {
+						left: 40%;
+					}
 				}
 			}
 
@@ -149,24 +162,39 @@ body {
 					content: '';
 					position: absolute;
 					bottom: 7px;
-					left: 37%;
-					right: 37%;
+					left: 40%;
 					max-width: 46px;
 					border-bottom: 2px solid #edbfff;
+
+					@include adaptive(media480) {
+						left: 40%;
+					}
 				}
 		}
 }
 
 /*===HEADER-SLIDER===*/
 .slider {
+	&__substrate {
+		@include adaptive(media480) {
+			background-color: rgba(0,0,0,.2);
+			min-height: 300px;
+			padding-top: 100px;
+		}
+	}
+
 	&__list {
 		margin-top: 112px;
+
+			@include adaptive(media480) {
+				margin-top: 16px;
+		}
 	}
 
 	&__control--next {
 		position: absolute;
 		right: 0;
-		top: 311px;
+		top: 305px;
 		display: inline-block;
 		width: 28px;
 		height: 38px;
@@ -183,7 +211,7 @@ body {
 	&__control--prev {
 		position: absolute;
 		left: 0;
-		top: 311px;
+		top: 305px;
 		display: inline-block;
 		width: 28px;
 		height: 38px;
@@ -210,17 +238,20 @@ body {
 
 	&__heading {
 		font-size: 36px;
+		line-height: 24px;
 		color: #fefefe;
+		padding-bottom: 8px;
 	}
 
 	&__aditional {
 		font-size: 18px;
-		max-height: 20px;
+		line-height: 24px;
+		max-height: 24px*1;
+		max-width: 100%*210px/320px;
 		overflow: hidden;
 		color: #edbfff;
 		text-transform: uppercase;
-		margin-right: 100%*15px/320px;
-		margin-left: 100%*23px/320px;
+		margin-left: 100%*65px/320px;
 	}
 
 	&__description {
