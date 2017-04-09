@@ -1,9 +1,47 @@
 .about {
-	max-width: 320px;
+	min-width: 320px;
+	max-width: 960px;
+	width: 100%;
 	text-align: center;
+	@include adaptive(media768) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@include adaptive(media960) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__section {
+		margin-top: 65px;
+		margin-bottom: 60px;
+
+		@include adaptive(media768) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		@include adaptive(media960) {
+			padding-left: 10px;
+			padding-right: 0;
+		}
+	}
 
 	&__article {
-		margin-top: 65px;
+		margin: 26px 0;
+		margin-left: 100%*25px/320px;
+		margin-right: 100%*26px/320px;
+		
+		@include adaptive(media768) {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+		@include adaptive(media960) {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 }
 
@@ -26,69 +64,81 @@
 }
 
 .about-company {
-	@include clearfix;
-	position: relative;
-	
-	&__icon {
-		float: left;
-		margin-left: 100%*32px/320px;
-		margin-top: 2px;
+	display: flex;
+
+	&__ico {
+		display: block;
+		margin-right: 100%*28px/320px;
+		margin-top: 3px;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		flex: 1 0 80%;
+		color: #fefefe;
+		text-align: left;
 	}
 
 	&__title {
-		display: inline-block;
-		float: left;
-		margin-left: 100%*22px/320px;
 		text-transform: uppercase;
 		letter-spacing: .3px;
 		font-family: $league;
 		font-size: 24px;
+		font-weight: 300;
 		line-height: 24px;
 		color: #fff;
-		text-shadow: 1.3px 1.3px  #0f1518;
+		text-shadow: 1px 1px  #0f1518;
+
+		@include adaptive(media768) {
+			font-size: 24px;
+		}
+
+		@include adaptive(media960) {
+			font-size: 30px;
+		}
 	}
 
 	&__text {
 		font-family: $osl;
 		font-size: 16px;
-		text-align: left;
 		line-height: 24px;
 		color: #fff;
 		text-shadow: 1px 1px #0f1518;
-		clear: both;
-		padding-left: 100%*65px/320px;
-		padding-right: 100%*42px/320px;
 		max-height: 24px*3;
-		margin-left: 3%;
 		overflow: hidden;
-	}
 
-	&__link {
-		position: absolute;
-		top: 115px;
-		right: 8%;
+		@include adaptive(media768) {
+			max-height: 24px*6;
+			max-width: 90%;
+		}
 
-		&:hover {
-			text-shadow: 0 0 8px rgba(255,255,255,.8);		
+		@include adaptive(media960) {
+			margin-top: 10px;
+			max-height: 24px*5;
+			max-width: 95%;
 		}
 	}
 }
 
 .read-more {
+	align-self: flex-end;
 	font-family: $league;
+	margin-right: 10px;
+	margin-top: 21px;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 18px;
 	color: #fff;
+	line-height: 24px;
+
+	@include adaptive(media960) {
+		padding-right: 10px;
+	}
+
+	&:hover {
+		text-shadow: 0 0 8px rgba(255,255,255,.8);
+	}
 }
-
-
-
-
-
-
-
-
-
 
 

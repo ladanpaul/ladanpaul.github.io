@@ -1,68 +1,166 @@
 .pingbuller-updates {
-	max-width: 320px;
+	min-width: 320px;
+	max-width: 960px;
+	width: 100%;
 	text-align: center;
-	@include clearfix;
+
+	&__slider {
+		display: inline-block;
+		margin-top: 65px;
+
+		@include adaptive(media768) {
+			max-width: 335px;
+		}
+
+		@include adaptive(media960) {
+			max-width: 425px;
+		}
+	}
+
+	@include adaptive(media768) {
+		display: flex;
+		border-bottom: 1px solid #e6e6e6;
+	}
+
+	@include adaptive(media960) {
+		display: flex;
+		border-bottom: 1px solid #e6e6e6;
+	}
 
 }
 
-.starts-here {
-	position: relative;
+.slide-content {
+position: relative;
+margin-left: 47px;
 
+@include adaptive(media480) {
+	margin-left: 40px;
+}
+
+@include adaptive(media960) {
+	margin-left: 25px;
+}
 
 	&__photo {
 		position: absolute;
-		left: 100%*20px/320px;
-		top: 85px;
+		top: 20px;
+		left: -25px;
+		z-index: 1;
+	}
+
+	&__body {
+		position: relative;
+		max-width: 100%*285px/320px;
+		display: flex;
+		flex-direction: column;
+		padding: 25px 25px 30px 35px;
+		background-color: #fff;
+		box-shadow: 0 1px 2px rgba(0,0,0,.05);
+
+		@include adaptive(media480) {
+			min-width: 100%*416px/480px;
+			padding: 25px 25px 30px 30px;		
+		}
+
+		@include adaptive(media768) {
+			min-width: 100%*335px/768px;
+			padding: 25px 25px 30px 30px;	
+		}
+
+		@include adaptive(media960) {
+			min-width: 100%*335px/768px;
+			padding: 25px 25px 30px 30px;	
+
+			&:after {
+				content:'';
+				display: inline;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				bottom: -20px;
+				right: 40px;
+				background: url("../img/triangle.png") center center;
+			}
+		}
 	}
 
 	&__head {
-		position: relative;
+		text-align: left;
+		display: inline-block;
 		font-family: $league;
 		text-transform: uppercase;
 		font-size: 24px;
 		line-height: 24px;
 		color: #454545;
-		max-height: 24px*2;
-		text-align: left;
-		padding-top: 95px;
-		padding-left: 100%*80px/320px;
+		font-weight: 300;
+
+		@include adaptive(media480) {
+			font-size: 30px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+		}
+
+		@include adaptive(media960) {
+			font-size: 30px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+		}
+
+
 
 		&--color {
 			color: #edbfff;
 			letter-spacing: .5px;
+
+			@include adaptive(media480) {
+				display: inline;
+			}
+
+			@include adaptive(media960) {
+				display: inline;
+			}
 		}
 	}
 
 	&__text {
-		position: relative;
+		padding-top: 5px;
 		font-family: $osl;
 		font-size: 16px;
 		line-height: 24px;
 		color: #454545;
-		max-width: 100%*180px/320px;
+		max-width: 100%;
 		max-height: 24px*7;
 		overflow: hidden;
 		text-align: left;
-		margin-top: 50px;
-		margin-left: 100%*80px/320px;
-		z-index: 2;
-	}
 
-	&:before {
-		content:'';
-		display: inline-block;
-		position: absolute;
-		left: 100%*44px/320px;
-		top: 69px;
-		background-color: #fff;
-		box-shadow: 0 1px 2px rgba(0,0,0,.05);
-		width: 100%*257px/320px;
-		min-height: 270px;
+		@include adaptive(media480) {
+			min-width: 100%*335px/480px;
+		}
+
+		@include adaptive(media768) {
+			max-height: 24px*6;
+		}
+
+		@include adaptive(media960) {
+			max-height: 24px*7;
+		}
 	}
 }
 
+
 .pingbuller__bullets {
 	margin-top: 55px;
+
+	@include adaptive(media480) {
+		margin-top: 25px;
+	}
+	@include adaptive(media768) {
+		margin-top: 23px;
+	}
+
+	@include adaptive(media960) {
+		margin-top: 22px;
+	}
 
 	.bullets__item {
 		border: solid 1px #e6e6e6;
@@ -90,15 +188,35 @@
 	@include clearfix;
 	border-bottom: 1px solid #e6e6e6;
 	padding-bottom: 90px;
+		
+	@include adaptive(media768) {
+		margin-top: 35px;
+		padding-bottom: 50px;
+		border-bottom: none;
+	}
+
+	@include adaptive(media960) {
+		margin-top: 44px;
+		padding-bottom: 60px;
+		border-bottom: none;
+	}
 
 	&__item {
 		margin-top: 50px;
+
+		@include adaptive(media480) {
+			margin-left: 100%*40px/320px;
+		}
+
+		@include adaptive(media768) {
+			margin-left: 100%*40px/768px;
+		}
 	}
 
 	&__head {
 		font-family: $league;
 		font-size: 30px;
-		line-height: 24px;
+		font-weight: 300;
 		text-transform: uppercase;
 		color: #454545;
 		text-align: left;
@@ -107,6 +225,16 @@
 
 	&__article {
 		margin-top: 18px;
+		text-align: left;
+
+		@include adaptive(media768) {
+			margin-top: 15px;
+		}
+
+		@include adaptive(media960) {
+			margin-top: 15px;
+			min-width: 500px;
+		}
 	}
 
 	&__ico {
@@ -135,9 +263,17 @@
 		line-height: 24px;
 		color: #454545;
 		max-height: 24px*1;
-		max-width: 100%*155px/320px;
-		margin-left: 100%*86px/320px;
+		max-width: 100%*200px/320px;
+		padding-left: 100%*18px/320px;
 		overflow: hidden;
+
+		@include adaptive(media768) {
+			max-width: 100%*230px/320px;
+		}
+
+		@include adaptive(media960) {
+			max-width: 100%*230px/320px;
+		}
 	}
 
 	&__text {
@@ -147,6 +283,12 @@
 		color: #454545;
 		max-height: 24px*1;
 		overflow: hidden;
+		padding-left: 100%*18px/320px;
+
+		@include adaptive(media480) {
+			max-width: 100%*200px/320px;
+		}	
+
 	}
 
 	&__link {
@@ -156,6 +298,20 @@
 		float: right;
 		margin-right: 100%*20px/320px;
 		margin-top: 25px;
+
+		@include adaptive(media480) {
+			margin-right: 100%*60px/480px;
+		}
+
+			&:hover {
+				text-shadow: 0 0 8px rgba(216,182,182,.8);
+				color: #5b5757;
+			}
+
+		@include adaptive(media960) {
+			margin-right: 100%*15px/480px;
+		}
+
 			&:hover {
 				text-shadow: 0 0 8px rgba(216,182,182,.8);
 				color: #5b5757;
@@ -165,13 +321,16 @@
 
 /*===BRENDS-LOGO===*/
 .brands-logo {
-	max-width: 320px;
 	border-top: 1px solid #fefefe;
 	padding-top: 70px;
 	display: flex;
 	justify-content: space-around;
 	flex-flow: row wrap;
 
+	@include adaptive(media480) {
+		padding-right: 100%*30px/480px;
+		padding-left: 100%*30px/480px;
+	}
 
 	&__list {
 		margin-bottom: 45px;

@@ -27,3 +27,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('../fonts/GeorgiaItalic/Georgia-Italic.eot');
+	src: url('../fonts/GeorgiaItalic/Georgia-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GeorgiaItalic/Georgia-Italic.woff') format('woff'),
+		url('../fonts/GeorgiaItalic/Georgia-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}

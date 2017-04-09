@@ -1,6 +1,7 @@
 $league: 'LeagueGothicRegular', sans-serif;
 $osl: 'OpenSans-Light', sans-serif;
 $oseb: 'OpenSans-Extrabold', sans-serif;
+$georgia: 'Georgia', sans-serif;
 
 @mixin clearfix {
 	&:after {
@@ -32,11 +33,8 @@ $oseb: 'OpenSans-Extrabold', sans-serif;
 
 
 @mixin adaptive($media) {
-	@if $media == media320 {
-		@media only screen and (min-width: 320px) and (max-width: 479px) {@content}
-	}
 
-	@else if $media == media480 {
+	@if $media == media480 {
 		@media only screen and (min-width: 480px) and (max-width: 767px) {@content}
 	}
 
@@ -47,4 +45,35 @@ $oseb: 'OpenSans-Extrabold', sans-serif;
 	@else if $media == media960 {
 		@media only screen and (min-width: 960px) {@content}
 	}	
+}
+
+@mixin reset-generic {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin reset-button { // для <button>
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+@mixin reset-link { // для <a>
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@mixin reset-input { // для <input>
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+@mixin reset-list { // для <ul>
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }

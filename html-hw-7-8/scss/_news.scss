@@ -1,0 +1,139 @@
+/*===NEWS-BEGIN===*/
+.pingbuller-news {
+	min-width: 320px;
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+
+	&__copyright {
+		margin-top: 80px;
+		
+		@include adaptive(media768) {
+			margin-top: 100px;
+		}
+	}
+
+	&__comments {
+		margin-top: 60px;
+
+		@include adaptive(media768) {
+			margin-top: 80px;
+		}
+	}
+
+	&__news-categories {
+		margin-top: 60px;
+
+		@include adaptive(media768) {
+			margin-top: 80px;
+		}
+	}
+
+	@include adaptive(media768) {
+		display: flex;
+	}
+
+	@include adaptive(media960) {
+		display: flex;
+	}
+}
+
+.copyright {
+	padding: 0 20px;
+	&__logo {
+	}
+
+	&__copy {
+		display: inline-block;
+		margin-top: 24px;
+		font-family: $georgia;
+		font-size: 16px;
+		font-style: italic;
+		color: #c5c5c5;
+		text-shadow: 1px 1px #fff;
+
+		@include adaptive(media768) {
+			margin-top: 5px;
+		}
+
+		@include adaptive(media960) {
+			margin-top: 5px;
+		}
+	}
+
+	&__text {
+		margin-top: 18px;
+		font-family: $osl;
+		font-size: 16px;
+		line-height: 24px;
+		color: #787878;
+		text-shadow: 1px 1px #fff;
+		max-height: 24px*4;
+		overflow: hidden;
+		text-align: left;
+
+		@include adaptive(media768) {
+			max-height: 24px*7;
+			margin-top: 5px;
+		}
+
+		@include adaptive(media960) {
+			max-height: 24px*7;
+			margin-top: 5px;
+		}
+	}
+}
+
+
+
+.recent-news {
+	padding: 0 20px;
+	&__title {
+		margin-top: 18px;
+		font-family: $league;
+		font-size: 30px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #454545;
+		text-shadow: 1px 1px #fff;
+	}
+
+	&__text {
+		margin-top: 18px;
+		font-family: $osl;
+		font-size: 16px;
+		line-height: 24px;
+		color: #787878;
+		text-shadow: 1px 1px #fff;
+		max-height: 24px*4;
+		overflow: hidden;
+		text-align: left;
+
+		@include adaptive(media768) {
+			max-height: 24px*7;
+			margin-top: 5px;
+		}
+
+		@include adaptive(media960) {
+			max-height: 24px*7;
+			margin-top: 5px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
