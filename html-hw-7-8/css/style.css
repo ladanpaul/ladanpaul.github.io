@@ -1272,6 +1272,9 @@ body {
 .brands-logo {
   border-top: 1px solid #fefefe;
   padding-top: 70px;
+  min-width: 320px;
+  max-width: 960px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
