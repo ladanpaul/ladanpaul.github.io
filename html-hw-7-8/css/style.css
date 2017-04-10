@@ -19,14 +19,26 @@ html, body {
 }
 
 .substrate--header {
-  padding-bottom: 60px;
+  padding-bottom: 67px;
   border-bottom: 1px solid #35273c;
   background: url("../img/mountains-top.jpg") no-repeat center top;
 }
 
 @media only screen and (min-width: 960px) {
   .substrate--header {
-    padding-bottom: 50px;
+    padding-bottom: 215px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .substrate--header {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .substrate--header {
+    padding-bottom: 158px;
   }
 }
 
@@ -108,22 +120,6 @@ body {
   visibility: hidden;
   height: 0;
   clear: both;
-}
-
-.header__slider {
-  margin-top: 180px;
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .header__slider {
-    margin-top: 27px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .header__slider {
-    margin-top: 84px;
-  }
 }
 
 .header__logo {
@@ -363,30 +359,40 @@ body {
 /*===HEADER-SLIDER===*/
 .slider {
   position: relative;
+  margin-top: 120px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .slider__substrate {
+  .slider {
     background-color: rgba(0, 0, 0, 0.2);
     min-height: 245px;
     max-height: 245px;
+    margin-top: 27px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  .slider__substrate {
+  .slider {
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 400px;
+    max-height: 400px;
+    margin-top: 84px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .slider {
     background-color: rgba(0, 0, 0, 0.2);
     min-height: 400px;
     max-height: 400px;
   }
 }
 
-@media only screen and (min-width: 960px) {
-  .slider__substrate {
-    background-color: rgba(0, 0, 0, 0.2);
-    min-height: 400px;
-    max-height: 400px;
-  }
+.slider__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .slider__control--next {
@@ -416,6 +422,7 @@ body {
 @media only screen and (min-width: 960px) {
   .slider__control--next {
     top: 170px;
+    right: -18%;
   }
 }
 
@@ -451,6 +458,7 @@ body {
 @media only screen and (min-width: 960px) {
   .slider__control--prev {
     top: 170px;
+    left: -18%;
   }
 }
 
@@ -460,29 +468,34 @@ body {
 }
 
 .slider__bullets {
-  margin-top: 75px;
+  margin-top: 70px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .slider__bullets {
-    margin-top: 22px;
+    position: absolute;
+    top: 100%;
+    right: 40%;
+    margin-top: 118px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .slider__bullets {
-    margin-top: 38px;
-    text-align: right;
-    margin-right: 128px;
-    margin-bottom: 37px;
+    position: absolute;
+    top: 100%;
+    right: 17%;
+    margin-top: 162px;
   }
 }
 
 @media only screen and (min-width: 960px) {
   .slider__bullets {
-    margin-top: 95px;
-    text-align: right;
-    margin-right: 160px;
+    margin-top: 203px;
+    position: absolute;
+    top: 100%;
+    right: 16%;
   }
 }
 
@@ -498,6 +511,7 @@ body {
   line-height: 36px;
   color: #fefefe;
   padding-bottom: 2px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -523,7 +537,7 @@ body {
     font-size: 60px;
     line-height: 48px;
     text-align: left;
-    margin-left: 4.16667%;
+    margin-left: 0;
     padding-top: 82px;
   }
 }
@@ -562,7 +576,7 @@ body {
     line-height: 34px;
     max-height: 34px;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 0;
     min-width: 300px;
   }
 }
@@ -593,7 +607,7 @@ body {
     display: block;
     max-width: 500px;
     margin-top: 12px;
-    margin-left: 40px;
+    margin-left: 0;
     text-align: left;
     line-height: 27px;
     max-height: 162px;
@@ -681,25 +695,25 @@ body {
   height: 17px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
-  margin-left: 1.5625%;
+  margin-left: 5px;
   cursor: pointer;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .bullets__item {
-    margin-left: 1.04167%;
+    margin-left: 5px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .bullets__item {
-    margin-left: 0.52083%;
+    margin-left: 4px;
   }
 }
 
 @media only screen and (min-width: 960px) {
   .bullets__item {
-    margin-left: 0.41667%;
+    margin-left: 4px;
   }
 }
 

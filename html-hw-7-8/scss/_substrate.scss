@@ -4,12 +4,20 @@
 	align-items: center;
 
 	&--header {
-		padding-bottom: 60px;
+		padding-bottom: 67px;
 		border-bottom: 1px solid #35273c;
 		background: url("../img/mountains-top.jpg")  no-repeat center top;
 
 		@include adaptive(media960) {
-			padding-bottom: 50px;
+			padding-bottom: 215px;
+		}
+
+		@include adaptive(media480) {
+			padding-bottom: 100px;
+		}
+
+		@include adaptive(media768) {
+			padding-bottom: 158px;
 		}
 	}
 
