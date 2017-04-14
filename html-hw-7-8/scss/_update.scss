@@ -59,17 +59,17 @@ margin-left: 47px;
 
 		@include adaptive(media480) {
 			min-width: 100%*416px/480px;
-			padding: 25px 25px 30px 30px;		
+			padding: 25px 25px 30px 30px;
 		}
 
 		@include adaptive(media768) {
 			min-width: 100%*335px/768px;
-			padding: 25px 25px 30px 30px;	
+			padding: 25px 25px 30px 30px;
 		}
 
 		@include adaptive(media960) {
 			min-width: 100%*335px/768px;
-			padding: 25px 25px 30px 30px;	
+			padding: 25px 25px 30px 30px;
 
 			&:after {
 				content:'';
@@ -111,6 +111,7 @@ margin-left: 47px;
 		&--color {
 			color: #edbfff;
 			letter-spacing: .5px;
+			display: block;
 
 			@include adaptive(media480) {
 				display: inline;
@@ -188,7 +189,7 @@ margin-left: 47px;
 	@include clearfix;
 	border-bottom: 1px solid #e6e6e6;
 	padding-bottom: 90px;
-		
+
 	@include adaptive(media768) {
 		margin-top: 35px;
 		padding-bottom: 50px;
@@ -287,7 +288,7 @@ margin-left: 47px;
 
 		@include adaptive(media480) {
 			max-width: 100%*200px/320px;
-		}	
+		}
 
 	}
 
@@ -359,38 +360,25 @@ margin-left: 47px;
 			width: 70px;
 			background-position: -70px 0;
 		}
-		
+
 		&-3 {
 			width: 68px;
 			background-position: -143px 0;
 		}
-		
+
 		&-4 {
 			width: 53px;
 			background-position: -210px 0;
 		}
-		
+
 		&-5 {
 			width: 105px;
 			background-position: -262px 0;
 		}
-		
+
 		&-6 {
 			width: 81px;
 			background-position: -366px 0;
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
