@@ -795,21 +795,24 @@ body {
 }
 
 .wrench-icon {
-  fill: #fff;
   width: 24px;
   height: 25px;
+  margin-right: 8.75%;
+  margin-top: 3px;
 }
 
 .speech-bubble-icon {
-  fill: #fff;
   width: 24px;
   height: 25px;
+  margin-right: 8.75%;
+  margin-top: 3px;
 }
 
 .note-icon {
-  fill: #fff;
   width: 24px;
   height: 25px;
+  margin-right: 8.75%;
+  margin-top: 3px;
 }
 
 .about-company {
