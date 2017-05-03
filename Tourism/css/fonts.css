@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Quicksand Book';
+	src: url('../fonts/Quicksand_Book/QuicksandBook-Regular.eot');
+	src: url('../fonts/Quicksand_Book/QuicksandBook-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Quicksand_Book/QuicksandBook-Regular.woff') format('woff'),
+		url('../fonts/Quicksand_Book/QuicksandBook-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('../fonts/Quicksand_Bold/QuicksandBold-Regular.eot');
+	src: url('../fonts/Quicksand_Bold/QuicksandBold-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Quicksand_Bold/QuicksandBold-Regular.woff') format('woff'),
+		url('../fonts/Quicksand_Bold/QuicksandBold-Regular.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}

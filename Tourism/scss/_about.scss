@@ -1,0 +1,62 @@
+.substrate {
+  &--about {
+    background-color: #aa9b77;
+    padding: 2rem;
+
+    @include adaptive(media768) {
+      padding: 3rem;
+    }
+
+    @include adaptive(media960) {
+      padding: 4rem;
+    }
+  }
+}
+
+.about-us {
+  min-width: 20rem;
+  max-width: 40rem;
+  height: 100%;
+  width: 50%;
+  padding: 1rem;
+  position: relative;
+
+  @include adaptive(media480) {
+    border: 2px solid #918363;
+  }
+
+  @include adaptive(media768) {
+    border: 2px solid #918363;
+  }
+
+  @include adaptive(media960) {
+    border: 2px solid #918363;
+  }
+
+  &__title {
+    color: #837659;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: -.8rem;
+    right: 40%;
+    margin-left: 20%;
+    max-width: 8rem;
+    padding: 0 .5rem;
+    background-color: #aa9b77;
+  }
+
+  &__text {
+    font-size: 1rem;
+    text-align: left;
+    color: #424242;
+
+    @include adaptive(media768) {
+      text-align: justifyx;
+    }
+
+    @include adaptive(media960) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,250 @@
+.substrate {
+  &--buyer{
+    background-color: #9ab2cf;
+  }
+}
+
+.substrate-buyer-item {
+  display: flex;
+  flex-direction: column;
+   @include adaptive(media768){
+     flex-flow: row wrap;
+   }
+   @include adaptive(media960){
+     flex-flow: row wrap;
+   }
+}
+
+.buyer {
+  min-height: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  min-width: 20rem;
+  max-width: 80rem;
+  width: 100%;
+
+  @include adaptive(media480) {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  @include adaptive(media768) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  @include adaptive(media960) {
+    padding: 1rem 2rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-left: 1rem;
+    min-width: 50%;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: .5rem;
+    cursor: pointer;
+
+    @include adaptive(media480) {
+      min-width: .5rem;
+      font-size: 1rem;
+    }
+
+    @include adaptive(media768) {
+      min-width: .5rem;
+      font-size: 1rem;
+    }
+
+    @include adaptive(media960) {
+      min-width: .5rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  &__men {
+    @include reset-input;
+    margin-right: .3rem;
+  }
+
+  &__women {
+    @extend .buyer__men ;
+  }
+
+  &__children {
+    @extend .buyer__men;
+  }
+
+  &__button {
+    @include reset-button;
+    width: 10rem;
+    height: 2rem;
+    color: #fff;
+    margin-top: .3rem;
+    background-color: #aa9b77;
+    border-radius: .2rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+    @include adaptive(media480) {
+      width: 12rem;
+      height: 3rem;
+      font-size: 1.2rem;
+    }
+
+    @include adaptive(media768) {
+      margin-top: 0;
+    }
+
+    @include adaptive(media960) {
+      margin-top: 0;
+      width: 11rem;
+      height: 2.3rem;
+    }
+  }
+}
+
+
+.clothing {
+  min-width: 20rem;
+  max-width: 80rem;
+  width: 100%;
+
+  &__men {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+
+  &__women {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+
+  &__title {
+    position: relative;
+    flex-basis: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    &--women {
+      text-align: right;
+
+      &:after {
+        left: 0;
+        width: 70% !important;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 80%;
+      height: 0;
+      border: .065rem solid #ccc;
+    }
+  }
+
+  &__item {
+    margin: 1rem auto;
+    padding: 1%;
+    cursor: pointer;
+
+    &:hover {
+      outline: .275rem solid #aa9b77;
+    }
+  }
+}
+
+.kind-of-clothes {
+  position: relative;
+  display: flex;
+  width: 17rem;
+  max-width: 17rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f6f7;
+
+  &__size {
+    align-self: flex-start;
+    flex-grow: 100;
+  }
+
+  &__image {
+    margin: 3rem;
+    max-width: 9rem;
+    align-self: center;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+  }
+
+  &__value {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+  }
+
+  &__color {
+    align-self: flex-start;
+
+    &--blue {
+      display: inline-block;
+      width: .7rem;
+      height: .7rem;
+      background-color: blue;
+      border-radius: 100%;
+    }
+
+    &--yellow {
+      display: inline-block;
+      width: .7rem;
+      height: .7rem;
+      background-color: yellow;
+      border-radius: 100%;
+    }
+
+    &--black {
+      display: inline-block;
+      width: .7rem;
+      height: .7rem;
+      background-color: black;
+      border-radius: 100%;
+    }
+  }
+}
+
+.page {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: row-reverse;
+  margin-bottom: 2rem;
+
+  &--women {
+    flex-direction: row;
+  }
+
+  &__number {
+    display: inline;
+    text-align: right;
+    font-size: 1rem;
+  }
+}

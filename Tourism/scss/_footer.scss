@@ -1,0 +1,153 @@
+.substrate {
+  &--social {
+    background-color: #535253;
+  }
+  &--footer-nav {
+    background-color: #424242;
+    padding: 2rem;
+  }
+}
+
+.social {
+  min-width: 20rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  padding: 1rem 0;
+  color: #fff;
+  justify-content: flex-start;
+}
+
+.footer {
+  &__menu {
+    min-width: 20rem;
+    max-width: 80rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    @include adaptive(media768) {
+      flex-flow: row wrap;
+    }
+
+    @include adaptive(media960) {
+      flex-flow: row wrap;
+    }
+  }
+
+  &__design {
+    color: #fff;
+    font-size: 1rem;
+    margin: 2rem auto;
+
+    @include adaptive(media768) {
+      width: 100%;
+      text-align: right;
+      margin: .4rem 2rem;
+    }
+
+    @include adaptive(media960) {
+      width: 100%;
+      text-align: right;
+      font-size: 1.1rem;
+      margin-top: -2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.trekking {
+  padding: 1rem;
+  width: 50%;
+
+  &__title {
+    font-size: 1.25rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include adaptive(media960){
+      text-align: left;
+    }
+  }
+
+  &__text {
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    min-width: 10rem;
+    max-width: 30rem;
+    height: 100%;
+    text-align: center;
+
+    @include adaptive(media960){
+      text-align: justify;
+    }
+  }
+}
+
+.footer-nav {
+  position: relative;
+
+  &__list {
+    @include reset-list;
+    display: flex;
+    flex-flow: column wrap;
+    width: 17rem;
+
+    @include adaptive(media960) {
+      flex-flow: row wrap;
+      width: 40%;
+      justify-content:flex-end;
+    }
+  }
+
+  &__item {
+    margin-left: 1rem;
+    position: relative;
+    margin: .3rem;
+
+    @include adaptive(media960){
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: -.3rem;
+        top: 30%;
+        display: inline-block;
+        border-right: .06rem solid #aa9b77;
+        height: .7rem;
+      }
+
+      &:nth-child(4):after {
+        content: '';
+        border: none;
+      }
+    }
+  }
+
+  &__link {
+    @include reset-link;
+    color: #fff;
+    background-color: #af9d73;
+    border-radius: .5rem;
+    display: block;
+    text-align: center;
+    padding: .2rem 2rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #96855d;
+    }
+
+    @include adaptive(media960){
+      background-color: inherit;
+      font-size: .8rem;
+      padding: .3rem;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.substrate {
+  &--header {
+    background-image: url("../img/clothing_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+
+    @include adaptive(media960){
+      background-attachment: fixed;
+    }
+  }
+}
+
+.header {
+  @include reset-generic;
+  // height: 48rem;
+  min-width: 20rem;
+  max-width: 80rem;
+  width: 100%;
+  height: 25rem;
+  padding: 2%;
+
+  @include adaptive(media960) {
+    height: 100vh;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: $qbook;
+    color: #fff;
+    margin-top: 0.5rem;
+    text-align: center;
+
+    @include adaptive(media768) {
+      max-width: 70%;
+    }
+
+    @include adaptive(media960) {
+      max-width: 60%;
+    }
+  }
+}
+
+.nav-menu {
+
+  &__list {
+    display: flex;
+    @include reset-list;
+    margin-top: .3rem;
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    @include reset-link;
+    color: #fff;
+    margin-left: 2rem;
+  }
+}
+
+.logo {
+  width: 3.3125rem;
+  height: 2.5rem;
+}
