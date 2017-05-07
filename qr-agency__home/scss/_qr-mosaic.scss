@@ -1,0 +1,140 @@
+.substrate-qr-mosaic {
+  border-bottom: .35rem solid #fb7c13;
+  margin-top: 1.5rem;
+  font-family: $treb-b;
+}
+
+.qr-mosaic {
+  display: flex;
+  justify-content: center;
+  max-height: 32rem;
+
+  &__text-hover {
+    padding: .25rem;
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: #fff;
+    background-color: rgba(#960c0c, .8);
+    font-size: 1rem;
+    white-space: pre-line;
+    font-family: $treb;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &__title {
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: rgba(#960c0c, .8);
+    color: #fff;
+  }
+
+  &__title-more {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(#fb7c13, .8);
+    color: #fff;
+    line-height: 11.7rem;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: rgba(#8a262f, .8);
+    }
+  }
+
+  &__column {
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    overflow: hidden;
+
+    &-big {
+      height: 20.3rem;
+    }
+
+    &:hover .qr-mosaic__text-hover {
+      display: block;
+    }
+
+    &:hover .qr-mosaic__title {
+      display: none;
+    }
+
+    &--1 {
+      background: url("../img/photo-6.png") center center no-repeat;
+      background-size: contain;
+    }
+
+    &--7 {
+      background: url("../img/photo-5.png") center center no-repeat;
+      background-size: contain;
+    }
+
+    &--2 {
+      background: url("../img/photo-3.png") center center no-repeat;
+      background-size: contain;
+    }
+
+    &--8 {
+      background: url("../img/photo-4.png") center center no-repeat;
+      background-size: contain;
+    }
+
+    &--3 {
+      background: url("../img/photo-2.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--9 {
+      background: url("../img/photo-1.png") top center no-repeat;
+      background-size: cover;
+      height: 11.7rem;
+    }
+
+    &--4 {
+      background: url("../img/photo-6.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--10 {
+      background: url("../img/photo-5.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--5 {
+      background: url("../img/photo-3.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--11 {
+      background: url("../img/photo-4.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--6 {
+      background: url("../img/photo-2.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--12 {
+      background: url("../img/photo-1.png") center center no-repeat;
+      background-size: cover;
+      height: 11.7rem;
+    }
+  }
+}
