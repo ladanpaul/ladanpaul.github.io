@@ -1,0 +1,41 @@
+.photo-slider {
+  min-width: 100%;
+  position: relative;
+
+  &__change {
+    position: absolute;
+    bottom: .2rem;
+    left: 20%;
+
+    &--prev {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      background: url("../img/arrows.png") 0 0 no-repeat;
+    }
+
+    &--next {
+      @extend .photo-slider__change--prev;
+      background-position: -45px 0;
+    }
+  }
+}
+
+.photo-slide {
+  background: url("../img/bgd-photo.png") top center no-repeat;
+  background-size: cover;
+  min-height: 31.9rem;
+  border-top: .35rem solid #fb7c13;
+  border-bottom: .35rem solid #960c0c;
+  text-align: center;
+
+  &__title {
+    color: #fff;
+    display: block;
+    font-size: 1.43rem;
+    line-height: 3rem;
+    background-color: rgba(#960c0c, .78);
+    height: 3.5rem;
+  }
+}
