@@ -37,6 +37,10 @@ html, body {
   margin-right: 1.2rem;
 }
 
+.header .contact-phone .tel {
+  color: #061769;
+}
+
 .header .contact-icon__email, .header .contact-icon__tube, .header .contact-icon__play, .header .contact-icon__note {
   background: url("../img/nav-icons.png") 0 0 no-repeat;
   width: 26px;
