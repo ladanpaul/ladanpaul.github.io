@@ -154,6 +154,17 @@ html, body {
   height: 3.5rem;
 }
 
+.photo-slide:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 1.5%;
+  right: 10%;
+  background: url(../img/bottom-lines.png) no-repeat;
+  width: 26rem;
+  height: 1.8rem;
+}
+
 .qr-resolution {
   display: flex;
   flex-flow: column wrap;
@@ -787,7 +798,7 @@ html, body {
 
 .footer__phone {
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1.18rem;
   max-width: 10rem;
   margin-top: .7rem;

@@ -38,4 +38,15 @@
     background-color: rgba(#960c0c, .78);
     height: 3.5rem;
   }
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 1.5%;
+    right: 10%;
+    background: url(../img/bottom-lines.png) no-repeat;
+    width: 26rem;
+    height: 1.8rem;
+  }
 }
