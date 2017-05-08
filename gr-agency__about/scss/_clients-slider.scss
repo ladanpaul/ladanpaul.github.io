@@ -1,0 +1,82 @@
+.clients-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    text-transform: uppercase;
+    color: #960c0c;
+    margin-top: 3.4rem;
+    border-top: 2px solid #fb7c13;
+    border-bottom: 2px solid #fb7c13;
+    padding: .5rem 0;
+    font-family: $treb-b;
+    font-size: 1.46rem;
+    margin-bottom: 2.7rem;
+  }
+
+  &__text {
+    color: #07186a;
+    font-family: $treb;
+    font-size: 1.31rem;
+    max-width: 47rem;
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 3.4rem;
+    display: flex;
+    width: 60rem;
+  }
+
+  &--prev {
+    display: inline-block;
+    position: absolute;
+    left: -9%;
+    top: 15%;
+    background: url("../img/arrow-left.png") no-repeat;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &--next {
+    display: inline-block;
+    position: absolute;
+    right: -15%;
+    top: 15%;
+    background: url("../img/arrow-right.png") no-repeat;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.clients-slide {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &--leroy {
+    display: inline-block;
+    background: url("../img/Group 1804.png") no-repeat;
+    width: 11.5rem;
+    height: 7.7rem;
+  }
+
+  &--gas {
+    @extend .clients-slide--leroy;
+    background-position: -14rem 0;
+    width: 13.1rem;
+  }
+
+  &--lucoyl {
+    @extend .clients-slide--leroy;
+    background-position: -29.3rem 0;
+    width: 19.3rem;
+  }
+
+  &--runako {
+    @extend .clients-slide--leroy;
+    background-position: -52rem 0;
+    width: 7rem;
+  }
+}

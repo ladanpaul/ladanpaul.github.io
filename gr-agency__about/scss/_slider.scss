@@ -1,0 +1,44 @@
+.photo-slider {
+  min-width: 100%;
+  position: relative;
+
+  &__change {
+    position: absolute;
+    bottom: .2rem;
+    left: 20%;
+
+    &--prev {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      background: url("../img/arrows.png") 0 0 no-repeat;
+    }
+
+    &--next {
+      @extend .photo-slider__change--prev;
+      background-position: -45px 0;
+    }
+  }
+}
+
+.photo-slide {
+  background: url("../img/Rectangle 189.png") top center no-repeat;
+  background-size: cover;
+  min-height: 12.3rem;
+  border-top: .35rem solid #fb7c13;
+  border-bottom: .35rem solid #960c0c;
+  text-align: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    background: url(../img/bottom-lines.png) no-repeat;
+    width: 26rem;
+    height: 1.8rem;
+  }
+}

@@ -1,0 +1,93 @@
+.qr-resolution {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font-family: $treb;
+
+  .about-us-title {
+    text-transform: uppercase;
+    min-width: 20rem;
+    margin: 2.5rem auto;
+    padding: .6rem 9rem;
+    border-top: 2px solid #fb7c13;
+    border-bottom: 2px solid #fb7c13;
+    color: #960c0c;
+    font-size: 1.5rem;
+    font-family: $treb-b;
+    font-weight: 300;
+  }
+
+  &__title {
+    color: #960c0c;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: $treb;
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column wrap;
+    font-family: $treb;
+    background: url("../img/middle-photo.png") top center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 40rem;
+    margin-top: 3.5rem;
+    color: #041568;
+
+    &-inner {
+      background-color: rgba(#fff, .83);
+      width: 50%;
+      min-height: 43rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 2rem 2rem;
+    }
+  }
+
+  &__list {
+    margin-top: 2rem;
+    max-width: 55%;
+    padding-left: 2.5rem;
+    line-height: 1.3rem;
+  }
+
+  &__item {
+    list-style-image: url("../img/list-arrow.png");
+  }
+
+  &__text {
+    max-width: 55%;
+
+    &-note {
+      margin-top: 1.5rem;
+      color: #960c0c;
+    }
+
+    &-title-list {
+      margin-top: 1.5rem;
+      color: #960c0c;
+    }
+  }
+
+  &__download {
+    font-family: $treb;
+    width: 15rem;
+    height: 2.5rem;
+    border: 1px solid #fb7c13;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-top: 2.8rem;
+    color: #95989a;
+
+    &:hover {
+      background-color: #fb7c13;
+      color: #fff;
+      transition: .2s all;
+    }
+  }
+}

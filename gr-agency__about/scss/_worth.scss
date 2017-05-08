@@ -1,0 +1,27 @@
+.worth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    text-transform: uppercase;
+    color: #960c0c;
+    margin-top: 3.4rem;
+    border-top: 2px solid #fb7c13;
+    border-bottom: 2px solid #fb7c13;
+    padding: .5rem 7rem;
+    font-size: 1.46rem;
+    font-family: $treb-b;
+  }
+
+  &__list {
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+    font-family: $treb;
+    color: #041568;
+    text-transform: uppercase;
+    line-height: 2rem;
+    text-align: center;
+  }
+}
