@@ -292,8 +292,19 @@ html, body {
   line-height: 1.5rem;
 }
 
+.page-slider__item--active {
+  background-color: #960c0c;
+  color: #fff !important;
+  border: none;
+  line-height: 1.7rem;
+}
+
 .page-slider__link {
   color: #041568;
+}
+
+.page-slider__link--active {
+  color: #fff;
 }
 
 .page-slider__link--arrow {

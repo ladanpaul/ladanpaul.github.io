@@ -131,10 +131,21 @@
     text-align: center;
     margin-right: .5rem;
     line-height: 1.5rem;
+
+    &--active {
+      background-color: #960c0c;
+      color: #fff !important;
+      border: none;
+      line-height: 1.7rem;
+    }
   }
 
   &__link {
     color: #041568;
+
+    &--active {
+      color: #fff;
+    }
 
     &--arrow {
       display: inline-block;
