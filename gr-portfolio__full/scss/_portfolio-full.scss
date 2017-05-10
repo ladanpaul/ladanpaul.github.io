@@ -1,0 +1,200 @@
+.substrate-portfolio-full {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5.6rem;
+  border-bottom: .37rem solid #fb7c13;
+  position: relative;
+  font-family: $treb;
+
+  &:before {
+    content: '';
+    background: url("../img/Group 1679.png") center center no-repeat;
+    width: 26rem;
+    height: 1.8rem;
+    position: absolute;
+    left: 10%;
+    bottom: -1.3rem;
+  }
+}
+
+.portfolio-full {
+  margin-top: 3.1rem;
+  max-width: 62rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: #960c0c;
+    font-size: 1.87rem;
+    font-family: $treb-b;
+  }
+
+  &__img {
+    margin-top: 2rem;
+    display: inline-block;
+    background: url("../img/Rectangle 1328.png") center center no-repeat;
+    background-position: cover;
+    width: 62rem;
+    min-height: 25rem;
+  }
+}
+
+.presentation {
+  display: flex;
+  flex-flow: column wrap;
+  color: #132371;
+  width: 90%;
+
+  &__text {
+    margin-top: 2rem;
+    white-space: pre-line;
+    line-height: 1rem;
+    font-size: .87rem;
+  }
+
+  &__download {
+    margin-top: 1.87rem;
+    font-size: 1.18rem;
+    font-family: $treb-b;
+    position: relative;
+    align-self: flex-start;
+    padding: .3rem 2.5rem .3rem .3rem;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      background: url("../img/contact-icon.png") center center no-repeat;
+      width: 1.68rem;
+      height: 1.68rem;
+      position: absolute;
+      top: .15rem;
+      right: 0;
+    }
+  }
+}
+
+.photos {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    color: #960c0c;
+    font-size: 1.56rem;
+    font-family: $treb-b;
+    margin-top: 2rem;
+
+  }
+
+  &__list {
+    margin-top: 2.3rem;
+    max-width: 62rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__link {
+    display: inline-block;
+    min-width: 12rem;
+    min-height: 10.1rem;
+    margin-top: .2rem;
+    &--1 {
+      background: url("../img/photos/Rectangle 1329.png") center center no-repeat;
+      background-size: cover;
+    }
+    &--2 {
+      @extend .photos__link--1;
+      background: url("../img/photos/Rectangle 1345.png");
+    }
+    &--3 {
+      @extend .photos__link--1;
+      background: url("../img/photos/Rectangle 1346.png");
+    }
+    &--4 {
+      @extend .photos__link--1;
+      background: url("../img/photos/Rectangle 1347.png");
+    }
+    &--5 {
+      @extend .photos__link--1;
+      background: url("../img/photos/Rectangle 1348.png");
+    }
+    &--6 {
+      @extend .photos__link--1;
+      background: url("../img/photos/Rectangle 1349.png");
+    }
+    &--7 {
+      @extend .photos__link--1;
+      background: url("../img/photos/Rectangle 1350.png");
+    }
+    &--8 {
+      @extend .photos__link--1;
+      background: url("../img/photos/Rectangle 1351.png");
+    }
+    &--9 {
+      @extend .photos__link--1;
+      background: url("../img/photos/Rectangle 1352.png");
+    }
+    &--10 {
+      @extend .photos__link--1;
+      background: url("../img/photos/Rectangle 1353.png");
+    }
+  }
+}
+
+.movies {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    color: #960c0c;
+    font-size: 1.56rem;
+    font-family: $treb-b;
+    margin-top: 5.5rem;
+  }
+
+  &__list {
+    margin-top: 2.3rem;
+    display: flex;
+    flex-flow: row wrap;
+    width: 62rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__link {
+    display: inline-block;
+    min-width: 12rem;
+    min-height: 10rem;
+    margin-top: .2rem;
+    &--1 {
+     background: url("../img/movies/Rectangle 1354.png") center center no-repeat;
+     background-size: cover;
+    }
+    &--2 {
+     @extend .movies__link--1;
+     background: url("../img/movies/Rectangle 1355.png");
+    }
+    &--3 {
+     @extend .movies__link--1;
+     background: url("../img/movies/Rectangle 1356.png");
+    }
+    &--4 {
+     @extend .movies__link--1;
+     background: url("../img/movies/Rectangle 1357.png");
+    }
+    &--5 {
+     @extend .movies__link--1;
+     background: url("../img/movies/Rectangle 1358.png");
+    }
+  }
+}
