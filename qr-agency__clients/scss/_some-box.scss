@@ -1,0 +1,28 @@
+.some-box {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border-top: .93rem solid #960c0c;
+  position: relative;
+  font-family: $treb;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    background: url("../img/Group 1679.png") center center no-repeat;
+    width: 26rem;
+    height: 2.2rem;
+    position: absolute;
+    top: -1.3rem;
+    left: 20%;
+  }
+
+  &__text {
+    margin-top: 5rem;
+    color: #041568;
+    font-size: 1.6rem;
+    max-width: 57rem;
+    text-align: center;
+  }
+}

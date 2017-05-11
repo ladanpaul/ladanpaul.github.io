@@ -1,0 +1,382 @@
+.clients-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $treb;
+
+  &__title {
+    margin-top: 2.75rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #9d1c1c;
+    padding: .5rem 5rem;
+    border-bottom: 2px solid #fb7c13;
+    border-top: 2px solid #fb7c13;
+    font-size: 1.43rem;
+    font-family: $treb-b;
+    font-weight: 300;
+  }
+
+  &__text {
+    margin-top: 2.8rem;
+    color: #041568;
+    font-size: 1.6rem;
+    max-width: 57rem;
+    text-align: center;
+  }
+}
+
+.substrate-clients-slider {
+  margin-top: 7.2rem;
+  width: 59rem;
+  height: 26.5rem;
+  position: relative;
+
+  .clients-slider__prev {
+    content:'';
+    display: inline-block;
+    width: 51px;
+    height: 72px;
+    background: url("../img/arrow-left.png") center center no-repeat;
+    position: absolute;
+    left: -8rem;
+    top: 12rem;
+  }
+
+  .clients-slider__next {
+    display: inline-block;
+    width: 51px;
+    height: 72px;
+    background: url("../img/arrow-right.png") center center no-repeat;
+    position: absolute;
+    right: -8rem;
+    top: 12rem;
+  }
+}
+
+.clients-slider {
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+  }
+}
+
+.clients-slide {
+
+    &__logo {
+      display: inline-block;
+
+      &--gasprom {
+        width: 155px;
+        height: 75px;
+        background: url("../img/sprite-clients.png") no-repeat;
+        background-position: -60px -84px;
+        position: relative;
+
+        &:hover .clients-slide__title {
+          display: inline-block;
+        }
+      }
+
+      &--luc {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -242px -103px;
+        height: 50px;
+        width: 183px;
+        left: 2.7rem;
+        top: 1.2rem;
+      }
+
+      &--rosneft {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -483px -84px;
+        height: 75px;
+        width: 120px;
+        left: 4.3rem;
+      }
+
+      &--bipartner {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -615px -100px;
+        height: 30px;
+        width: 243px;
+        left: 5rem;
+        top: 1.5rem;
+      }
+
+      &--mcoffee {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -877px -105px;
+        height: 70px;
+        width: 104px;
+        left: 8rem;
+        top: 2rem;
+      }
+
+      &--maycor {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -70px -174px;
+        height: 34px;
+        width: 220px;
+        top: 1rem;
+        left: 0;
+      }
+
+      &--nortgas {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -309px -174px;
+        height: 71px;
+        width: 138px;
+        top: 1rem;
+        left: 2rem;
+      }
+
+      &--ara {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -474px -190px;
+        height: 68px;
+        width: 82px;
+        top: 2rem;
+        left: 3.5rem;
+      }
+
+      &--vostok {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -608px -160px;
+        height: 36px;
+        width: 226px;
+        bottom: .2rem;
+        left: 6rem;
+      }
+
+      &--mistral {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -603px -219px;
+        height: 53px;
+        width: 99px;
+        top: 3.5rem;
+        right: 8.5rem;
+      }
+
+      &--lorey {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -745px -207px;
+        height: 83px;
+        width: 115px;
+        top: 2.7rem;
+        right: 6rem;
+      }
+
+      &--novard{
+        @extend .clients-slide__logo--gasprom;
+        background-position: -888px -198px;
+        height: 77px;
+        width: 88px;
+        left: 52rem;
+        bottom: 3rem;
+      }
+
+      &--robur {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -62px -223px;
+        height: 70px;
+        width: 67px;
+        right: 5.5rem;
+        bottom: 1.5rem;
+      }
+
+      &--gaspribor {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -145px -252px;
+        height: 33px;
+        width: 241px;
+        right: 4rem;
+        top: .4rem;
+      }
+
+      &--gost {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -70px -302px;
+        height: 68px;
+        width: 114px;
+        right: 24.5rem;
+        top: 3.5rem;
+      }
+
+      &--bel {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -262px -305px;
+        height: 72px;
+        width: 70px;
+        right: 20rem;
+        top: 3.8rem;
+      }
+
+      &--nikon {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -370px -295px;
+        height: 63px;
+        width: 63px;
+        right: 17rem;
+        top: 3.4rem;
+      }
+
+      &--snt {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -473px -288px;
+        height: 86px;
+        width: 69px;
+        right: 14.8rem;
+        top: 3rem;
+      }
+
+      &--ucs {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -571px -305px;
+        height: 49px;
+        width: 135px;
+        top: 4rem;
+        right: 12.5rem;
+      }
+
+      &--unis {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -735px -305px;
+        height: 68px;
+        width: 95px;
+        top: 4rem;
+        right: 10rem;
+      }
+
+      &--runaco {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -880px -298px;
+        height: 82px;
+        width: 87px;
+        bottom: 2.3rem;
+        left: 52rem;
+      }
+
+      &--binvest {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -77px -380px;
+        height: 47px;
+        width: 115px;
+        right: 5rem;
+        top: 2.7rem;
+      }
+
+      &--medocs {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -226px -390px;
+        height: 34px;
+        width: 88px;
+        top: 3.5rem;
+        right: 2rem;
+      }
+
+      &--slavros {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -384px -396px;
+        height: 35px;
+        width: 143px;
+        top: 3.9rem;
+        left: 3.5rem;
+      }
+
+      &--trox {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -597px -387px;
+        height: 45px;
+        width: 179px;
+        top: 3.5rem;
+        left: 8rem;
+      }
+
+      &--vtb {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -840px -405px;
+        height: 25px;
+        width: 129px;
+        top: 4.5rem;
+        left: 11.5rem;
+      }
+
+      &--energotech {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -65px -450px;
+        height: 60px;
+        width: 237px;
+        top: 1.13rem;
+        left: .3rem;
+      }
+
+      &--tnk {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -352px -453px;
+        height: 57px;
+        width: 85px;
+        top: 1.2rem;
+        left: 5rem;
+      }
+
+      &--sevco {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -481px -467px;
+        height: 32px;
+        width: 114px;
+        top: 2rem;
+        left: 8rem;
+      }
+
+      &--sgt {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -625px -470px;
+        height: 29px;
+        width: 94px;
+        top: 2rem;
+        left: 10rem;
+      }
+
+      &--ecuador {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -759px -444px;
+        height: 63px;
+        width: 80px;
+        top: .1rem;
+        left: 12rem;
+      }
+
+      &--tis {
+        @extend .clients-slide__logo--gasprom;
+        background-position: -880px -470px;
+        height: 37px;
+        width: 88px;
+        top: 2rem;
+        left: 14rem;
+      }
+    }
+
+  &__title {
+    position: absolute;
+    top: -5rem;
+    text-align: center;
+    line-height: 3.125rem;
+    color: #fff;
+    width: 100%;
+    height: 3.125rem;
+    background-color: #960c0c;
+    display: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 40%;
+      bottom: -28px;
+      border: 14px solid transparent;
+      border-top: 14px solid #960c0c;
+    }
+  }
+}

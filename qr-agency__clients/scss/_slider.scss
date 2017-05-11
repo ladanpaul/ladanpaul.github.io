@@ -1,0 +1,30 @@
+.photo-slider {
+  min-width: 100%;
+  position: relative;
+
+  &__change {
+    position: absolute;
+    bottom: .2rem;
+    left: 20%;
+  }
+}
+
+.photo-slide {
+  background: url("../img/middle-photo.png") center center no-repeat;
+  min-height: 13.6rem;
+  border-top: .35rem solid #fb7c13;
+  border-bottom: .35rem solid #960c0c;
+  text-align: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    background: url(../img/bottom-lines.png) no-repeat;
+    width: 26rem;
+    height: 1.8rem;
+  }
+}
