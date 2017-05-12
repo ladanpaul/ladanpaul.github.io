@@ -1,0 +1,205 @@
+.solutions {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: $treb;
+
+  &__title {
+    font-family: $treb-b;
+    font-size: 1.43rem;
+    margin-top: 2.75rem;
+    color: #9c3133;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .4rem 8rem;
+    border-top: 2px solid #fb7c13;
+    border-bottom: 2px solid #fb7c13;
+  }
+
+  &__text {
+    margin-top: 4rem;
+    max-width: 60rem;
+    text-align: center;
+    color: #152572;
+    font-size: 1.6rem;
+  }
+
+  &-nav {
+    max-width: 64rem;
+    display: flex;
+    overflow: hidden;
+    margin-top: 6rem;
+  }
+
+  &-nav__list {
+    font-size: 1.43rem;
+    display: flex;
+  }
+
+  &-nav__item {
+    text-align: center;
+    padding-right: .6rem;
+  }
+
+  &-nav__link {
+    background-color: #fb7c13;
+    color: #fff;
+    display: inline-block;
+    width: 21rem;
+    line-height: 2.5rem;
+
+    &--active {
+      background-color: #960c0c;
+    }
+  }
+
+  &__content {
+    margin-top: .2rem;
+    border: 1px solid #a22929;
+    max-width: 64rem;
+    @include clearfix;
+
+    .more {
+      margin-top: 2rem;
+      float: right;
+      color: #051669;
+      font-size: .75rem;
+      line-height: 1.4rem;
+      border: 1px solid #fb7c13;
+      padding: 0 2rem 0 .8rem;
+      position: relative;
+      z-index: 1;
+
+      &:after {
+        content: '';
+        background: url("../img/slide-arrow.png") center center no-repeat;
+        width: 12px;
+        height: 7px;
+        position: absolute;
+        top: .5rem;
+        right: .9rem;
+      }
+    }
+  }
+}
+
+.communications {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem .7rem 1.2rem;
+
+  &__content {
+    width: 48%;
+    padding: 1.25rem;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 4.37rem;
+      height: 4.37rem;
+      background: url("../img/Group 728.png") center center no-repeat;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 4.37rem;
+      height: 4.37rem;
+      background: url("../img/Group 718.png") center center no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__text {
+    color: #2b0d01;
+    font-size: 1rem;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__solutions {
+    margin-top: 2.1rem;
+    color: #a02424;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  &__list {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list-img {
+    display: inline-block;
+    width: 6.8rem;
+    height: 6.18rem;
+
+    &--1 {
+      background: url("../img/Rectangle 1386.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--2 {
+      background: url("../img/Rectangle 788.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--3 {
+      background: url("../img/Rectangle 789.png") center center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__item {
+    max-width: 6.8rem;
+    text-align: center;
+  }
+
+  &__link {
+    margin-top: 1.5rem;
+    color: #4d342a;
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  &__image {
+    display: block;
+    width: 49%;
+    background: url("../img/Rectangle 742.png") top center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 4.37rem;
+      height: 4.37rem;
+      background: url("../img/Group 728.png") center center no-repeat;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 4.37rem;
+      height: 4.37rem;
+      background: url("../img/Group 718.png") center center no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

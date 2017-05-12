@@ -1,0 +1,116 @@
+.substrate-footer {
+  font-family: $treb;
+  font-weight: 300;
+  background-color: #fb7c13;
+  display: flex;
+  justify-content: center;
+  min-height: 7.5rem;
+  border-bottom: .3rem solid #960c0c;
+}
+
+.footer {
+  display: flex;
+  flex-flow: column-wrap;
+  justify-content: space-around;
+  width: 65%;
+
+  &__list {
+    margin-top: .4rem;
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    height: 6rem;
+    text-transform: uppercase;
+    font-size: .87rem;
+  }
+
+  &__link {
+    color: #fff;
+    line-height: 1.5rem;
+  }
+
+  &__phone {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.18rem;
+    max-width: 10rem;
+    margin-top: .7rem;
+    margin-right: .3rem;
+    text-align: right;
+    align-self: flex-end;
+
+    .tel {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+
+  &__copy {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+    margin-top: 1.7rem;
+    font-size: .8rem;
+  }
+}
+
+.substrate-phone-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+  .search {
+  max-width: 14.5rem;
+  margin-top: .6rem;
+  position: relative;
+
+  &__input{
+    width: 100%;
+    height: 1.8rem;
+    outline: none;
+    padding: .6rem 1.8rem .6rem .93rem;
+    @include placecolor($color:#fb7f18);
+  }
+
+  &__submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    font-size: 0;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url("../img/lupe.png") center center no-repeat;
+    background-color: #960c0c;
+    outline: none;
+    cursor: pointer
+  }
+}
+
+.social {
+  margin-top: .6rem;
+  margin-left: .3rem;
+  &__vk {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url("../img/social-icons.png") no-repeat;
+  }
+  &__fb {
+    @extend .social__vk;
+    background-position: -30px 0;
+  }
+  &__google-plus {
+    @extend .social__vk;
+    background-position: -60px 0;
+  }
+  &__email {
+    @extend .social__vk;
+    background-position: -90px 0;
+  }
+  &__tw {
+    @extend .social__vk;
+    background-position: -120px 0;
+  }
+}

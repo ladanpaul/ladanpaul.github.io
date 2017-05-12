@@ -1,0 +1,112 @@
+.reputation {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: $treb;
+
+  &__title {
+    font-family: $treb-b;
+    font-size: 1.43rem;
+    margin-top: 2.5rem;
+    color: #9c3133;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .5rem 7rem;
+    border-top: 2px solid #fb7c13;
+    border-bottom: 2px solid #fb7c13;
+  }
+
+  &__background {
+    width: 100%;
+    margin-top: 3.6rem;
+    border-bottom: .35rem solid #fb7c13;
+    text-align: center;
+    height: 13rem;
+    background: url("../img/Path 55.png") center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: -.2rem;
+      right: 15%;
+      background: url(../img/bottom-lines.png) no-repeat;
+      width: 26rem;
+      height: 1.7rem;
+    }
+
+    .reputation__text {
+      color: #041568;
+      font-size: 1.6rem;
+      max-width: 60rem;
+      display: inline-block;
+    }
+  }
+
+  &-slider__list {
+    width: 56.25rem;
+    margin-top: 3.7rem;
+  }
+}
+
+.reputation-slider {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &--pre {
+    display: inline-block;
+    width: 48px;
+    height: 73px;
+    background: url("../img/arrow-left.png") center center no-repeat;
+    position: absolute;
+    left: -7rem;
+  }
+
+  &--next {
+    display: inline-block;
+    width: 48px;
+    height: 73px;
+    background: url("../img/arrow-right.png") center center no-repeat;
+    position: absolute;
+    right: -7rem;
+  }
+
+  .reputation-slide__img {
+    display: inline-block;
+    width: 13.2rem;
+    height: 18.4rem;
+  }
+
+  .reputation-slide--1 {
+    .reputation-slide__img {
+      background: url("../img/энерготех-2.png") center center no-repeat;
+    }
+  }
+
+  .reputation-slide--2 {
+    .reputation-slide__img {
+      background: url("../img/gmcs-благодарность2.png") center center no-repeat;
+    }
+  }
+
+  .reputation-slide--3 {
+    .reputation-slide__img {
+      background: url("../img/упрсоврстр-ва.png") center center no-repeat;
+    }
+  }
+
+  .reputation-slide--4 {
+    .reputation-slide__img {
+      background: url("../img/сапр-благодарность.png") center center no-repeat;
+    }
+  }
+}
