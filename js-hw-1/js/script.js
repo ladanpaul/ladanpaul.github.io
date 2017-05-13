@@ -9,7 +9,7 @@ function pow(base, exp) {
   if (exp < 0) {
     exp = exp*(-1);
     for(var i = 0; i < exp; i++) {
-      result = result * number;
+      result = result * base;
     }
     return 1/result;
   } else {
