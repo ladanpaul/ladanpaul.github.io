@@ -2,14 +2,23 @@
 
 var number = prompt('enter a base: ','');
 var exponent = prompt('enter an exponent: ','');
-var result = 1;
 
 function pow(base, exp) {
 
-  for(var i = 0; i < exponent; i++) {
-    result = result * number;
+  var result = 1;
+  if (exp < 0) {
+    exp = exp*(-1);
+    for(var i = 0; i < exp; i++) {
+      result = result * number;
+    }
+    return 1/result;
+  } else {
+
+    for(var i = 0; i < exp; i++) {
+      result = result * base;
+    }
+    return result;
   }
-  return result;
 
 }
 
