@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  width: 50rem;
+}
+
+.topTitle {
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.item {
+  font-size: 1.1rem;
+  margin: .5rem 0 0 1rem;
+  text-align: left;
+}
+
+.check {
+  margin-right: 1rem;
+}
+
+.submit {
+  margin-top: 3rem;
+  border: inherit;
+  width: 20rem;
+  height: 3rem;
+  border: 2px solid #000;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+}
