@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hw 11-12</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+	<div class="wrapper">
+		<div class="registration">
+			<input type="text" placeholder="First Name"	class="firstName">
+			<input type="text" placeholder="Last Name"	class="lastName">
+			<input type="tel" placeholder="Phone" class="phone">
+			<input type="email" placeholder="E-mail" class="email"> 
+			<textarea rows="7" placeholder="Your hobbie" class="hobie"></textarea>
+			<input type="date" class="dateOfBirth">
+			<a href="#" class="signIn">Sign In</a>
+		 </div>		
+	</div>
+	
+		<script id="page" type="text/x-handlebars-template">
+
+			 <div class="page-substrate">
+				<div class="page">
+					<header class="header">
+						<div class="substrate-photo">
+							<img src="./img/page/myPhoto.jpg" alt="photo" class="userPhoto">
+							<h4 class="birth">{{birth}}</h4>
+						</div>
+						<div class="substrate-name-surname">
+							<h4 class="name">{{name}}</h4>
+							<h4 class="surName">{{surname}}</h4>
+						</div>
+					</header>
+					<section class="profile">
+						<h5 class="userPhone">
+							{{phone}}
+						</h5>
+						<h5 class="userEmail">
+							{{email}}
+						</h5>
+					</section>
+					<div class="userHobie">
+						<h5 class="title">
+							My Hobbie:
+						</h5>
+						<span class="hobie-text">
+							{{hobie}}
+						</span>
+					</div>
+				</div>
+			 </div>
+			 
+		</script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="./js/handlebars-v4.0.10.js"></script>
+		<script src="./js/page-script.js"></script>
+  </body>
+</html>
