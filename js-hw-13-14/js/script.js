@@ -28,9 +28,9 @@ var templateScript = $('#data').html(),
 	template = Handlebars.compile(templateScript);
 $(document.body).append(template(data));
 
-var result = document.querySelectorAll('button')[0],
+var resultButton = document.querySelectorAll('button')[0],
 	answInp = document.querySelectorAll('input');
-result.addEventListener('click', testing);
+resultButton.addEventListener('click', testing);
 
 function testing(){
 	
@@ -50,10 +50,26 @@ function testing(){
 	var correctAnswersArrToString = JSON.stringify(correctAnswersArr),
 		answArrToString = JSON.stringify(answArr);
 	
+	var wrapInner = document.getElementById('wrapper__inner');
+		wrapInner.style.display = 'none';
+		resultButton.style.display = 'none';
+	var modaleClose = document.getElementById('modaleClose'),
+		result = document.getElementById('result'),
+		resultText = document.getElementById('result-text');
+		
+		modaleClose.addEventListener('click', closeModal);
+		result.style.display = 'flex';
+		
+	function closeModal(){
+		result.style.display = 'none';
+		wrapInner.style.display = 'block';
+		resultButton.style.display = 'block';
+	}
+	
 	if (correctAnswersArrToString == answArrToString) {
-		alert('yes, you won :)');
+		resultText.textContent = 'Yes, you won :)'
 	} else {
-		alert('No luck, you lost :(');
+		resultText.textContent = 'No luck, you lost :(';
 	}
 }
 
