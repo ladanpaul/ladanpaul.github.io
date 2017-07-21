@@ -40,7 +40,7 @@ function testing(){
 	for(let i = 0; i < answInp.length; i++){
 		answArr.push(answInp[i].checked);
 	}
-
+	
 	for(let i = 0;  i < data.questions.length; i++){
 	  for(let j = 0; j < data.questions[i].answers.length; j++){
 		correctAnswersArr.push(data.questions[i].right.includes(j+1));
@@ -64,6 +64,9 @@ function testing(){
 		result.style.display = 'none';
 		wrapInner.style.display = 'block';
 		resultButton.style.display = 'block';
+		for(let i = 0; i < answInp.length; i++){
+			answInp[i].checked = false;
+		}
 	}
 	
 	if (correctAnswersArrToString == answArrToString) {
@@ -71,6 +74,7 @@ function testing(){
 	} else {
 		resultText.textContent = 'No luck, you lost :(';
 	}
+
 }
 
 
