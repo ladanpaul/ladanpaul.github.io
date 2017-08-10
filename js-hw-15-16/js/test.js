@@ -19,7 +19,10 @@ var data = {
 // ADD New question
 
 Add.addEventListener('click', function(){
-	if (inputQ.value && inputA.value && inputCA.value == true){
+	console.log('inputQ.value: ',inputQ.value);
+	console.log('inputA.value: ',inputA.value);
+	console.log('inputCA.value: ',inputCA.value);
+	if (inputQ.value && inputA.value && inputCA.value){
 		arrAnsw.push(...inputA.value.split(/\s*,\s*/));
 		arrCuAnsw.push(...inputCA.value.split(/\s*,\s*/));
 		arrCuAnswToNum = arrCuAnsw.map(function(item){
