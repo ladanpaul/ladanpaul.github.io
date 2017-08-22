@@ -1,0 +1,94 @@
+@function rem($px) {
+    $rems: $px / 16;
+    @return #{$rems}rem;
+}
+.substrate-top-navigate {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(38);
+
+  .top-navigate {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2d32;
+    padding-right: rem(20);      
+    
+    &__list {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+
+      &-item {
+        text-transform: uppercase;
+        border-right: rem(1) solid #181a1d;
+        width: 100%;
+        text-align: center;
+
+        &--active {
+          background-color: #248cec;
+        }
+      }
+
+      &-link {
+        color: #fff;
+        font-size: rem(14);
+        line-height: rem(56);      
+
+        &:hover {
+          color: #f4b60d;
+        }
+      }
+    }
+
+    &__search {
+      width: 25%;
+
+      .search {
+        position: relative;
+        transform: translateY(27%);        
+
+        &__input {
+          width: 100%;
+          background-color: #35383c;
+          padding: rem(10) rem(30) rem(10) rem(8);
+          color: #fff;
+          border: rem(1) solid #181a1d;
+          outline: none;
+        }
+
+        &__submit {
+          position: absolute;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background-color: transparent;
+          background-image: url('../img/svg/zoom.svg');
+          transform: translateY(75%);
+          width: rem(16);
+          height: rem(16);
+          top: rem(0);
+          right: rem(10);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

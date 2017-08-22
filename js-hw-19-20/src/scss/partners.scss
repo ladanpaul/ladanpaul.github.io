@@ -1,0 +1,53 @@
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+.substrate-partners {
+  padding: rem(100) rem(0);
+  display: flex;
+  justify-content: center;
+
+  .partners {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+  }
+
+  .rbp {
+    width: rem(100);
+    height: rem(55);
+    display: inline-block;
+    opacity: .65;
+    background: url('../img/sprite.jpg') rem(-20) rem(-5) no-repeat;
+  }
+
+  .moto {
+    @extend .rbp;
+    background-position: rem(-145);
+  }
+
+  .crave {
+    @extend .moto;
+    width: rem(155);
+    background-position: rem(-257);
+  }
+
+  .atx {
+    @extend .crave;
+    width: rem(102);
+    background-position: rem(-435);
+  }
+
+  .cruiser {
+    @extend .atx;
+    width: rem(118);
+    background-position: rem(-550);
+  }
+
+  .gear {
+    @extend .cruiser;
+    width: rem(88);
+    height: rem(60);
+    background-position: rem(-700);
+  }
+}

@@ -1,0 +1,61 @@
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+.substrate-footer {
+  display: flex;
+  justify-content: center;
+  background-color: #35383c;
+  padding: rem(22) 0;
+}
+
+.footer {
+  width: 65%;
+  display: flex;
+  justify-content: space-between
+}
+
+.locate-ico {
+  margin-left: rem(10);
+  width: rem(12);
+  height: rem(16);
+  fill: #5d6063;
+}
+
+.address {
+  font-size: rem(12);
+  color: #686a6c;
+  vertical-align: top;
+  line-height: rem(17);
+  margin-left: rem(10);
+}
+
+.phone-ico {
+  @extend .locate-ico;
+  width: rem(10);
+  height: rem(16);
+}
+
+.phone {
+  @extend .address;
+}
+
+.message-ico {
+  @extend .phone-ico;
+  width: rem(16);
+  height: rem(12);
+  margin-bottom: rem(2);
+}
+
+.email {
+  @extend .phone;
+  font-weight: 600;
+}
+
+.copyright {
+  @extend .phone;
+}
+
+
+

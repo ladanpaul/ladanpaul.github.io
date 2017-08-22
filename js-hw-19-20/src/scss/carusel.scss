@@ -1,0 +1,40 @@
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+.slider-substrate {
+  margin-top: rem(38);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__inner {
+    width: 65%;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: rem(308);
+      height: rem(197);
+      background: url('../img/buildBusinessBGC.png') 0 0 no-repeat;
+      position: absolute;
+      bottom: rem(40);
+      left: rem(37);
+      z-index: 1;      
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: rem(308);
+      height: rem(197);
+      background: url('../img/buildBusiness.png') 0 0 no-repeat;
+      position: absolute;
+      bottom: rem(10);
+      left: rem(62);
+      z-index: 2;
+    }
+  }
+}

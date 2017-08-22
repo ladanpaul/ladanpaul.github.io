@@ -1,0 +1,68 @@
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+.substrate-about {
+  display: flex;
+  justify-content: center;
+  padding: rem(70) 0 rem(80);
+
+  .about {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: rem(40);
+
+    &__item {
+      grid-column: span 4;
+      display: flex;
+
+      &-ico {
+        width: rem(32);
+        height: rem(32);
+        fill: #f4b60d;
+      }
+
+      &-num {
+        font-size: rem(90);
+        line-height: rem(65);
+        color: #e9e9ea;
+      }
+
+      &-content {
+        margin-left: rem(42);
+      }
+
+      &-title {
+        font-size: rem(20);
+        color: #2a2b2e;
+        margin-top: rem(16);
+        font-weight: 500;
+      }
+
+      &-text {
+        font-size: rem(13);
+        color: #8a8a8a;
+        display: inline-block;
+        margin-top: rem(23);
+      }
+
+      &-more {
+        font-size: rem(13);
+        color: #2a2b2e;
+        font-weight: 500;
+        margin-top: rem(22);
+        display: inline-block;
+
+        &:hover {
+          color: #248cec;
+        }
+      }
+
+      &-moreArr {
+        color: #248cec;
+        margin-left: rem(9);
+      }
+    }
+  }
+}
