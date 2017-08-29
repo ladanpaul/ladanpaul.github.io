@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<script id="data" type="text/x-handlebars-template">
+			<div class="wrapper">
+				<div id="wrapper__inner">
+					<h1 class="q-title">{{title}}</h1>
+					  <ul class="q-list">
+						{{#each questions}}
+						<h6 class="q-number">{{question}}-й вопрос</h6>
+							<li class="q-list__item">
+							  <h4 class="inner-q-title">{{title}}</h4>
+							  <ul class="inner-q-list">
+								{{#each answers}}
+								<li class="inner-q-item">
+								  <label class="inner-ask">
+									<input type="checkbox">
+									{{this}}
+								  </label>
+								</li>
+								{{/each}}
+							  </ul>
+							</li>
+						{{/each}}
+					  </ul>
+				</div>
+				<button>Sure? Click</button>
+				<h6 id="result">
+					<span id="result-text"></span>
+					<span id="modaleClose">&times;</span>
+				</h6>
+			</div>
+		</script>
+		
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="src/handlebars-v4.0.10.js"></script>
+	<script src="src/script.js"></script>
+</body>
+</html>
