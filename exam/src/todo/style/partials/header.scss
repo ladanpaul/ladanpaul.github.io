@@ -1,0 +1,61 @@
+.header {
+  margin: 0;
+  padding: $genPadding;
+  min-height: 540px;
+  background: $colBlack url("../img/header-back.jpg") no-repeat center center;
+  background-size: cover;
+  overflow: auto;
+  &__box {
+    max-width: $maxGenWhits;
+    margin: 0 auto;
+  }
+  &__top {
+    @include media-xs {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0 100px;
+    }
+  }
+  &__logo-box {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: block;
+    text-align: center;
+    margin: 100px auto 35px;
+    @include media-xs {
+      margin: 0;
+    }
+  }
+  &__title-box {
+    margin: 35px 0;
+  }
+  .sign {
+    margin: 0;
+    padding: $genPadding 0;
+    display: flex;
+    justify-content: center;
+    @include media-xs {
+      justify-content: flex-end;
+    }
+    &__btn {
+      margin: 0 5px;
+      padding: 10px;
+    }
+  }
+  .title-box {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    &__description {
+      margin: 20px 0;
+    }
+  }
+}
+
+
+
+
