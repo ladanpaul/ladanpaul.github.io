@@ -23,8 +23,8 @@
     }
     @media only screen and (min-width: rem(1024)) {
       height: rem(450);
-      background-image: url('../img/Kiev.jpg');
-      background-position: center rem(-80);
+      background-image: url('../img/kiev.jpg');
+      // background-position: center rem(-80);
       background-attachment: fixed;
 
       &:after {
