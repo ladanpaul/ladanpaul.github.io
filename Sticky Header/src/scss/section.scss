@@ -1,0 +1,18 @@
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+.main {
+  font-family: helvetica;
+  padding: rem(16);
+  font-size: rem(16);
+  @media only screen and (min-width: rem(674)) {
+    padding: rem(18);
+    font-size: rem(18);
+  }
+  @media only screen and (min-width: rem(1024)) {
+    padding: rem(24);
+    font-size: rem(24);
+  }
+}
