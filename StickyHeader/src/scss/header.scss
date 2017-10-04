@@ -15,16 +15,16 @@
     background-repeat: no-repeat;    
     height: rem(350);
     position: relative;
-    @media only screen and (min-width: rem(674)) {
+    @media screen and (min-width: rem(674)) {
       height: rem(400);
-      background-image: url('../img/Kiev.jpg');
+      background-image: url('../img/kiev.jpg');
       background-position: center center;
       background-attachment: fixed;
     }
-    @media only screen and (min-width: rem(1024)) {
+    @media screen and (min-width: rem(1024)) {
       height: rem(450);
       background-image: url('../img/kiev.jpg');
-      // background-position: center rem(-80);
+      background-position: center rem(-80);
       background-attachment: fixed;
 
       &:after {
@@ -52,7 +52,7 @@
     opacity: .4;
     text-shadow: rem(1) rem(2) rem(3) #020253;
     cursor: pointer;
-    @media only screen and (min-width: rem(674)) {
+    @media screen and (min-width: rem(674)) {
       opacity: .7;
       text-shadow: 0 0 rem(2) rgba(#F5CC11, .4);
       top: rem(20);
@@ -63,20 +63,20 @@
 .nav-menu {
   background-color: #A28605;
   box-shadow: 0 rem(1) rem(5) #000;
-  @media only screen and (min-width: rem(674)) {
+  @media screen and (min-width: rem(674)) {
     background-color: #272525;
   }
   &__list {
     text-align: center;
     padding: rem(16);
-    @media only screen and (min-width: rem(674)) {
+    @media screen and (min-width: rem(674)) {
       padding: rem(18);
     }
   }
   &__item {
     display: inline-block;
     margin-right: rem(16);
-    @media only screen and (min-width: rem(674)) {
+    @media screen and (min-width: rem(674)) {
       margin-right: rem(32);
     }
   }
@@ -88,10 +88,10 @@
     &:focus {
       text-shadow: rem(1) rem(1) rem(2) #665400;
     }
-    @media only screen and (min-width: rem(674)) {
+    @media screen and (min-width: rem(674)) {
       font-size: rem(24);
     }
-    @media only screen and (min-width: rem(1024)) {
+    @media screen and (min-width: rem(1024)) {
       &:hover {
         text-shadow: 1px 1px 1px #A28605;
       }

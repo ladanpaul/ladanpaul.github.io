@@ -8,16 +8,17 @@
   background-repeat: no-repeat;
   height: 21.875rem;
   position: relative; }
-  @media only screen and (min-width: 42.125rem) {
+  @media screen and (min-width: 42.125rem) {
     .header__logo {
       height: 25rem;
-      background-image: url("../img/Kiev.jpg");
+      background-image: url("../img/kiev.jpg");
       background-position: center center;
       background-attachment: fixed; } }
-  @media only screen and (min-width: 64rem) {
+  @media screen and (min-width: 64rem) {
     .header__logo {
       height: 28.125rem;
       background-image: url("../img/kiev.jpg");
+      background-position: center -5rem;
       background-attachment: fixed; }
       .header__logo:after {
         content: '';
@@ -41,7 +42,7 @@
   opacity: .4;
   text-shadow: 0.0625rem 0.125rem 0.1875rem #020253;
   cursor: pointer; }
-  @media only screen and (min-width: 42.125rem) {
+  @media screen and (min-width: 42.125rem) {
     .header__title {
       opacity: .7;
       text-shadow: 0 0 0.125rem rgba(245, 204, 17, 0.4);
@@ -51,19 +52,19 @@
   background-color: #A28605;
   -webkit-box-shadow: 0 0.0625rem 0.3125rem #000;
   box-shadow: 0 0.0625rem 0.3125rem #000; }
-  @media only screen and (min-width: 42.125rem) {
+  @media screen and (min-width: 42.125rem) {
     .nav-menu {
       background-color: #272525; } }
   .nav-menu__list {
     text-align: center;
     padding: 1rem; }
-    @media only screen and (min-width: 42.125rem) {
+    @media screen and (min-width: 42.125rem) {
       .nav-menu__list {
         padding: 1.125rem; } }
   .nav-menu__item {
     display: inline-block;
     margin-right: 1rem; }
-    @media only screen and (min-width: 42.125rem) {
+    @media screen and (min-width: 42.125rem) {
       .nav-menu__item {
         margin-right: 2rem; } }
   .nav-menu__link {
@@ -73,10 +74,10 @@
     font-family: 'helvetica', sans-serif; }
     .nav-menu__link:focus {
       text-shadow: 0.0625rem 0.0625rem 0.125rem #665400; }
-    @media only screen and (min-width: 42.125rem) {
+    @media screen and (min-width: 42.125rem) {
       .nav-menu__link {
         font-size: 1.5rem; } }
-    @media only screen and (min-width: 64rem) {
+    @media screen and (min-width: 64rem) {
       .nav-menu__link:hover {
         text-shadow: 1px 1px 1px #A28605; } }
 
