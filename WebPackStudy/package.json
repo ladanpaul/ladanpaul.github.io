@@ -1,0 +1,28 @@
+{
+  "name": "WPPorshen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV='development' webpack-dev-server",
+    "build": "cross-env NODE_ENV='production' webpack -p"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "cross-env": "^5.0.1",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.29.0",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
