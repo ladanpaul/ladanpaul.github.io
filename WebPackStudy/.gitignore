@@ -45,3 +45,5 @@ node_modules/
 /*.jpg
 /*.jpeg
 *.psd
+
+npm-debug.log

@@ -2,14 +2,12 @@ let webpack = require('webpack');
 let path = require('path');
 let HTMLWebpackPlugin = require('html-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
-const SRC_DIR = path.resolve(__dirname, 'src');
-const DIST_BUILD = path.resolve(__dirname, 'public', 'build');
 
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: DIST_BUILD,
-    publicPath: '/build/',
+    path: __dirname+'/dist',
+    publicPath: '',
     filename: 'bundle.js'
   },
   devtool: NODE_ENV === 'development' && 'eval-source-map',
@@ -18,8 +16,14 @@ module.exports = {
     loaders: [{
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      include: SRC_DIR,
-      loader: 'babel-loader',
+      use: [
+        {
+          loader: 'babel-loader',
+          options: {
+            presets: ['es2016', 'react']
+          }
+        }
+      ]
     }]
   },
   plugins: [
@@ -36,6 +40,6 @@ module.exports = {
     port: 9000,
     stats: 'errors-only',
     clientLogLevel: 'warning',
-    compress: true
+    compress: false
   }
 }
