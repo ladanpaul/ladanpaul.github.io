@@ -2,6 +2,7 @@ import React from 'react';
 
 import NoteEditor from './NoteEditor.jsx';
 import NotesGrid from './NotesGrid.jsx';
+import './Note.css';
 
 const NotesApp = React.createClass({
   getInitialState() {
