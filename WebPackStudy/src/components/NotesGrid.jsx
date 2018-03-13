@@ -1,6 +1,14 @@
 import React from 'react';
-
+import Masonry from 'react-masonry-component';
 import Note from './Note.jsx';
+
+const masonryOptions = {
+  columnWidth: 240,
+  itemSelector: '.note',
+  gutter: 20,
+  percentPosition: true,
+  fitWidth: true
+};
 
 const NotesGrid = React.createClass({
 
@@ -11,7 +19,10 @@ const NotesGrid = React.createClass({
     } = this.props;
 
     return(
-      <div className="grid">
+      <Masonry
+        className="grid"
+        options={masonryOptions}
+      >
         {
           notes.map(note =>
             <Note 
@@ -24,7 +35,7 @@ const NotesGrid = React.createClass({
             </Note>
           )
         }
-      </div>
+      </Masonry>
     );
   }
 });

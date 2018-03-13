@@ -11,6 +11,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .app__header {
@@ -68,19 +69,18 @@
 }
 
 .grid {
-  margin-top: 1rem;
+  padding: 3rem;
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 2rem;
+  justify-content: center;
 }
 
 .note {
-  width: 300px;
+  width: 200px;
   min-height: 50px;
   max-height: 400px;
   overflow: hidden;
   overflow-y: auto;
-  margin: 0 0 1rem 1rem ;
+  margin: .5rem auto;
   padding: .8rem;
   box-shadow: 0 1px 1px 0px rgba(0,0,0, .3);
   position: relative;

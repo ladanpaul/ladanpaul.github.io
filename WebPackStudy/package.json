@@ -13,7 +13,8 @@
   "dependencies": {
     "babel-preset-es2016": "^6.24.1",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-masonry-component": "^6.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
