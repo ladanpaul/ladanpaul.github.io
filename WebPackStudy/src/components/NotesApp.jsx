@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import NoteEditor from './NoteEditor.jsx';
 import NotesGrid from './NotesGrid.jsx';
 import './Note.css';
 
-const NotesApp = React.createClass({
-  getInitialState() {
-    return {
-      notes: [],
-    };
-  },
+export default class NotesApp extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      notes: []
+    }
+
+    this.handleNoteAdd = ::this.handleNoteAdd;
+    this.handleNoteDelete = ::this.handleNoteDelete;
+  }
 
   componentDidMount() {
     const savedNotes = JSON.parse(localStorage.getItem('notes'));
@@ -18,32 +23,32 @@ const NotesApp = React.createClass({
         notes: savedNotes,
       });
     }
-  },
+  }
 
   componentDidUpdate(prevProps, prevState) {
     if(prevState !== this.state.notes) {
       this.saveToLocalStorage();
     }    
-  },
+  }
 
   handleNoteAdd(newNote) {
     this.setState({
       notes: [newNote, ...this.state.notes]
     }, this.saveToLocalStorage);
-  },
+  }
 
   handleNoteDelete(noteId) {
     this.setState({
       notes: this.state.notes.filter((note) => note.id !== noteId)
     });
-  },
+  }
 
   saveToLocalStorage() {
     console.log('this state notes: ', this.state.notes);
     
     const notes = JSON.stringify(this.state.notes);
     localStorage.setItem('notes', notes);
-  },
+  }
 
   render() {
     return(
@@ -54,6 +59,4 @@ const NotesApp = React.createClass({
       </div>
     );
   }
-});
-
-export default NotesApp;
+}

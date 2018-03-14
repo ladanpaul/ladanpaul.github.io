@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Masonry from 'react-masonry-component';
 import Note from './Note.jsx';
 
@@ -10,8 +10,7 @@ const masonryOptions = {
   fitWidth: true
 };
 
-const NotesGrid = React.createClass({
-
+export default class NotesGrid extends Component {
   render() {
     const {
       notes,
@@ -38,6 +37,4 @@ const NotesGrid = React.createClass({
       </Masonry>
     );
   }
-});
-
-export default NotesGrid;
+}

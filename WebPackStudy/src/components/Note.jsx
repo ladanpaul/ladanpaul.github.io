@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Note = React.createClass({
+export default class Note extends Component {
+  constructor() {
+    super()
+
+    this.handleDelete = ::this.handleDelete;
+  }
+
   handleDelete() {
     this.props.onDelete(this.props.id)
-  },
+  }
 
   render() {
     const {
@@ -19,6 +25,4 @@ const Note = React.createClass({
       </div>
     );
   }
-});
-
-export default Note;
+}

@@ -1,20 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 const DEFAULT_COLOR = 'yellow';
 
-const NoteEditor = React.createClass({
-  
-  getInitialState() {
-    return {
-      text: '',
-    };
-  },
+export default class NoteEditor extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      text: ''
+    }
+    
+    this.handleTextChange = ::this.handleTextChange;
+    this.handleNoteAdd = ::this.handleNoteAdd;
+  }
 
   handleTextChange(e) {
     this.setState({
       text: e.target.value,
     });
-  },
+  }
 
   handleNoteAdd() {
     const newNote = {
@@ -26,14 +30,14 @@ const NoteEditor = React.createClass({
     this.props.onNoteAdd(newNote);
 
     this.resetState();
-  },
+  }
 
   resetState() {
     this.setState({
       text: '',
     });
-  },
-
+  }
+  
   render() {
     return(
       <div className="editor">
@@ -54,6 +58,4 @@ const NoteEditor = React.createClass({
       </div>
     );
   }
-});
-
-export default NoteEditor;
+}
