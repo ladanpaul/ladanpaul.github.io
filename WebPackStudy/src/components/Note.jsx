@@ -1,6 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 export default class Note extends Component {
+  static propTypes = {
+    id: PropTypes.number.isRequired,
+    color: PropTypes.string.isRequired,
+    children: PropTypes.string,
+    onDelete: PropTypes.func.isRequired
+  }
+
   constructor() {
     super()
 
