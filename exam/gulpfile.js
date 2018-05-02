@@ -88,7 +88,7 @@ gulp.task('img', function () {
 });
 
 
-gulp.task('server', function () {
+gulp.task('server', () => {
   browserSync({
     server: {baseDir: paths.dist.html},
     notify: false
@@ -104,5 +104,7 @@ gulp.task('watch', ['sass', 'html', 'js', 'img'], function () {
 });
 
 gulp.task('default', ['server', 'html', 'sass', 'js', 'fonts', 'img', 'watch']);
+
+
 
 
