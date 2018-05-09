@@ -1,5 +1,0 @@
-$(function(){
-	$('.pslider-substrate').slider();
-});
-	
-	
