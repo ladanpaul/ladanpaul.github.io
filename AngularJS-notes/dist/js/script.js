@@ -6,6 +6,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 angular.module("myNotes", []);
 
+var notesCtrl = function notesCtrl() {
+  _classCallCheck(this, notesCtrl);
+};
+
+angular.module("myNotes").component("notesComponent", {
+  template: "\n      <div class=\"notes-wrapper\">\n        <h1>Notes:</h1>\n        <editor-component></editor-component>        \n      </div>\n    ",
+  controller: notesCtrl
+});
+
 var editorCtrl = function () {
   function editorCtrl() {
     _classCallCheck(this, editorCtrl);
@@ -18,7 +27,7 @@ var editorCtrl = function () {
     value: function addNote() {
       if (this.note) {
         this.notes.push({
-          id: new Date(),
+          id: Date.now(),
           text: this.note
         });
         this.note = '';
@@ -34,23 +43,27 @@ angular.module("myNotes").component("editorComponent", {
   controller: editorCtrl
 });
 
-var notesCtrl = function notesCtrl() {
-  _classCallCheck(this, notesCtrl);
-};
+var notesListCtrl = function () {
+  function notesListCtrl() {
+    _classCallCheck(this, notesListCtrl);
 
-angular.module("myNotes").component("notesComponent", {
-  template: "\n      <div class=\"notes-wrapper\">\n        <h1>Notes:</h1>\n        <editor-component></editor-component>        \n      </div>\n    ",
-  controller: notesCtrl
-});
+    console.log(this);
+  }
 
-var notesListCtrl = function notesListCtrl() {
-  _classCallCheck(this, notesListCtrl);
+  _createClass(notesListCtrl, [{
+    key: "deleteNote",
+    value: function deleteNote(item) {
+      this.notes = this.notes.filter(function (note) {
+        return note.id != item.id;
+      });
+    }
+  }]);
 
-  console.log(this);
-};
+  return notesListCtrl;
+}();
 
 angular.module("myNotes").component("notesList", {
-  template: "\n      <ul>\n        <li ng-repeat=\"note in $ctrl.notes\">\n          {{note.text}}\n        </li>\n      </ul>\n    ",
+  template: "\n      <ul>\n        <li ng-repeat=\"note in $ctrl.notes\">\n          <span>{{note.text}}</span>\n          <i ng-click=\"$ctrl.deleteNote(note)\">X</i>\n        </li>\n      </ul>\n      {{$ctrl.notes.length}}\n    ",
   controller: notesListCtrl,
   bindings: {
     notes: '='

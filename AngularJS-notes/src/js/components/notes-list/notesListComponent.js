@@ -2,6 +2,10 @@ class notesListCtrl {
   constructor() {
     console.log(this)
   }
+
+  deleteNote(item) {
+    this.notes = this.notes.filter((note) => note.id != item.id)
+  }
 }
 
 
@@ -10,9 +14,11 @@ angular.module("myNotes")
     template: `
       <ul>
         <li ng-repeat="note in $ctrl.notes">
-          {{note.text}}
+          <span>{{note.text}}</span>
+          <i ng-click="$ctrl.deleteNote(note)">X</i>
         </li>
       </ul>
+      {{$ctrl.notes.length}}
     `,
     controller: notesListCtrl,
     bindings: {

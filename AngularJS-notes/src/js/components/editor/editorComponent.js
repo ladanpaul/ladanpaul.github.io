@@ -6,7 +6,7 @@ class editorCtrl {
   addNote() {
     if(this.note) {
       this.notes.push({
-        id: new Date(),
+        id: Date.now(),
         text: this.note,
       })
       this.note = ''
