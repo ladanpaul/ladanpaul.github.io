@@ -1,17 +1,19 @@
 class editorCtrl {
   constructor() {
-    this.notes = []
-  }
 
-  addNote() {
-    if(this.note) {
-      this.notes.push({
-        id: Date.now(),
-        text: this.note,
-      })
-      this.note = ''
+    this.addNote = () => {
+      if(this.note) {
+        const note = {
+          id: Date.now(),
+          text: this.note,
+        }
+        this.addNote2({ $note: note, $hello: 'hello' })
+        this.note = ''
+      }
     }
   }
+
+  
 }
 
 angular.module("myNotes")
@@ -21,7 +23,9 @@ angular.module("myNotes")
         <textarea cols="30" rows="10" ng-model="$ctrl.note"></textarea>
         <button class="addNote" ng-click="$ctrl.addNote()">Add</button>
       </div>
-      <notes-list notes="$ctrl.notes"></notes-list>
     `,
     controller: editorCtrl,
+    bindings: {
+      addNote2: '&',
+    }
   })

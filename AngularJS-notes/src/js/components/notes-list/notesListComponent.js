@@ -15,7 +15,7 @@ angular.module("myNotes")
       <ul>
         <li ng-repeat="note in $ctrl.notes">
           <span>{{note.text}}</span>
-          <i ng-click="$ctrl.deleteNote(note)">X</i>
+          <i ng-click="$ctrl.deleteNote(note)">✕</i>
         </li>
       </ul>
       {{$ctrl.notes.length}}
