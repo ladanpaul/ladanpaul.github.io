@@ -1,0 +1,8 @@
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+$header-bg: #e4f6fb;
+$header-color: #272b74;
+$header-text-hover: #d45231;

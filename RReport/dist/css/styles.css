@@ -1,0 +1,278 @@
+
+@-webkit-keyframes scaledown {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scaledown {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2); } }
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2); } }
+
+.header-wrapper {
+  color: #272b74;
+  height: 100vh;
+  width: 100%; }
+  .header-wrapper .puzzles {
+    padding: 1.25rem 2.5rem;
+    background-image: url("../img/adventure.jpg");
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position: 80% top;
+    background-attachment: scroll;
+    height: calc(100% - 70px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative; }
+    .header-wrapper .puzzles .item {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      border: 0.0625rem solid #81d5ee;
+      border-left: none;
+      -webkit-animation: scaledown .4s ease;
+      animation: scaledown .4s ease;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%; }
+      .header-wrapper .puzzles .item:hover {
+        z-index: 100;
+        -webkit-animation: scale .4s ease;
+        animation: scale .4s ease;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        border: none; }
+        .header-wrapper .puzzles .item:hover .circle-right {
+          border: none;
+          -webkit-box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2); }
+        .header-wrapper .puzzles .item:hover .circle-left {
+          border: none;
+          -webkit-box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2); }
+        .header-wrapper .puzzles .item:hover .circle-bottom {
+          border: none;
+          -webkit-box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2); }
+      .header-wrapper .puzzles .item .arrows {
+        position: absolute;
+        color: #fff;
+        bottom: -0.625rem;
+        left: 50%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        cursor: pointer;
+        padding: 0.625rem; }
+      .header-wrapper .puzzles .item .puzzle {
+        background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(23%, #ceeef8), to(#81d5ee));
+        background: linear-gradient(to bottom, white 0%, #ceeef8 23%, #81d5ee 100%);
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 1.25rem; }
+        .header-wrapper .puzzles .item .puzzle__image {
+          width: 100%;
+          height: 6.25rem;
+          -o-object-fit: cover;
+          object-fit: cover; }
+        .header-wrapper .puzzles .item .puzzle .block-text {
+          margin-top: 0.3125rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          max-width: 100%; }
+          .header-wrapper .puzzles .item .puzzle .block-text .text {
+            font-size: 0.75rem; }
+          .header-wrapper .puzzles .item .puzzle .block-text .text-up {
+            font-size: 1.125rem; }
+        .header-wrapper .puzzles .item .puzzle .text-agro, .header-wrapper .puzzles .item .puzzle .text-prom {
+          margin-top: 1.125rem; }
+      .header-wrapper .puzzles .item .circle-right {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 0.0625rem solid #81d5ee;
+        background: -webkit-gradient(linear, left top, left bottom, from(#bee9f6), to(#a9e3f4));
+        background: linear-gradient(to bottom, #bee9f6 0%, #a9e3f4 100%);
+        border-radius: 45%;
+        position: absolute;
+        right: -25px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: -1; }
+      .header-wrapper .puzzles .item .circle-left {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 0.0625rem solid #81d5ee;
+        background: -webkit-gradient(linear, left top, left bottom, from(#bee9f6), to(#a9e3f4));
+        background: linear-gradient(to bottom, #bee9f6 0%, #a9e3f4 100%);
+        border-radius: 45%;
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: -1; }
+      .header-wrapper .puzzles .item .circle-bottom {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: #81d5ee;
+        border-radius: 45%;
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: -1;
+        border: 0.0625rem solid #81d5ee; }
+    .header-wrapper .puzzles .item-1 {
+      z-index: 4; }
+    .header-wrapper .puzzles .item-2 {
+      z-index: 1; }
+      .header-wrapper .puzzles .item-2:hover:after {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 50px;
+        background: rgba(237, 237, 237, 0.3);
+        border-top-right-radius: 5000%;
+        border-bottom-right-radius: 5000%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 10; }
+      .header-wrapper .puzzles .item-2:hover:before {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 50px;
+        background: rgba(237, 237, 237, 0.3);
+        border-top-left-radius: 5000%;
+        border-bottom-left-radius: 5000%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 10; }
+    .header-wrapper .puzzles .item-3 {
+      z-index: 2; }
+    .header-wrapper .puzzles .item-4 {
+      z-index: 1; }
+      .header-wrapper .puzzles .item-4:hover:after {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 50px;
+        background: rgba(237, 237, 237, 0.3);
+        border-top-right-radius: 5000%;
+        border-bottom-right-radius: 5000%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 10; }
+
+.header {
+  background: #e4f6fb;
+  padding: 0.625rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #272b74;
+  font-size: 1.125rem;
+  text-transform: uppercase; }
+  .header .logo__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 12.5rem;
+    height: 3.125rem; }
+  .header .logo__icon {
+    display: inline-block;
+    width: 100%; }
+  .header .list {
+    margin-left: 3.125rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .header .list__item:hover {
+      cursor: pointer; }
+      .header .list__item:hover .list__link {
+        color: #d45231; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Ubuntu-M'; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.wrapper {
+  width: 70%; }
