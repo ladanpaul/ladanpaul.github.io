@@ -20,6 +20,7 @@ var editorCtrl = function editorCtrl() {
       _this.addNote2({ $note: note, $hello: 'hello' });
       _this.note = '';
     }
+    debugger;
   };
 };
 
@@ -36,16 +37,15 @@ var notesCtrl = function () {
     _classCallCheck(this, notesCtrl);
 
     this.notes = [];
+    console.log('this noteList ->', this);
   }
 
   _createClass(notesCtrl, [{
     key: 'addNoteToList',
     value: function addNoteToList(hello, note) {
-      console.log(arguments);
-      debugger;
-      if (note) {
-        this.notes.push(note);
-      }
+      console.log('arguments', arguments);
+      console.log('this', this);
+      note ? this.notes.push(note) : null;
     }
   }]);
 
@@ -59,9 +59,9 @@ angular.module("myNotes").component("notesComponent", {
 
 var notesListCtrl = function () {
   function notesListCtrl() {
-    _classCallCheck(this, notesListCtrl);
+    // console.log('this noteList ->', this)
 
-    console.log(this);
+    _classCallCheck(this, notesListCtrl);
   }
 
   _createClass(notesListCtrl, [{

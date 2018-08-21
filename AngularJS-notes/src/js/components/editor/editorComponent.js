@@ -10,6 +10,7 @@ class editorCtrl {
         this.addNote2({ $note: note, $hello: 'hello' })
         this.note = ''
       }
+      debugger
     }
   }
 

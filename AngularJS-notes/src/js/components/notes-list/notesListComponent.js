@@ -1,6 +1,6 @@
 class notesListCtrl {
   constructor() {
-    console.log(this)
+    // console.log('this noteList ->', this)
   }
 
   deleteNote(item) {
