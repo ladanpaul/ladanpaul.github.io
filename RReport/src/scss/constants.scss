@@ -2,6 +2,12 @@
   $rems: $px / 16;
   @return #{$rems}rem;
 }
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
 
 $header-bg: #e4f6fb;
 $header-color: #272b74;

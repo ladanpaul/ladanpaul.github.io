@@ -1,13 +1,13 @@
-// // ===Slider===
+// ===Slider===
 
-// $('document').ready(function(){
-//   $('.bxslider').bxSlider({
-//     mode: 'fade',
-//     randomStart: true,
-//     auto: true,
-//     pause: 7000
-//   });
-// });
+$('document').ready(function(){
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+    randomStart: true,
+    auto: true,
+    pause: 4000
+  });
+});
 
 // (function(){
 //   var data = [

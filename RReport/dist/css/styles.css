@@ -1,3 +1,34 @@
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.slider-substrate {
+  width: 100%; }
+  .slider-substrate li {
+    position: relative; }
+    .slider-substrate li .text-wrapper {
+      position: absolute;
+      background-color: #272b74;
+      padding: 0.625rem 0.9375rem;
+      bottom: 15%;
+      left: 15%;
+      color: #fff;
+      font-size: 2.375rem;
+      max-width: 25%; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
 
 @-webkit-keyframes scaledown {
   0% {
@@ -38,7 +69,7 @@
 .header-wrapper {
   color: #272b74;
   height: 100vh;
-  width: 100%; }
+  width: 70%; }
   .header-wrapper .puzzles {
     padding: 1.25rem 2.5rem;
     background-image: url("../img/adventure.jpg");
@@ -66,6 +97,8 @@
       animation-fill-mode: forwards;
       -webkit-transform-origin: 50% 50%;
       transform-origin: 50% 50%; }
+      .header-wrapper .puzzles .item .text-hover {
+        display: none; }
       .header-wrapper .puzzles .item:hover {
         z-index: 100;
         -webkit-animation: scale .4s ease;
@@ -87,6 +120,21 @@
           border: none;
           -webkit-box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2);
           box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2); }
+        .header-wrapper .puzzles .item:hover .text-hover {
+          display: inline-block;
+          background: #92DAF0;
+          font-size: 0.875rem;
+          padding: 0 1.25rem 1.25rem 1.25rem;
+          position: absolute;
+          width: 100%;
+          max-height: 13.75rem;
+          overflow: hidden;
+          top: 85%;
+          left: 0;
+          -webkit-box-shadow: 1.5625rem 2.5rem 3.125rem -1.25rem rgba(0, 0, 0, 0.2);
+          box-shadow: 1.5625rem 2.5rem 3.125rem -1.25rem rgba(0, 0, 0, 0.2); }
+        .header-wrapper .puzzles .item:hover .arrows {
+          display: none; }
       .header-wrapper .puzzles .item .arrows {
         position: absolute;
         color: #fff;
@@ -265,7 +313,7 @@
   font-family: 'Ubuntu-M'; }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,4 +323,14 @@ body {
   justify-content: center; }
 
 .wrapper {
-  width: 70%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }

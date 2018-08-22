@@ -1,13 +1,15 @@
-// // ===Slider===
+'use strict';
 
-// $('document').ready(function(){
-//   $('.bxslider').bxSlider({
-//     mode: 'fade',
-//     randomStart: true,
-//     auto: true,
-//     pause: 7000
-//   });
-// });
+// ===Slider===
+
+$('document').ready(function () {
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+    randomStart: true,
+    auto: true,
+    pause: 4000
+  });
+});
 
 // (function(){
 //   var data = [
@@ -295,4 +297,3 @@
 //   var Friends = _.chain(data).map('friends').flatten().map('name').uniq().value();
 //   console.log('Friends: ', Friends);
 // })();
-"use strict";
