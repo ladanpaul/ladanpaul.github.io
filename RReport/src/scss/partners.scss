@@ -1,0 +1,29 @@
+@import "constants";
+
+.patners-substrate {
+  width: 70%;
+  min-height: rem(600);
+  background-image: url("../img/boys.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: rem(40) rem(20);
+  display: flex;
+  justify-content: flex-end;
+  .block-text {
+    width: 50%;
+    min-height: 100%;
+    background-color: rgba(255,255,255, .4);
+    color: $header-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: rem(30) rem(20);
+    font-size: rem(22);
+    overflow: auto;
+    .text-item {
+      margin-bottom: rem(30);
+    }
+  }
+}

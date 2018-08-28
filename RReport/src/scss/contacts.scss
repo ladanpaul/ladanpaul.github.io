@@ -1,0 +1,43 @@
+@import "constants";
+
+.contacts-substrate {
+  width: 70%;
+  .title {
+    text-align: center;
+    line-height: rem(80);
+    font-size: rem(24);
+    color: $header-text-hover;
+  }
+  .content {
+    display: flex;
+    .item {
+      width: 50%;
+      iframe {
+        width: 100%;
+      }
+    }
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      color: $header-color;
+      font-size: rem(22);
+      padding: rem(10) rem(20);
+      .address {
+        font-size: rem(28);
+      }
+      .email {
+        color: $header-text-hover;
+      }
+      .phones {
+        display: flex;
+        flex-direction: column;
+        margin-top: rem(5);
+        a {
+          text-decoration: none;
+          color: $header-color;
+        }
+      }
+    }
+  }
+}

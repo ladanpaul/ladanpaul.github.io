@@ -1,0 +1,19 @@
+@import "constants";
+
+.slider-substrate {
+  width: 100%;
+  li {
+    position: relative;
+    .text-wrapper {
+      position: absolute;
+      background-color: $header-color;
+      padding: rem(10) rem(15);
+      bottom: 15%;
+      left: 15%;
+      color: #fff;
+      font-size: rem(38);
+      max-width: 45%;
+    } 
+  }
+}
+
