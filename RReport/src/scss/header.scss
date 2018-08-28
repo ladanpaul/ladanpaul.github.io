@@ -38,6 +38,9 @@
     display: flex;
     justify-content: center;
     position: relative;
+    a {
+      color: $header-color;
+    }
     .item {
       width: 200px;
       height: 200px;
@@ -48,6 +51,7 @@
       animation: scaledown .4s ease;
       animation-fill-mode: forwards;
       transform-origin: 50% 50%;
+      cursor: pointer;
       .text-hover {
         display: none; 
       }
