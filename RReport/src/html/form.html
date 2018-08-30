@@ -1,0 +1,57 @@
+<div class="form-substrate">
+  <div class="form-header">
+    <h4 class="title">
+      ЕСТЬ ВОПРОСЫ?
+    </h4>
+    <div class="text">
+      Просто напишите нам, и наши специалисті предоставят интересующую информацию
+    </div>
+    <button class="submit-request">
+      Оставить заявку
+    </button>
+  </div>
+  <div class="form-content">
+    <form action="mail.php" method="POST">
+      <div class="inner-form">
+        <div class="form-group fg-left">
+          <label>
+            <span class="form-label">
+              Название Вашей компании*
+            </span>
+            <span class="form-label">
+              Ваше имя
+            </span>
+            <input type="text" name="user_name">
+          </label>
+          <label>
+            <span class="form-label">
+              Отрасль*
+            </span>
+            <input type="text" name="industry">
+          </label>
+          <label>
+            <span class="form-label">
+              Адрес єлектронной почты*
+            </span>
+            <input type="text" name="email">
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            <span class="form-label">
+              Телефон*
+            </span>
+            <input type="text" name="phone">
+          </label>
+          <label>
+            <span class="form-label">
+              Сообщение
+            </span>
+            <textarea name="message" id="" cols="10" rows="5"></textarea>
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="send-btn">Отправить</button>
+    </form>
+  </div>
+</div>

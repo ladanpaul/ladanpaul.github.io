@@ -1,0 +1,35 @@
+@import "constants";
+
+.footer-substrate {
+  background-color: $footer-bg;
+  padding: rem(20) 0 rem(30);
+  width: 70%;
+  text-align: center;
+  .logo {
+    display: flex;
+    justify-content: center;
+    &__link {
+      display: flex;
+      width: rem(200);
+      height: rem(50);
+    }
+    &__icon {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    color: $footer-color;
+    .address {
+      font-size: rem(25);
+    }
+    .phones {
+      font-size: rem(20);
+    }
+    a {
+      color: $footer-color;
+    }
+  }
+}

@@ -4,6 +4,9 @@
 .italic {
   font-style: italic; }
 
+button {
+  cursor: pointer; }
+
 .agro-substrate {
   width: 70%; }
 
@@ -12,6 +15,9 @@
 
 .italic {
   font-style: italic; }
+
+button {
+  cursor: pointer; }
 
 .slider-substrate {
   width: 100%; }
@@ -33,11 +39,17 @@
 .italic {
   font-style: italic; }
 
+button {
+  cursor: pointer; }
+
 .bold {
   font-weight: bold; }
 
 .italic {
   font-style: italic; }
+
+button {
+  cursor: pointer; }
 
 .contacts-substrate {
   width: 70%; }
@@ -89,6 +101,9 @@
 .italic {
   font-style: italic; }
 
+button {
+  cursor: pointer; }
+
 .devprod-substrate {
   width: 70%; }
 
@@ -97,6 +112,176 @@
 
 .italic {
   font-style: italic; }
+
+button {
+  cursor: pointer; }
+
+.footer-substrate {
+  background-color: #b6e7f5;
+  padding: 1.25rem 0 1.875rem;
+  width: 70%;
+  text-align: center; }
+  .footer-substrate .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .footer-substrate .logo__link {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 12.5rem;
+      height: 3.125rem; }
+    .footer-substrate .logo__icon {
+      display: inline-block;
+      width: 100%; }
+  .footer-substrate .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #37332b; }
+    .footer-substrate .contacts .address {
+      font-size: 1.5625rem; }
+    .footer-substrate .contacts .phones {
+      font-size: 1.25rem; }
+    .footer-substrate .contacts a {
+      color: #37332b; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+button {
+  cursor: pointer; }
+
+.form-substrate {
+  width: 70%; }
+  .form-substrate .form-header {
+    padding: 1.875rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#91b5cb), to(#f5f6f1));
+    background: linear-gradient(to bottom, #91b5cb 0%, #f5f6f1 100%);
+    background-repeat: no-repeat;
+    background-size: 145%;
+    background-position: center top; }
+    .form-substrate .form-header .title {
+      text-transform: uppercase;
+      color: #da5e31;
+      font-size: 3.125rem; }
+    .form-substrate .form-header .text {
+      margin-top: 1.25rem;
+      font-size: 2.0625rem;
+      text-align: center; }
+    .form-substrate .form-header .submit-request {
+      margin-top: 1.25rem;
+      border: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      outline: none;
+      background-color: #7fc95f;
+      border-radius: 31px/31px 31px 30px 30px;
+      line-height: 3.75rem;
+      width: 30%;
+      font-size: 1.75rem;
+      color: #fcfcfc; }
+  .form-substrate form {
+    min-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .form-substrate .form-content {
+    background-color: lightblue;
+    padding: 1.875rem 3.125rem;
+    background-image: url("../img/clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center; }
+  .form-substrate .form-content .inner-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-size: 1.125rem;
+    color: #da5e31; }
+  .form-substrate .form-group {
+    width: 100%;
+    grid-column: span 6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .form-substrate .form-group label {
+      margin-top: 1.5625rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .form-substrate .form-group label input, .form-substrate .form-group label textarea {
+        margin-top: 0.625rem;
+        width: 16.25rem;
+        border-radius: 31px/31px 31px 30px 30px;
+        line-height: 1.75rem;
+        outline: none;
+        padding: 0 0.625rem;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.5); }
+      .form-substrate .form-group label textarea {
+        border-radius: 1.25rem;
+        resize: none;
+        line-height: 1.125rem;
+        padding: 0.625rem; }
+  .form-substrate .fg-left {
+    margin-top: -21px; }
+  .form-substrate .send-btn {
+    margin-top: 1.25rem;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    background-color: #0093be;
+    border-radius: 31px/31px 31px 30px 30px;
+    line-height: 2.8125rem;
+    width: 20%;
+    font-size: 1.75rem;
+    color: #fcfcfc;
+    margin-left: auto; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+button {
+  cursor: pointer; }
 
 @-webkit-keyframes scaledown {
   0% {
@@ -143,8 +328,7 @@
     background-image: url("../img/adventure.jpg");
     background-repeat: no-repeat;
     background-size: 125%;
-    background-position: 80% top;
-    background-attachment: scroll;
+    background-position: center top;
     height: calc(100% - 70px);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -380,6 +564,9 @@
 .italic {
   font-style: italic; }
 
+button {
+  cursor: pointer; }
+
 .it-substrate {
   width: 70%; }
 
@@ -388,6 +575,9 @@
 
 .italic {
   font-style: italic; }
+
+button {
+  cursor: pointer; }
 
 .patners-substrate {
   width: 70%;
@@ -430,6 +620,9 @@
 
 .italic {
   font-style: italic; }
+
+button {
+  cursor: pointer; }
 
 .services-content {
   padding: 2.5rem; }
@@ -569,6 +762,9 @@ body {
 
 .italic {
   font-style: italic; }
+
+button {
+  cursor: pointer; }
 
 .traid-substrate {
   width: 70%; }

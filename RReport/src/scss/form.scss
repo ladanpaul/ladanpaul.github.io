@@ -1,0 +1,101 @@
+@import "constants";
+
+.form-substrate {
+  width: 70%;
+  .form-header  {
+    padding: rem(30) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(145,181,203,1) 0%, rgba(245,246,241,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 145%;
+    background-position: center top;
+    .title {
+      text-transform: uppercase;
+      color: $red;
+      font-size: rem(50);
+    }
+    .text {
+      margin-top: rem(20);
+      font-size: rem(33);
+      text-align: center;
+    }
+    .submit-request {
+      margin-top: rem(20);
+      border: none;
+      box-shadow: none;
+      outline: none;
+      background-color: $green;
+      border-radius: 31px/31px 31px 30px 30px;
+      line-height: rem(60);
+      width: 30%;
+      font-size: rem(28);
+      color: $white-color;
+    }
+  }
+  form {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-content {
+    background-color: lightblue;
+    padding: rem(30) rem(50);
+    background-image: url("../img/clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+  .form-content .inner-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-size: rem(18);
+    color: $red;
+  }
+  .form-group {
+    width: 100%;
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+    label {
+      margin-top: rem(25);
+      display: flex;
+      flex-direction: column;
+      input, textarea {
+        margin-top: rem(10);
+        width: rem(260);
+        border-radius: 31px/31px 31px 30px 30px;        
+        line-height: rem(28);
+        outline: none;
+        padding: 0 rem(10);
+        box-shadow: none;
+        border: none;
+        background-color: rgba(255,255,255, .5);
+      }
+      textarea {
+        border-radius: rem(20);
+        resize: none;
+        line-height: rem(18);
+        padding: rem(10);
+      }
+    }
+  }
+  .fg-left {
+    margin-top: -21px;
+  }
+  .send-btn {
+    margin-top: rem(20);
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: $blue;
+    border-radius: 31px/31px 31px 30px 30px;
+    line-height: rem(45);
+    width: 20%;
+    font-size: rem(28);
+    color: $white-color;
+    margin-left: auto;
+  }
+}
