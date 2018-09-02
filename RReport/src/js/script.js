@@ -31,3 +31,45 @@ jQuery(document).ready(function($){
   });
 
 });
+
+// open form
+let openForm = false;
+const form = $('.form-content')
+form.css('display', 'none')
+
+$('#phone-click').click(() => {
+  openForm = true;
+  form.slideDown(100)
+})
+
+$('#q-send-btn').click(() => {
+  openForm = !openForm
+  if (openForm) {
+    form.slideDown(100)
+  } else {
+    form.slideUp(100)
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

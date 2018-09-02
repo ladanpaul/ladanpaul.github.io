@@ -32,3 +32,22 @@ jQuery(document).ready(function ($) {
     pause: 4000
   });
 });
+
+// open form
+var openForm = false;
+var form = $('.form-content');
+form.css('display', 'none');
+
+$('#phone-click').click(function () {
+  openForm = true;
+  form.slideDown(100);
+});
+
+$('#q-send-btn').click(function () {
+  openForm = !openForm;
+  if (openForm) {
+    form.slideDown(100);
+  } else {
+    form.slideUp(100);
+  }
+});
