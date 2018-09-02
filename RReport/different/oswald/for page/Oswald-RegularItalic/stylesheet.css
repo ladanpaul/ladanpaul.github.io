@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-RegularItalic.eot');
+    src: url('Oswald-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-RegularItalic.woff2') format('woff2'),
+        url('Oswald-RegularItalic.woff') format('woff'),
+        url('Oswald-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

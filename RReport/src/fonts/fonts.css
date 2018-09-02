@@ -1,9 +1,60 @@
 @font-face {
-	font-family: 'Ubuntu-M';
-  src: url('./ubuntu-medium/Ubuntu-Medium.eot');  
-	src: url('./ubuntu-medium/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
-		url('./ubuntu-medium/Ubuntu-Medium.woff') format('woff'),
-		url('./ubuntu-medium/Ubuntu-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+    font-family: 'DemiBold';
+    src: url('./Oswald-DemiBold/Oswald-DemiBold.eot');
+    src: url('./Oswald-DemiBold/Oswald-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./Oswald-DemiBold/Oswald-DemiBold.woff2') format('woff2'),
+        url('./Oswald-DemiBold/Oswald-DemiBold.woff') format('woff'),
+        url('./Oswald-DemiBold/Oswald-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url('./Oswald-Medium/Oswald-Medium.eot');
+    src: url('./Oswald-Medium/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./Oswald-Medium/Oswald-Medium.woff2') format('woff2'),
+        url('./Oswald-Medium/Oswald-Medium.woff') format('woff'),
+        url('./Oswald-Medium/Oswald-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald-ELI';
+    src: url('./Oswald-Extra-LightItalic/Oswald-Extra-LightItalic.eot');
+    src: url('./Oswald-Extra-LightItalic/Oswald-Extra-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./Oswald-Extra-LightItalic/Oswald-Extra-LightItalic.woff2') format('woff2'),
+        url('./Oswald-Extra-LightItalic/Oswald-Extra-LightItalic.woff') format('woff'),
+        url('./Oswald-Extra-LightItalic/Oswald-Extra-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald-Light';
+    src: url('./Oswald-Light/Oswald-Light.eot');
+    src: url('./Oswald-Light/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+        url('./Oswald-Light/Oswald-Light.woff2') format('woff2'),
+        url('./Oswald-Light/Oswald-Light.woff') format('woff'),
+        url('./Oswald-Light/Oswald-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Oswald-RegularItalic';
+    src: url('./Oswald-RegularItalic/Oswald-RegularItalic.eot');
+    src: url('./Oswald-RegularItalic/Oswald-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('./Oswald-RegularItalic/Oswald-RegularItalic.woff2') format('woff2'),
+        url('./Oswald-RegularItalic/Oswald-RegularItalic.woff') format('woff'),
+        url('./Oswald-RegularItalic/Oswald-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+
+

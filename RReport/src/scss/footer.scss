@@ -23,10 +23,12 @@
     flex-direction: column;
     color: $footer-color;
     .address {
-      font-size: rem(25);
+      font-size: rem(22);
+      font-family: 'Oswald-Medium', sans-serif;
     }
     .phones {
-      font-size: rem(20);
+      font-size: rem(18);
+      font-family: 'Oswald-RegularItalic', sans-serif;
     }
     a {
       color: $footer-color;

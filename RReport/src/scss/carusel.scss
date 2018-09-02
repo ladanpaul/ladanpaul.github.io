@@ -7,12 +7,27 @@
     .text-wrapper {
       position: absolute;
       background-color: $header-color;
-      padding: rem(10) rem(15);
+      padding: rem(10) rem(20);
       bottom: 15%;
       left: 15%;
       color: #fff;
-      font-size: rem(38);
       max-width: 45%;
+      .bold {
+        font-family: 'DemiBold', sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: rem(45);
+        line-height: rem(50);
+        text-transform: uppercase;
+      }
+      .text.italic {
+        padding: 0;
+        margin: 0;
+        font-family: 'Oswald-RegularItalic', sans-serif;
+        font-size: rem(45);
+        line-height: rem(50);
+        text-transform: uppercase;
+      }
     } 
   }
 }

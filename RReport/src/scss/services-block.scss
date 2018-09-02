@@ -12,7 +12,8 @@
     padding: 0;
     width: 60%;
     text-align: center;
-    font-size: rem(32);
+    font-size: rem(38);
+    font-family: 'DemiBold', sans-serif;
   }
   .content {
     margin-top: rem(20);
@@ -78,13 +79,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-family: 'Oswald-RegularItalic', sans-serif;
         .bigger {
-          width: 70%;
-          font-size: rem(22);
+          width: 75%;
+          font-size: rem(28);
         }
         .less {
           width: 75%;
-          font-size: rem(16);
+          font-size: rem(22);
         }
       }
     }

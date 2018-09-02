@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-DemiBold.eot');
+    src: url('Oswald-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-DemiBold.woff2') format('woff2'),
+        url('Oswald-DemiBold.woff') format('woff'),
+        url('Oswald-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+

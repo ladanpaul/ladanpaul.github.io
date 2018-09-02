@@ -4,32 +4,42 @@
   width: 70%;
   .title {
     text-align: center;
-    line-height: rem(80);
-    font-size: rem(24);
+    line-height: rem(130);
+    font-size: rem(50);
+    font-weight: normal;
+    font-family: 'Oswald-RegularItalic', sans-serif;
     color: $header-text-hover;
   }
   .content {
     display: flex;
+    height: 455px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(188,230,242,1) 100%);
+    padding: 0 rem(20) rem(80);
     .item {
       width: 50%;
       iframe {
         width: 100%;
+        height: 100%;
       }
     }
-    .contacts {
+    .item.contacts {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      min-height: 100%;
       margin: auto;
       color: $header-color;
-      font-size: rem(22);
       padding: rem(10) rem(20);
+      font-family: 'Oswald-RegularItalic', sans-serif;
       .address {
-        font-size: rem(28);
+        font-size: rem(38);
       }
       .email {
+        font-size: rem(34);
         color: $header-text-hover;
       }
       .phones {
+        font-size: rem(32);
         display: flex;
         flex-direction: column;
         margin-top: rem(5);

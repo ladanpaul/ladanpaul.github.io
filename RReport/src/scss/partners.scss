@@ -20,10 +20,17 @@
     flex-direction: column;
     justify-content: space-between;
     padding: rem(30) rem(20);
-    font-size: rem(22);
+    font-size: rem(24);
     overflow: auto;
     .text-item {
       margin-bottom: rem(30);
+      span {
+        font-family: 'Oswald-Light', sans-serif;
+      }
+      .bold {
+        font-weight: normal;
+        font-family: 'Oswald-RegularItalic', sans-serif;
+      }
     }
   }
 }

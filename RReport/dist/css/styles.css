@@ -26,12 +26,25 @@ button {
     .slider-substrate li .text-wrapper {
       position: absolute;
       background-color: #272b74;
-      padding: 0.625rem 0.9375rem;
+      padding: 0.625rem 1.25rem;
       bottom: 15%;
       left: 15%;
       color: #fff;
-      font-size: 2.375rem;
       max-width: 45%; }
+      .slider-substrate li .text-wrapper .bold {
+        font-family: 'DemiBold', sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 2.8125rem;
+        line-height: 3.125rem;
+        text-transform: uppercase; }
+      .slider-substrate li .text-wrapper .text.italic {
+        padding: 0;
+        margin: 0;
+        font-family: 'Oswald-RegularItalic', sans-serif;
+        font-size: 2.8125rem;
+        line-height: 3.125rem;
+        text-transform: uppercase; }
 
 .bold {
   font-weight: bold; }
@@ -55,18 +68,25 @@ button {
   width: 70%; }
   .contacts-substrate .title {
     text-align: center;
-    line-height: 5rem;
-    font-size: 1.5rem;
+    line-height: 8.125rem;
+    font-size: 3.125rem;
+    font-weight: normal;
+    font-family: 'Oswald-RegularItalic', sans-serif;
     color: #d45231; }
   .contacts-substrate .content {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    height: 455px;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#bce6f2));
+    background: linear-gradient(to bottom, white 0%, #bce6f2 100%);
+    padding: 0 1.25rem 5rem; }
     .contacts-substrate .content .item {
       width: 50%; }
       .contacts-substrate .content .item iframe {
-        width: 100%; }
-    .contacts-substrate .content .contacts {
+        width: 100%;
+        height: 100%; }
+    .contacts-substrate .content .item.contacts {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -74,15 +94,21 @@ button {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      min-height: 100%;
       margin: auto;
       color: #272b74;
-      font-size: 1.375rem;
-      padding: 0.625rem 1.25rem; }
-      .contacts-substrate .content .contacts .address {
-        font-size: 1.75rem; }
-      .contacts-substrate .content .contacts .email {
+      padding: 0.625rem 1.25rem;
+      font-family: 'Oswald-RegularItalic', sans-serif; }
+      .contacts-substrate .content .item.contacts .address {
+        font-size: 2.375rem; }
+      .contacts-substrate .content .item.contacts .email {
+        font-size: 2.125rem;
         color: #d45231; }
-      .contacts-substrate .content .contacts .phones {
+      .contacts-substrate .content .item.contacts .phones {
+        font-size: 2rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -91,7 +117,7 @@ button {
         -ms-flex-direction: column;
         flex-direction: column;
         margin-top: 0.3125rem; }
-        .contacts-substrate .content .contacts .phones a {
+        .contacts-substrate .content .item.contacts .phones a {
           text-decoration: none;
           color: #272b74; }
 
@@ -147,9 +173,11 @@ button {
     flex-direction: column;
     color: #37332b; }
     .footer-substrate .contacts .address {
-      font-size: 1.5625rem; }
+      font-size: 1.375rem;
+      font-family: 'Oswald-Medium', sans-serif; }
     .footer-substrate .contacts .phones {
-      font-size: 1.25rem; }
+      font-size: 1.125rem;
+      font-family: 'Oswald-RegularItalic', sans-serif; }
     .footer-substrate .contacts a {
       color: #37332b; }
 
@@ -184,10 +212,14 @@ button {
     .form-substrate .form-header .title {
       text-transform: uppercase;
       color: #da5e31;
-      font-size: 3.125rem; }
+      font-size: 3.125rem;
+      font-weight: 500;
+      font-family: 'Oswald-Medium', sans-serif; }
     .form-substrate .form-header .text {
+      font-family: 'Oswald-ELI', sans-serif;
       margin-top: 1.25rem;
-      font-size: 2.0625rem;
+      font-size: 2rem;
+      font-weight: 300;
       text-align: center; }
     .form-substrate .form-header .submit-request {
       margin-top: 1.25rem;
@@ -200,7 +232,11 @@ button {
       line-height: 3.75rem;
       width: 30%;
       font-size: 1.75rem;
-      color: #fcfcfc; }
+      font-family: 'Oswald-RegularItalic', sans-serif;
+      color: #fcfcfc;
+      opacity: .8; }
+      .form-substrate .form-header .submit-request:hover {
+        opacity: 1; }
   .form-substrate form {
     min-width: 100%;
     display: -webkit-box;
@@ -241,7 +277,9 @@ button {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+      font-family: 'Oswald-Medium', sans-serif;
+      font-size: 1.125rem; }
       .form-substrate .form-group label input, .form-substrate .form-group label textarea {
         margin-top: 0.625rem;
         width: 16.25rem;
@@ -271,8 +309,12 @@ button {
     line-height: 2.8125rem;
     width: 20%;
     font-size: 1.75rem;
+    font-family: 'Oswald-RegularItalic', sans-serif;
     color: #fcfcfc;
-    margin-left: auto; }
+    margin-left: auto;
+    opacity: .8; }
+    .form-substrate .send-btn:hover {
+      opacity: 1; }
 
 .bold {
   font-weight: bold; }
@@ -325,10 +367,7 @@ button {
   width: 70%; }
   .header-wrapper .puzzles {
     padding: 1.25rem 2.5rem;
-    background-image: url("../img/adventure.jpg");
-    background-repeat: no-repeat;
-    background-size: 125%;
-    background-position: center top;
+    background: #fff;
     height: calc(100% - 70px);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -337,11 +376,27 @@ button {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative; }
+    .header-wrapper .puzzles:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/adventure.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;
+      opacity: .7; }
     .header-wrapper .puzzles a {
       color: #272b74; }
     .header-wrapper .puzzles .item {
-      width: 200px;
-      height: 200px;
+      width: 13.75rem;
+      height: 13.75rem;
       position: relative;
       border: 0.0625rem solid #81d5ee;
       border-left: none;
@@ -376,13 +431,16 @@ button {
           -webkit-box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2);
           box-shadow: 0.3125rem 0.3125rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.2); }
         .header-wrapper .puzzles .item:hover .text-hover {
+          font-family: 'Oswald-RegularItalic', sans-serif;
           display: inline-block;
           background: #92DAF0;
           font-size: 0.875rem;
-          padding: 0 1.25rem 1.25rem 1.25rem;
+          padding: 0.625rem 1.25rem 1.25rem 1.25rem;
+          font-size: 1rem;
           position: absolute;
           width: 100%;
-          max-height: 13.75rem;
+          min-height: 9.375rem;
+          max-height: 15.625rem;
           overflow: hidden;
           top: 85%;
           left: 0;
@@ -407,7 +465,8 @@ button {
         display: inline-block;
         width: 100%;
         height: 100%;
-        padding: 1.25rem; }
+        padding: 1.25rem;
+        font-family: 'Oswald-Medium', sans-serif; }
         .header-wrapper .puzzles .item .puzzle__image {
           width: 100%;
           height: 6.25rem;
@@ -418,20 +477,22 @@ button {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
           -ms-flex-direction: column;
           flex-direction: column;
-          max-width: 100%; }
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          width: 100%;
+          height: 3.4375rem; }
           .header-wrapper .puzzles .item .puzzle .block-text .text {
-            font-size: 0.75rem; }
+            font-size: 0.875rem; }
           .header-wrapper .puzzles .item .puzzle .block-text .text-up {
-            font-size: 1.125rem; }
-        .header-wrapper .puzzles .item .puzzle .text-agro, .header-wrapper .puzzles .item .puzzle .text-prom {
-          margin-top: 1.125rem; }
+            font-size: 1.5rem; }
       .header-wrapper .puzzles .item .circle-right {
         display: inline-block;
         width: 50px;
@@ -552,7 +613,9 @@ button {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    justify-content: space-around;
+    font-family: 'Oswald-Medium', sans-serif;
+    font-size: 1.125rem; }
     .header .list__item:hover {
       cursor: pointer; }
       .header .list__item:hover .list__link {
@@ -610,10 +673,15 @@ button {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 1.875rem 1.25rem;
-    font-size: 1.375rem;
+    font-size: 1.5rem;
     overflow: auto; }
     .patners-substrate .block-text .text-item {
       margin-bottom: 1.875rem; }
+      .patners-substrate .block-text .text-item span {
+        font-family: 'Oswald-Light', sans-serif; }
+      .patners-substrate .block-text .text-item .bold {
+        font-weight: normal;
+        font-family: 'Oswald-RegularItalic', sans-serif; }
 
 .bold {
   font-weight: bold; }
@@ -639,7 +707,8 @@ button {
     padding: 0;
     width: 60%;
     text-align: center;
-    font-size: 2rem; }
+    font-size: 2.375rem;
+    font-family: 'DemiBold', sans-serif; }
   .services-content .content {
     margin-top: 1.25rem;
     display: -webkit-box;
@@ -717,13 +786,14 @@ button {
         flex-direction: column;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+        font-family: 'Oswald-RegularItalic', sans-serif; }
         .services-content .content__item .text-block .bigger {
-          width: 70%;
-          font-size: 1.375rem; }
+          width: 75%;
+          font-size: 1.75rem; }
         .services-content .content__item .text-block .less {
           width: 75%;
-          font-size: 1rem; }
+          font-size: 1.375rem; }
 
 * {
   margin: 0;
@@ -731,8 +801,7 @@ button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
-  font-family: 'Ubuntu-M'; }
+  text-decoration: none; }
 
 body {
   width: 100%;
