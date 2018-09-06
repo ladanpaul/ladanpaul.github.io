@@ -51,3 +51,7 @@ $('#q-send-btn').click(function () {
     form.slideUp(100);
   }
 });
+
+// init animate WOW
+
+new WOW().init();

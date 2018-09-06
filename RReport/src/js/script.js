@@ -53,7 +53,9 @@ $('#q-send-btn').click(() => {
 
 
 
+// init animate WOW
 
+new WOW().init()
 
 
 
