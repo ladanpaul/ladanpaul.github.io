@@ -55,3 +55,19 @@ $('#q-send-btn').click(function () {
 // init animate WOW
 
 new WOW().init();
+
+// animate puzzle hover
+
+var puzzle = $('.puzzles .item');
+
+puzzle.mouseenter(function () {
+  puzzle.css("opacity", ".5");
+  $(this).css("opacity", "1");
+});
+
+puzzle.mouseleave(function () {
+  puzzle.css({
+    "opacity": "1",
+    "transition": "opacity ease-in-out .2s"
+  });
+});
