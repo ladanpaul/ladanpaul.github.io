@@ -250,6 +250,7 @@
   color: $header-color;
   font-size: rem(18);
   text-transform: uppercase;
+  z-index: 999;
   .logo {
     &__link {
       display: flex;
@@ -275,4 +276,21 @@
       }
     }
   }
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  width: 70%;
+  height: rem(50);
+  .logo {
+    &__link {
+      width: rem(150);
+      height: rem(35);
+    }
+  }
+}
+
+.header-fixed + .puzzles {
+  margin-top: rem(70);
 }

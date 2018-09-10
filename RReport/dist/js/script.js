@@ -71,3 +71,18 @@ puzzle.mouseleave(function () {
     "transition": "opacity ease-in-out .2s"
   });
 });
+
+// sticky header
+$(document).on('scroll', function () {
+  var navTop = $(this).scrollTop();
+  if (navTop >= 70) {
+    $('.header').addClass('header-fixed');
+  } else {
+    $('.header').removeClass('header-fixed');
+  }
+  if (navTop >= 500) {
+    $('#arrow-btn').css('display', 'block');
+  } else {
+    $('#arrow-btn').css('display', 'none');
+  }
+});

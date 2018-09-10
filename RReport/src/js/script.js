@@ -78,6 +78,20 @@ puzzle.mouseleave(
   }
 )
 
+// sticky header
+$(document).on('scroll', function(){
+  const navTop = $(this).scrollTop();
+  if(navTop >= 70) {
+    $('.header').addClass('header-fixed');
+  } else {
+    $('.header').removeClass('header-fixed');
+  }
+  if(navTop >= 100%) {
+    $('#arrow-btn').css('display', 'block');
+  } else {
+    $('#arrow-btn').css('display', 'none');
+  }
+});
 
 
 

@@ -35,15 +35,15 @@ button {
         font-family: 'DemiBold', sans-serif;
         padding: 0;
         margin: 0;
-        font-size: 2.8125rem;
-        line-height: 3.125rem;
+        font-size: 2.1875rem;
+        line-height: 2.5rem;
         text-transform: uppercase; }
       .slider-substrate li .text-wrapper .text.italic {
         padding: 0;
         margin: 0;
         font-family: 'Oswald-RegularItalic', sans-serif;
-        font-size: 2.8125rem;
-        line-height: 3.125rem;
+        font-size: 2.1875rem;
+        line-height: 2.5rem;
         text-transform: uppercase; }
 
 .bold {
@@ -596,7 +596,8 @@ button {
   align-items: center;
   color: #272b74;
   font-size: 1.125rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 999; }
   .header .logo__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -620,6 +621,18 @@ button {
       cursor: pointer; }
       .header .list__item:hover .list__link {
         color: #d45231; }
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  width: 70%;
+  height: 3.125rem; }
+  .header-fixed .logo__link {
+    width: 9.375rem;
+    height: 2.1875rem; }
+
+.header-fixed + .puzzles {
+  margin-top: 4.375rem; }
 
 .bold {
   font-weight: bold; }
@@ -996,6 +1009,32 @@ body {
   border-radius: 50%;
   width: 100%;
   height: 100%; }
+
+#arrow-btn {
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  bottom: 3.125rem;
+  cursor: pointer;
+  left: 5%;
+  border-radius: 50%;
+  -webkit-animation: redPulse 1.3s linear infinite;
+  animation: redPulse 1.3s linear infinite;
+  -webkit-box-shadow: 0 0 5px 2px rgba(218, 94, 49, 0.09);
+  box-shadow: 0 0 5px 2px rgba(218, 94, 49, 0.09); }
+  #arrow-btn .arrow-ico {
+    width: 100%;
+    height: 100%;
+    cursor: pointer; }
+  #arrow-btn #arrow-click {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; }
 
 .bold {
   font-weight: bold; }
