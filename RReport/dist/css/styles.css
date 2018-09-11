@@ -8,7 +8,8 @@ button {
   cursor: pointer; }
 
 .agro-substrate {
-  width: 70%; }
+  width: 100%;
+  max-width: 87.5rem; }
 
 .bold {
   font-weight: bold; }
@@ -65,7 +66,8 @@ button {
   cursor: pointer; }
 
 .contacts-substrate {
-  width: 70%; }
+  width: 100%;
+  max-width: 87.5rem; }
   .contacts-substrate .title {
     text-align: center;
     line-height: 8.125rem;
@@ -131,7 +133,8 @@ button {
   cursor: pointer; }
 
 .devprod-substrate {
-  width: 70%; }
+  width: 100%;
+  max-width: 87.5rem; }
 
 .bold {
   font-weight: bold; }
@@ -145,7 +148,8 @@ button {
 .footer-substrate {
   background-color: #b6e7f5;
   padding: 1.25rem 0 1.875rem;
-  width: 70%;
+  width: 100%;
+  max-width: 87.5rem;
   text-align: center; }
   .footer-substrate .logo {
     display: -webkit-box;
@@ -191,7 +195,8 @@ button {
   cursor: pointer; }
 
 .form-substrate {
-  width: 70%; }
+  width: 100%;
+  max-width: 87.5rem; }
   .form-substrate .form-header {
     padding: 1.875rem 0;
     display: -webkit-box;
@@ -364,7 +369,8 @@ button {
 .header-wrapper {
   color: #272b74;
   height: 100vh;
-  width: 70%; }
+  width: 100%;
+  max-width: 87.5rem; }
   .header-wrapper .puzzles {
     padding: 1.25rem 2.5rem;
     background: #fff;
@@ -608,8 +614,9 @@ button {
     display: inline-block;
     width: 100%; }
   .header .list {
-    margin-left: 3.125rem;
-    width: 100%;
+    padding-left: 3.125rem;
+    margin-left: auto;
+    width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -625,7 +632,8 @@ button {
 .header-fixed {
   position: fixed;
   top: 0;
-  width: 70%;
+  width: 100%;
+  max-width: 87.5rem;
   height: 3.125rem; }
   .header-fixed .logo__link {
     width: 9.375rem;
@@ -644,7 +652,8 @@ button {
   cursor: pointer; }
 
 .it-substrate {
-  width: 70%; }
+  width: 100%;
+  max-width: 87.5rem; }
 
 .bold {
   font-weight: bold; }
@@ -656,7 +665,8 @@ button {
   cursor: pointer; }
 
 .patners-substrate {
-  width: 70%;
+  width: 100%;
+  max-width: 87.5rem;
   min-height: 37.5rem;
   background-image: url("../img/boys.jpg");
   background-repeat: no-repeat;
@@ -1046,4 +1056,5 @@ button {
   cursor: pointer; }
 
 .traid-substrate {
-  width: 70%; }
+  width: 100%;
+  max-width: 87.5rem; }

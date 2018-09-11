@@ -1,7 +1,8 @@
 @import "constants";
 
 .patners-substrate {
-  width: 70%;
+  width: 100%;
+  max-width: rem(1400);
   min-height: rem(600);
   background-image: url("../img/boys.jpg");
   background-repeat: no-repeat;

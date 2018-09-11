@@ -23,10 +23,12 @@
   }
 }
 
+
 .header-wrapper {
   color: $header-color;
   height: 100vh;
-  width: 70%;
+  width: 100%;
+  max-width: rem(1400);
   .puzzles {
     padding: rem(20) rem(40);
     background: #fff;
@@ -263,8 +265,9 @@
     }
   }
   .list {
-    margin-left: rem(50);
-    width: 100%;
+    padding-left: rem(50);
+    margin-left: auto;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     font-family: 'Oswald-Medium', sans-serif;
@@ -281,7 +284,8 @@
 .header-fixed {
   position: fixed;
   top: 0;
-  width: 70%;
+  width: 100%;
+  max-width: rem(1400);
   height: rem(50);
   .logo {
     &__link {
@@ -293,4 +297,12 @@
 
 .header-fixed + .puzzles {
   margin-top: rem(70);
+}
+
+//320 480 768 980 1200 1400 1600
+
+@media screen and (max-width: 1200px) {
+  .header-wrapper .puzzles .item {
+    // width: rem(180);
+  }
 }
