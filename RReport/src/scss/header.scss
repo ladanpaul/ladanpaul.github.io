@@ -29,12 +29,10 @@
   height: 100vh;
   width: 100%;
   max-width: rem(1400);
-  .puzzles {
-    padding: rem(20) rem(40);
+  .puzzles-wrapper {
     background: #fff;
     height: calc(100% - 70px);
-    display: flex;
-    justify-content: center;
+    padding: rem(20) rem(40);
     position: relative;
     &:after {
       content: '';
@@ -46,19 +44,40 @@
       left: 0;
       bottom: 0;
       right: 0;
-      background-image: url("../img/adventure.jpg");
+      background-image: url("../img/adventure.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center top;
       background-attachment: fixed;
       opacity: .7;
+      z-index: 0;
     }
+  }
+  .taglogs {
+    font-size: rem(50);
+    position: relative;
+    z-index: 9;
+    margin-top: 25%;
+    // text-align: center;
+    .text {
+      display: inline-block;
+      width: 50%;
+      text-align: center;
+      font-family: 'Oswald-Light', sans-serif;
+      background: rgba(#272b74, .5);
+      color: #fff;
+      padding: 5px 15px;
+    }
+  }
+  .puzzles {
+    display: flex;
+    justify-content: center;
     a {
       color: $header-color;
     }
     .item {
-      width: rem(220);
-      height: rem(220);
+      width: rem(280);
+      height: rem(280);
       position: relative;
       border: rem(1) solid #81d5ee;
       border-left: none;
@@ -66,9 +85,13 @@
       animation: scaledown .4s ease;
       animation-fill-mode: forwards;
       transform-origin: 50% 50%;
+      box-shadow: 0px 0px 5px  rgba(0,0,0, .2);
       cursor: pointer;
       .text-hover {
-        display: none; 
+        display: none;
+      }
+      .circle-bottom {
+        box-shadow: 1px 1px 5px  rgba(0,0,0, .2);
       }
       &:hover {
         z-index: 100;
@@ -129,7 +152,7 @@
         font-family: 'Oswald-Medium', sans-serif;
         &__image {
           width: 100%;
-          height: rem(100);
+          height: rem(150);
           object-fit: cover;
         }
         .block-text{
@@ -150,38 +173,38 @@
       }
       .circle-right {
         display: inline-block;
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
         border: rem(1) solid #81d5ee;
         background: linear-gradient(to bottom, rgba(190,233,246,1) 0%, rgba(169,227,244,1) 100%);
         border-radius: 45%;
         position: absolute;
-        right: -25px;
+        right: -40px;
         top: 50%;
         transform: translateY(-50%);
         z-index: -1;
       }
       .circle-left {
         display: inline-block;
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
         border: rem(1) solid #81d5ee;
         background: linear-gradient(to bottom, rgba(190,233,246,1) 0%, rgba(169,227,244,1) 100%);
         border-radius: 45%;
         position: absolute;
-        left: -25px;
+        left: -40px;
         top: 50%;
         transform: translateY(-50%);
         z-index: -1;
       }
       .circle-bottom {
         display: inline-block;
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
         background: #81d5ee;
         border-radius: 45%;
         position: absolute;
-        bottom: -25px;
+        bottom: -40px;
         left: 50%;
         transform: translateX(-50%);
         z-index: -1;
@@ -196,8 +219,8 @@
       &:hover:after {
         content: '';
         display: inline-block;
-        width: 30px;
-        height: 50px;
+        width: 40px;
+        height: 90px;
         background: rgba(237,237,237,.3);
         border-top-right-radius: 5000%;
         border-bottom-right-radius: 5000%;
@@ -210,8 +233,8 @@
       &:hover:before {
         content: '';
         display: inline-block;
-        width: 30px;
-        height: 50px;
+        width: 40px;
+        height: 90px;
         background: rgba(237,237,237,.3);
         border-top-left-radius: 5000%;
         border-bottom-left-radius: 5000%;
@@ -230,8 +253,8 @@
       &:hover:after {
         content: '';
         display: inline-block;
-        width: 30px;
-        height: 50px;
+        width: 40px;
+        height: 90px;
         background: rgba(237,237,237,.3);
         border-top-right-radius: 5000%;
         border-bottom-right-radius: 5000%;
@@ -278,6 +301,15 @@
         color: $header-text-hover;
       }
     }
+    .list__link {
+      color: $header-color;      
+    }
+    .list__link:focus {
+      color: $header-color;
+    }
+    .list__link:visited {
+      color: $header-color;
+    }
   }
 }
 
@@ -295,7 +327,7 @@
   }
 }
 
-.header-fixed + .puzzles {
+.header-fixed + .puzzles-wrapper {
   margin-top: rem(70);
 }
 
