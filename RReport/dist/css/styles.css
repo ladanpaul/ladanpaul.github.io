@@ -397,11 +397,11 @@ button {
     font-size: 3.125rem;
     position: relative;
     z-index: 9;
-    margin-top: 25%; }
+    margin-top: 20%; }
     .header-wrapper .taglogs .text {
       display: inline-block;
       width: 50%;
-      text-align: center;
+      text-align: right;
       font-family: 'Oswald-Light', sans-serif;
       background: rgba(39, 43, 116, 0.5);
       color: #fff;
@@ -416,8 +416,8 @@ button {
     .header-wrapper .puzzles a {
       color: #272b74; }
     .header-wrapper .puzzles .item {
-      width: 17.5rem;
-      height: 17.5rem;
+      width: 25%;
+      height: 25%;
       position: relative;
       border: 0.0625rem solid #81d5ee;
       border-left: none;

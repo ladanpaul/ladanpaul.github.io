@@ -57,12 +57,11 @@
     font-size: rem(50);
     position: relative;
     z-index: 9;
-    margin-top: 25%;
-    // text-align: center;
+    margin-top: 20%;
     .text {
       display: inline-block;
       width: 50%;
-      text-align: center;
+      text-align: right;
       font-family: 'Oswald-Light', sans-serif;
       background: rgba(#272b74, .5);
       color: #fff;
@@ -76,8 +75,10 @@
       color: $header-color;
     }
     .item {
-      width: rem(280);
-      height: rem(280);
+      // width: rem(280);
+      // height: rem(280);
+      width: 25%;
+      height: 25%;
       position: relative;
       border: rem(1) solid #81d5ee;
       border-left: none;
