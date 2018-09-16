@@ -36,3 +36,24 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .footer-substrate {
+    padding: rem(20) rem(10) rem(30);
+    width: 100%;
+    .logo {
+      &__link {
+        width: rem(150);
+        height: rem(40);
+      }
+    }
+    .contacts {
+      .company, .address {
+        font-size: rem(18);
+      }
+      .phones {
+        font-size: rem(16);
+      }
+    }
+  }
+}

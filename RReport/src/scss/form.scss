@@ -161,3 +161,48 @@
     }
   }
 }
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .form-substrate {
+    .form-header  {
+      padding: rem(30) rem(10);
+      .title {
+        font-size: rem(28);
+      }
+      .text {
+        margin-top: rem(10);
+        font-size: rem(22);
+      }
+      .submit-request {
+        margin-top: rem(10);
+        line-height: rem(25);
+        width: auto;
+        font-size: rem(24);
+        padding: rem(10) rem(15);
+      }
+    }
+    .form-content {
+      padding: rem(20) rem(30);
+    }
+    .form-content .inner-form {
+      display: flex;
+      flex-direction: column;
+      font-size: rem(18);
+    }
+    .form-group {
+      width: 100%;
+      display: flex;
+      label {
+        font-size: rem(18);
+        input, textarea {
+          width: 100%;
+        }
+      }
+    }
+    .send-btn {
+      padding: 0 rem(15);
+      width: auto;
+    }
+  }
+}

@@ -615,45 +615,60 @@
 
 
 @media (min-width: 320px) and (max-width: 479px) {
-  .header-fixed {
-    height: auto;
-    padding: rem(5) rem(20);
-  }
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 0;
     .logo {
       width: 100%;
+      display: flex;
       &__link {
+        justify-content: center;
+        align-items: center;
         width: 100%;
       }
       &__icon {
-        width: 100%;
+        width: 50%;
       }
     }
     .list {
       padding: 0;
       margin: 0;
       margin-left: 0;
-      margin-top: rem(5);
       display: flex;
       width: 100%;
+      font-size: rem(18);
+      .list__link {
+        font-size: rem(16);
+      }
+    }
+  }
+  .header-fixed {
+    height: auto;
+    padding: rem(5) rem(10);
+    .logo__icon {
+      width: 40%;
+    }
+    .list {
+      margin-top: 0;
     }
   }
   .header-wrapper {
+    min-height: auto;
     .puzzles-wrapper {
-      padding: rem(20) rem(10);
+      padding: rem(20) rem(10) rem(70) rem(10);
     }
     .puzzles {
       flex-wrap: wrap;
+      flex-direction: column;
       .item-1 {
         .circle-bottom {
           box-shadow: none;
         }
       }
       .item-2 {
-        z-index: 2;
+        z-index: 3;
         .circle-bottom {
           box-shadow: none;
         }
@@ -669,7 +684,7 @@
         }
       }
       .item {
-        width: 50%;
+        width: 100%;
         height: 50%;
         box-shadow: none;
         border: none;
@@ -698,9 +713,7 @@
           }
         }
         .circle-right {
-          width: 80px;
-          height: 80px;
-          right: -30px;
+          display: none;
         }
         .circle-left {
           display: none;

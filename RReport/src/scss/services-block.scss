@@ -159,3 +159,47 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .services-content {
+    padding: rem(20) rem(10);
+    .title {
+      font-size: rem(22);
+      width: 100%;
+    }
+    .content {
+      margin-top: rem(20);
+      &__item {
+        width: 100%;
+        height: rem(90);
+        margin-top: rem(10);
+        .ico-block {
+          width: rem(90);
+          height: rem(90);
+          &:after {
+            top: 50%;
+            right: -22%;
+            width: rem(22);
+            height: rem(22);
+          }
+          &:before {
+            left: 50%;
+            bottom: -22%;
+            width: rem(22);
+            height: rem(22);
+          }
+        }
+        .text-block {
+          .bigger {
+            width: 75%;
+            font-size: rem(18);
+          }
+          .less {
+            width: 75%;
+            font-size: rem(16);
+          }
+        }
+      }
+    }
+  }
+}

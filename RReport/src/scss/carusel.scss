@@ -71,3 +71,26 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .slider-substrate {
+    li {
+      .text-wrapper {
+        bottom: 15%;
+        left: 10%;
+        padding: rem(5) rem(8);
+        max-width: 55%;
+        .bold {
+          font-size: rem(18);
+          line-height: rem(24);
+        }
+        .text.italic {
+          font-size: rem(18);
+          line-height: rem(24);
+        }
+      }
+    }
+  }
+}
+
+

@@ -116,3 +116,49 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .contacts-substrate {
+    .title {
+      font-size: rem(28);
+      line-height: rem(70);
+    }
+    .content {
+      flex-direction: column;
+      height: auto;
+      padding: rem(10) rem(10) rem(50) rem(10);
+      .item.contacts {
+        padding: 0;
+        width: 100%;
+        .company, .address {
+          font-size: rem(18);
+          text-align: center;
+        }
+        .email {
+          font-size: rem(18);
+          text-align: center;
+        }
+        .phones {
+          font-size: rem(18);
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          a {
+            margin-left: rem(10);
+          }
+        }
+      }
+      .map {
+        width: 100%;
+        height: 300px;
+        margin-top: rem(20);
+      }
+    }
+  }
+}
+
+
+
+
+
