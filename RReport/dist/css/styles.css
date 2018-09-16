@@ -754,7 +754,8 @@ button {
   top: 0;
   width: 100%;
   max-width: 87.5rem;
-  height: 3.125rem; }
+  height: 3.125rem;
+  z-index: 99999; }
   .header-fixed .logo__link {
     width: 9.375rem;
     height: 2.1875rem; }

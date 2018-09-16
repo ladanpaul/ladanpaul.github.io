@@ -317,6 +317,7 @@
   width: 100%;
   max-width: rem(1400);
   height: rem(50);
+  z-index: 99999;
   .logo {
     &__link {
       width: rem(150);
