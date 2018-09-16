@@ -51,10 +51,11 @@ gulp.task('bundleCss', function(){
     return gulp.src(paths.src.css)
     .pipe(plumber())    
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
-        cascade: false
-    }))
+    // .pipe(autoprefixer({
+    //     browsers: ['last 2 versions'],
+    //     cascade: false
+    // }))
+    .pipe(autoprefixer())
     .pipe(concat('styles.css'))
     .pipe(gulp.dest(paths.dist.css))
     .pipe(browserSync.reload({stream: true}));

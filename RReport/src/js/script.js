@@ -86,7 +86,7 @@ $(document).on('scroll', function(){
   } else {
     $('.header').removeClass('header-fixed');
   }
-  if(navTop >= 100%) {
+  if(navTop >= 100) {
     $('#arrow-btn').css('display', 'block');
   } else {
     $('#arrow-btn').css('display', 'none');

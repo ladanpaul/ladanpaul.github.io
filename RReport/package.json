@@ -14,7 +14,7 @@
     "babel-preset-env": "^1.6.0",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^7.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.1.0",

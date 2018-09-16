@@ -32,7 +32,7 @@
       color: $header-color;
       padding: rem(10) rem(20);
       font-family: 'Oswald-RegularItalic', sans-serif;
-      .address {
+      .company, .address {
         font-size: rem(38);
       }
       .email {
@@ -48,6 +48,70 @@
           text-decoration: none;
           color: $header-color;
         }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .contacts-substrate {
+    .title {
+      font-size: rem(38);
+    }
+    .content {
+      .item.contacts {
+        .company, .address {
+          font-size: rem(28);
+        }
+        .email {
+          font-size: rem(28);
+        }
+        .phones {
+          font-size: rem(26);
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .contacts-substrate {
+    .title {
+      font-size: rem(28);
+      line-height: rem(70);
+    }
+    .content {
+      flex-direction: column;
+      height: auto;
+      .item.contacts {
+        padding: 0;
+        width: 100%;
+        .company, .address {
+          font-size: rem(18);
+          text-align: center;
+        }
+        .email {
+          font-size: rem(18);
+          text-align: center;
+        }
+        .phones {
+          font-size: rem(18);
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          a {
+            margin-left: rem(10);
+          }
+        }
+      }
+      .map {
+        width: 100%;
+        height: 300px;
+        margin-top: rem(20);
       }
     }
   }
