@@ -590,7 +590,7 @@ button {
     display: none; }
   .header-wrapper .puzzles-wrapper {
     background: #fff;
-    height: calc(100% - 70px);
+    height: calc(100vh - 70px);
     padding: 1.25rem 2.5rem 6.25rem 2.5rem;
     position: relative; }
     .header-wrapper .puzzles-wrapper:after {
@@ -613,7 +613,7 @@ button {
     font-size: 3.125rem;
     position: relative;
     z-index: 9;
-    margin-top: 20%; }
+    margin-top: 25%; }
     .header-wrapper .taglogs .text {
       display: inline-block;
       width: 50%;
@@ -919,8 +919,8 @@ button {
     height: 70px;
     right: 0;
     top: 50%; }
-  .header-wrapper .taglogs {
-    font-size: 2rem; } }
+  .header-wrapper .taglogs .text {
+    width: 60%; } }
 
 @media (min-width: 768px) and (max-width: 979px) {
   .header-wrapper .more-about {

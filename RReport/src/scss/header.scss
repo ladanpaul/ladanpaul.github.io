@@ -34,7 +34,7 @@
   }
   .puzzles-wrapper {
     background: #fff;
-    height: calc(100% - 70px);
+    height: calc(100vh - 70px);
     padding: rem(20) rem(40) rem(100) rem(40);
     position: relative;
     &:after {
@@ -60,7 +60,7 @@
     font-size: rem(50);
     position: relative;
     z-index: 9;
-    margin-top: 20%;
+    margin-top: 25%;
     .text {
       display: inline-block;
       width: 50%;
@@ -391,7 +391,9 @@
       }
     }
     .taglogs {
-      font-size: rem(32);
+      .text {
+        width: 60%;
+      }
     }
   }
 }
