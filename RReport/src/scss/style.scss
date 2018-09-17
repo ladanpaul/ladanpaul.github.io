@@ -154,3 +154,71 @@ body {
 }
 
 
+@media (min-width: 320px) and (max-width: 767px) {
+	#phone-btn {
+		animation: none;
+		width: rem(50);
+		height: rem(50);
+		&:hover {
+			animation: none;
+		}
+		.phone-ico {
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+		}
+	}
+	#arrow-btn {
+		width: rem(50);
+		height: rem(50);
+		bottom: rem(80);
+	}
+}
+
+
+
+//for arrow
+.more-about {
+	.container {
+		background: #fff;
+		text-align: center;
+	}
+
+	/* Arrow & Hover Animation */
+	#more-arrows {
+		width: 75px;
+		height: 75px;
+		&:hover {
+			
+			polygon {
+				fill: #000;
+				transition: all .2s ease-out;
+	
+				&.arrow-bottom {
+					transform: translateY(-18px);
+				}
+	
+				&.arrow-top {
+					transform: translateY(18px);
+				}
+				
+			}
+		
+		}
+		
+	}
+	
+	polygon {
+		fill: #000;
+		transition: all .2s ease-out;
+			
+		&.arrow-middle {
+			opacity: 0.75;
+		}
+	
+		&.arrow-top {
+			opacity: 0.5
+		}
+		 
+	}
+}

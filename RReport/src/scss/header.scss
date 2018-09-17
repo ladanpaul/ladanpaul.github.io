@@ -26,19 +26,22 @@
 
 .header-wrapper {
   color: $header-color;
-  min-height: 100vh;
+  // min-height: 100vh;
   width: 100%;
   max-width: rem(1400);
+  .text-title-mobile, .text-hover-mobile {
+    display: none;
+  }
   .puzzles-wrapper {
     background: #fff;
     height: calc(100% - 70px);
-    padding: rem(20) rem(40);
+    padding: rem(20) rem(40) rem(100) rem(40);
     position: relative;
     &:after {
       content: '';
       display: inline-block;
       width: 100%;
-      min-height: 100vh;
+      // min-height: 100vh;
       position: absolute;
       top: 0;
       left: 0;
@@ -67,6 +70,16 @@
       color: #fff;
       padding: 5px 15px;
     }
+  }
+  .more-about {
+    display: block;
+    font-size: rem(50);
+    font-family: 'Oswald-Light', sans-serif;
+    color: #272b74;
+    text-align: center;
+    position: relative;
+    padding: rem(20);
+    padding-bottom: 0;
   }
   .puzzles {
     display: flex;
@@ -293,20 +306,20 @@
     justify-content: space-around;
     font-family: 'Oswald-Medium', sans-serif;
     font-size: rem(18);
-    &__item:hover {
-      cursor: pointer;
-      .list__link {
-        color: $header-text-hover;
-      }
-    }
     .list__link {
       color: $header-color;      
+      cursor: pointer;
     }
     .list__link:focus {
       color: $header-color;
     }
     .list__link:visited {
       color: $header-color;
+    }
+    &__item {
+      .list__link:hover {
+        color: $header-text-hover;
+      }
     }
   }
 }
@@ -386,6 +399,9 @@
 
 @media (min-width: 768px) and (max-width: 979px) {
   .header-wrapper {
+    .more-about {
+      font-size: rem(42);
+    }
     .puzzles {
       flex-wrap: wrap;
       .item-1 {
@@ -514,8 +530,12 @@
     }
   }
   .header-wrapper {
+    .more-about {
+      font-size: rem(36);
+    }
     .puzzles-wrapper {
-      padding: rem(20) rem(10);
+      padding-left: rem(10);
+      padding-right: rem(10);
     }
     .puzzles {
       flex-wrap: wrap;
@@ -657,6 +677,9 @@
   }
   .header-wrapper {
     min-height: auto;
+    .more-about {
+      font-size: rem(36);
+    }
     .puzzles-wrapper {
       padding: rem(20) rem(10) rem(70) rem(10);
     }
@@ -752,6 +775,27 @@
     }
     .taglogs {
       display: none;
+    }
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 978px) {
+  .header-wrapper {
+    .text-title-mobile {
+      display: block;
+      font-family: 'Oswald-Medium', sans-serif;
+    }
+    .text-hover-mobile{
+      display: block;
+      position: absolute;
+      color: #fff;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: rem(18);
+      padding: rem(5) rem(10);
+      cursor: pointer;
     }
   }
 }
