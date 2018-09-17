@@ -58,12 +58,13 @@
   }
   .taglogs {
     font-size: rem(50);
-    position: relative;
+    position: absolute;
+    bottom: 25%;
     z-index: 9;
-    margin-top: 25%;
+    width: 40%;
     .text {
       display: inline-block;
-      width: 50%;
+      width: 100%;
       text-align: right;
       font-family: 'Oswald-Light', sans-serif;
       background: rgba(#272b74, .5);
@@ -391,9 +392,7 @@
       }
     }
     .taglogs {
-      .text {
-        width: 60%;
-      }
+      width: 60%;
     }
   }
 }
