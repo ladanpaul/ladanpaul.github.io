@@ -287,6 +287,7 @@ button {
         -ms-flex-pack: center;
             justify-content: center; }
     .footer-substrate .logo__link {
+      position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -584,19 +585,21 @@ button {
 
 .header-wrapper {
   color: #272b74;
+  min-height: 100vh;
   width: 100%;
   max-width: 87.5rem; }
   .header-wrapper .text-title-mobile, .header-wrapper .text-hover-mobile {
     display: none; }
   .header-wrapper .puzzles-wrapper {
     background: #fff;
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     padding: 1.25rem 2.5rem 6.25rem 2.5rem;
     position: relative; }
     .header-wrapper .puzzles-wrapper:after {
       content: '';
       display: inline-block;
       width: 100%;
+      min-height: 100vh;
       position: absolute;
       top: 0;
       left: 0;
@@ -854,10 +857,12 @@ button {
     display: -ms-flexbox;
     display: flex;
     width: 12.5rem;
-    height: 3.125rem; }
+    height: 3.125rem;
+    position: relative; }
   .header .logo__icon {
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
   .header .list {
     padding-left: 3.125rem;
     margin-left: auto;
@@ -1018,9 +1023,12 @@ button {
         -ms-flex-align: center;
             align-items: center; }
     .header .logo {
-      width: 100%; }
+      width: 100%;
+      cursor: pointer;
+      position: relative; }
       .header .logo__link {
-        width: 100%; }
+        width: 100%;
+        cursor: pointer; }
       .header .logo__icon {
         width: 100%; }
     .header .list {
@@ -1549,6 +1557,7 @@ body {
 
 .wrapper {
   width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1692,15 +1701,6 @@ body {
     width: 3.75rem;
     height: 3.75rem; } }
 
-#phone-click {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%; }
-
 #phone-btn {
   width: 3.75rem;
   height: 3.75rem;
@@ -1712,7 +1712,7 @@ body {
           animation: redPulse 2s linear infinite;
   -webkit-box-shadow: 0 0 5px 2px rgba(218, 94, 49, 0.09);
           box-shadow: 0 0 5px 2px rgba(218, 94, 49, 0.09);
-  opacity: 1;
+  opacity: .8;
   z-index: 9999999; }
   #phone-btn:hover {
     cursor: pointer;
@@ -1722,6 +1722,14 @@ body {
     width: 100%;
     height: 100%;
     cursor: pointer; }
+  #phone-btn #phone-click {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%; }
 
 #arrow-btn {
   display: none;
@@ -1748,6 +1756,13 @@ body {
     top: 0;
     left: 0;
     opacity: 0; }
+
+.substrate-for-click {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 @media (min-width: 320px) and (max-width: 767px) {
   #phone-btn {

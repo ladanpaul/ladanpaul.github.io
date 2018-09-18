@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     &__link {
+      position: relative;
       display: flex;
       width: rem(200);
       height: rem(50);
