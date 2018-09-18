@@ -591,6 +591,7 @@ button {
     display: none; }
   .header-wrapper .puzzles-wrapper {
     background: #fff;
+    height: 100vh;
     padding: 1.25rem 2.5rem 6.25rem 2.5rem;
     position: relative;
     border: 1px solid black; }
@@ -637,10 +638,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .header-wrapper .puzzles a {
       color: #272b74; }
     .header-wrapper .puzzles .item {
