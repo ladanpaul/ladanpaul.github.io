@@ -585,19 +585,22 @@ button {
 
 .header-wrapper {
   color: #272b74;
+  min-height: 100vh;
+  border: 1px solid black;
   width: 100%;
   max-width: 87.5rem; }
   .header-wrapper .text-title-mobile, .header-wrapper .text-hover-mobile {
     display: none; }
   .header-wrapper .puzzles-wrapper {
     background: #fff;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100% - 70px);
     padding: 1.25rem 2.5rem 6.25rem 2.5rem;
     position: relative; }
     .header-wrapper .puzzles-wrapper:after {
       content: '';
       display: inline-block;
       width: 100%;
+      min-height: inherit;
       position: absolute;
       top: 0;
       left: 0;
