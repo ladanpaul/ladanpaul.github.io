@@ -26,7 +26,7 @@
 
 .header-wrapper {
   color: $header-color;
-  min-height: 100vh;
+  // min-height: 100vh;
   width: 100%;
   max-width: rem(1400);
   .text-title-mobile, .text-hover-mobile {
@@ -34,14 +34,15 @@
   }
   .puzzles-wrapper {
     background: #fff;
-    min-height: calc(100vh - 70px);
+    // min-height: calc(100vh - 70px);
     padding: rem(20) rem(40) rem(100) rem(40);
     position: relative;
+    border: 1px solid black;
     &:after {
       content: '';
       display: inline-block;
       width: 100%;
-      min-height: 100vh;
+      // min-height: 100vh;
       position: absolute;
       top: 0;
       left: 0;
@@ -84,7 +85,8 @@
   }
   .puzzles {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    flex-direction: column;
     a {
       color: $header-color;
     }

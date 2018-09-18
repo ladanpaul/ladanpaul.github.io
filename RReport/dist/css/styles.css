@@ -585,21 +585,19 @@ button {
 
 .header-wrapper {
   color: #272b74;
-  min-height: 100vh;
   width: 100%;
   max-width: 87.5rem; }
   .header-wrapper .text-title-mobile, .header-wrapper .text-hover-mobile {
     display: none; }
   .header-wrapper .puzzles-wrapper {
     background: #fff;
-    min-height: calc(100vh - 70px);
     padding: 1.25rem 2.5rem 6.25rem 2.5rem;
-    position: relative; }
+    position: relative;
+    border: 1px solid black; }
     .header-wrapper .puzzles-wrapper:after {
       content: '';
       display: inline-block;
       width: 100%;
-      min-height: 100vh;
       position: absolute;
       top: 0;
       left: 0;
@@ -639,9 +637,10 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .header-wrapper .puzzles a {
       color: #272b74; }
     .header-wrapper .puzzles .item {
