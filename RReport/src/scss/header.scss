@@ -34,8 +34,7 @@
   }
   .puzzles-wrapper {
     background: #fff;
-    // min-height: calc(100vh - 70px);
-    height: 100vh;
+    min-height: calc(100vh - 70px);
     padding: rem(20) rem(40) rem(100) rem(40);
     position: relative;
     &:after {

@@ -86,7 +86,3 @@ $(document).on('scroll', function () {
     $('#arrow-btn').css('display', 'none');
   }
 });
-
-//for  mobile height 
-var viewportHeight = $('.puzzles-wrapper').outerHeight();
-$('.puzzles-wrapper').css({ 'min-height': viewportHeight });

@@ -96,11 +96,4 @@ $(document).on('scroll', function(){
 
 
 
-//for  mobile height 
-let viewportHeight = $('.puzzles-wrapper').outerHeight();
-$('.puzzles-wrapper').css({ 'min-height': viewportHeight });
-
-
-
-
 
