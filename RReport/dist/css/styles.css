@@ -593,8 +593,7 @@ button {
     background: #fff;
     height: 100vh;
     padding: 1.25rem 2.5rem 6.25rem 2.5rem;
-    position: relative;
-    border: 1px solid black; }
+    position: relative; }
     .header-wrapper .puzzles-wrapper:after {
       content: '';
       display: inline-block;
