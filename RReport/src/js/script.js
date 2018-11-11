@@ -6,28 +6,28 @@ jQuery(document).ready(function($){
     mode: 'horizontal',
     randomStart: true,
     auto: true,
-    pause: 4000,
+    pause: 6000,
   });
   
   let bx2 = $('.bxslider-it').bxSlider({
     mode: 'horizontal',
     randomStart: true,
     auto: true,
-    pause: 4000,
+    pause: 6000,
   });
 
   let bx3 = $('.bxslider-traid').bxSlider({
     mode: 'horizontal',
     randomStart: true,
     auto: true,
-    pause: 4000,
+    pause: 6000,
   });
 
   let bx4 = $('.bxslider-devprod').bxSlider({
     mode: 'horizontal',
     randomStart: true,
     auto: true,
-    pause: 4000,
+    pause: 6000,
   });
 
 });
@@ -94,6 +94,22 @@ $(document).on('scroll', function(){
 });
 
 
+let $input = $('input:text');
+const $register = $('#register');    
+$register.attr('disabled', true);
 
+$input.keyup(function() {
+    var trigger = false;
+    $input.each(function() {
+      if (!$(this).val()) {
+        trigger = true;
+      }
+    });
+    trigger ? $register.attr('disabled', true) : $register.removeAttr('disabled');
+});
 
-
+$register.click(() => {
+  setTimeout(() => {
+    alert('Спасибо за заявку! Наш специалист свяжется с Вами в ближайшее время');
+  }, 2000)
+})

@@ -186,7 +186,27 @@ body {
 
 
 
-//for arrow
+//more about
+.more-about {
+	display: block;
+	font-size: rem(50);
+	font-family: 'Oswald-Light', sans-serif;
+	color: #272b74;
+	text-align: center;
+	position: relative;
+	padding: rem(20);
+	padding-bottom: 0;
+}
+
+#register[disabled] {
+	opacity: .5;
+	&:hover {
+		opacity: .5;
+		cursor: default;
+	}
+}
+
+
 .more-about {
 	.container {
 		background: #fff;
